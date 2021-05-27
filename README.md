@@ -7,7 +7,7 @@
     * Generate new package number and tag by semantic release
     * Publish the package to the NPM registry
     * Build the demo app and push the built app to the `gh-pages` branch
-    * The branch served as a webpage on: [https://brumik.github.io/react-data-explorer](https://brumik.github.io/react-data-explorer)
+    * The branch served as a webpage on: [https://brumik.github.io/react-json-chart-builder](https://brumik.github.io/react-json-chart-builder)
 
 ### Semantic release commit messages
 Using semantic release (disabled until the app is in <v1.0.0)
@@ -24,10 +24,6 @@ The default graphite width of 10mm is always used for performance reasons.`
 
 ### Setup
 * `npm i` - install the packages
-* (only if want to try out the editor too):
-    * Run the AAA full stack (proxy + backend) - This step is needed, since the editor in the demo app is set up to work with the AAA API
-    * backend: https://gitlab.cee.redhat.com/automation-analytics/automation-analytics-backend (vpn needed)
-    * proxy: https://github.com/RedHatInsights/insights-proxy
 * `npm start` - start the local web server
 * go to `localhost:8080`
 
