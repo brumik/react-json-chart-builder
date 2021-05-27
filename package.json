@@ -1,0 +1,78 @@
+{
+  "name": "react-json-chart-builder",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A chart builder component in react, which uses JSON for schema.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brumik/react-json-chart-builder.git"
+  },
+  "keywords": ["react", "chart", "json", "builder", "schema"],
+  "author": "Levente Berky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brumik/react-json-chart-builder/issues"
+  },
+  "homepage": "https://brumik.github.io/react-json-chart-builder",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:demo": "webpack --config demo/webpack.config.js --mode production",
+    "start": "webpack serve --config demo/webpack.config.js --mode development",
+    "test": "jest --config jest.config.json --coverage",
+    "test:watch": "jest --config jest.config.json --watch",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:esm": "tsc -p tsconfig.esm.json --module es2015 --target es5",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "lint": "eslint ./src/**/*.{js,ts,tsx}",
+    "prepublishOnly": "npm run lint",
+    "prepare": "rm -rf dist && npm run build",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "@patternfly/react-charts": "^6.14.22",
+    "@patternfly/react-core": "^4.121.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@testing-library/react": "^11.2.6",
+    "@types/jest": "^26.0.22",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-redux": "^7.1.16",
+    "@types/uuid": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^5.2.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jsdoc": "^32.3.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-react": "^7.23.1",
+    "fetch-mock-jest": "^1.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "path": "^0.12.7",
+    "semantic-release": "^17.4.2",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.5.5",
+    "ts-loader": "^8.1.0",
+    "typescript": "^3.9.9",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
