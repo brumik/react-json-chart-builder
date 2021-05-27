@@ -1,6 +1,6 @@
 {
   "name": "react-json-chart-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "A chart builder component in react, which uses JSON for schema.",
   "main": "dist/cjs/index.js",
