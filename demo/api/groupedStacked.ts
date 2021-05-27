@@ -1,4 +1,5 @@
 export default {
+    'response_type': 'example',
     'items': [
         {
             'year': 'initial',
