@@ -44,7 +44,7 @@ export const dashboard: ChartSchemaElement[] = [
         },
         api: {
             params: {},
-            url: '/api/groupedStacked.json',
+            url: 'groupedStacked',
             method: 'GET'
         }
     },
@@ -133,7 +133,7 @@ export const dashboard: ChartSchemaElement[] = [
                 only_root_workflows_and_standalone_jobs: false,
                 attributes: ['failed_count']
             },
-            url: '/api/anomaly.json',
+            url: 'anomaly',
             method: 'GET'
         }
     },
@@ -195,8 +195,8 @@ export const dashboard: ChartSchemaElement[] = [
                 only_root_workflows_and_standalone_jobs: false,
                 attributes: ['failed_count', 'successful_count']
             },
-            // url: 'https://prod.foo.redhat.com:1337/api/tower-analytics/v1/job_explorer/'
-            url: '/api/demo.byTime.stacked.json',
+            // url: 'https://prod.foo.redhat.com:1337tower-analytics/v1/job_explorer/'
+            url: 'demoByTimeStacked',
             method: 'GET'
         }
     },
@@ -276,8 +276,8 @@ export const dashboard: ChartSchemaElement[] = [
                 only_root_workflows_and_standalone_jobs: false,
                 attributes: ['failed_count', 'successful_count']
             },
-            // url: 'https://prod.foo.redhat.com:1337/api/tower-analytics/v1/job_explorer/'
-            url: '/api/demo.byTime.stacked.json',
+            // url: 'https://prod.foo.redhat.com:1337tower-analytics/v1/job_explorer/'
+            url: 'demoByTimeStacked',
             method: 'GET'
         }
     },
@@ -352,8 +352,8 @@ export const dashboard: ChartSchemaElement[] = [
                 group_by: 'org',
                 sort_by: 'total_count:desc'
             },
-            // url: 'https://prod.foo.redhat.com:1337/api/tower-analytics/v1/job_explorer/?limit=5'
-            url: '/api/demo.byTime.grouped.json',
+            // url: 'https://prod.foo.redhat.com:1337tower-analytics/v1/job_explorer/?limit=5'
+            url: 'demoByTimeGrouped',
             method: 'GET'
         },
         legend: {
@@ -399,8 +399,8 @@ export const dashboard: ChartSchemaElement[] = [
                 attributes: ['host_count'],
                 sort_by: 'total_count:desc'
             },
-            // url: 'https://prod.foo.redhat.com:1337/api/tower-analytics/v1/job_explorer/?limit=5'
-            url: '/api/demo.byOrg.pie.json',
+            // url: 'https://prod.foo.redhat.com:1337tower-analytics/v1/job_explorer/?limit=5'
+            url: 'demoByOrgPie',
             method: 'GET'
         },
         legend: {
