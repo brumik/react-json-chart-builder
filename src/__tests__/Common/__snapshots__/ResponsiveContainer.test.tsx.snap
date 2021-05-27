@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart/Common/ResponsiveContainer should render the responsive container without children 1`] = `
+<div>
+  <div>
+    <div
+      style="height: 300px;"
+    />
+  </div>
+</div>
+`;
