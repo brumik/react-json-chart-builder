@@ -40,9 +40,9 @@ const ChartRenderer: FunctionComponent<Props> = ({
         <React.Fragment>
             {charts().map(el => {
                 if(el.type === ChartTopLevelType.chart) {
-                    return (<CreateWrapper key={el.id} id={el.id} data={data} />);
+                    return (<CreateWrapper key={el.id + Math.random()} id={el.id} data={data} />);
                 } else if (el.type === ChartTopLevelType.pie) {
-                    return (<CreatePieChart key={el.id} id={el.id} data={data} />);
+                    return (<CreatePieChart key={el.id + Math.random()} id={el.id} data={data} />);
                 } else {
                     return null;
                 }
