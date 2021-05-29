@@ -1,6 +1,6 @@
 {
   "name": "react-json-chart-builder",
-  "version": "0.0.2",
+  "version": "0.0.0-semantic",
   "private": false,
   "description": "A chart builder component in react, which uses JSON for schema.",
   "main": "dist/cjs/index.js",
@@ -35,8 +35,7 @@
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "lint": "eslint ./src/**/*.{js,ts,tsx}",
     "prepublishOnly": "npm run lint",
-    "prepare": "rm -rf dist && npm run build",
-    "semantic-release": "semantic-release"
+    "prepare": "rm -rf dist && npm run build"
   },
   "dependencies": {
     "@patternfly/react-charts": "^6.14.22",
@@ -73,7 +72,6 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "path": "^0.12.7",
-    "semantic-release": "^17.4.2",
     "style-loader": "^2.0.0",
     "ts-jest": "^26.5.5",
     "ts-loader": "^8.1.0",
