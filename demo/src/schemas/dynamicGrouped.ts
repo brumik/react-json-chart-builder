@@ -26,21 +26,6 @@ export default [
             label: 'Jobs across organizations'
         },
         api: {
-            params: {
-                status: [],
-                org_id: [],
-                quick_date_range: 'last_2_weeks',
-                job_type: ['workflowjob', 'job'],
-                cluster_id: [],
-                template_id: [],
-                start_date: null,
-                end_date: null,
-                attributes: ['total_count'],
-                group_by_time: true,
-                group_by: 'org',
-                sort_by: 'total_count:desc'
-            },
-            // url: 'https://prod.foo.redhat.com:1337tower-analytics/v1/job_explorer/?limit=5'
             url: 'demoByTimeGrouped',
             method: 'GET'
         },

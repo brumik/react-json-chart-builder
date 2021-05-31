@@ -17,13 +17,6 @@ export default [
             y: 'host_count'
         },
         api: {
-            params: {
-                group_by: 'org',
-                include_others: true,
-                attributes: ['host_count'],
-                sort_by: 'total_count:desc'
-            },
-            // url: 'https://prod.foo.redhat.com:1337tower-analytics/v1/job_explorer/?limit=5'
             url: 'demoByOrgPie',
             method: 'GET'
         },
