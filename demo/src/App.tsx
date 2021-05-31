@@ -1,4 +1,4 @@
-import React, { RefObject, useState } from 'react';
+import React, { RefObject, useState, useEffect } from 'react';
 import ChartRenderer, { ChartKind, ChartSchemaElement, ChartTopSchemaElement, functions } from '../../src/';
 import presets, {
     PresetNames,
@@ -25,9 +25,10 @@ import {
 } from '@patternfly/react-core';
 import {
     CodeEditor,
+    CodeEditorControl,
     Language
 } from '@patternfly/react-code-editor';
-
+import SaveIcon from '@patternfly/react-icons/dist/js/icons/save-icon';
 
 /* eslint-disable-next-line */
 const getResponse = (url: string) => data[url];
@@ -53,7 +54,12 @@ const clipboardCopyFunc = (event, text) => {
 
 const App: React.FunctionComponent<Record<string, never>> = () => {
     const [schema, setSchema] = useState(presets[PresetNames.ANOMALY]);
+    const [editorCode, setEditorCode] = useState('');
     const [activeTabKey, setActiveTabKey] = useState(0);
+
+    useEffect(() => {
+        setEditorCode(prettyPrintJson(schema));
+    }, [schema])
 
     const contentRef1: RefObject<HTMLElement> = React.createRef();
     const contentRef2: RefObject<HTMLElement> = React.createRef();
@@ -90,7 +96,7 @@ const App: React.FunctionComponent<Record<string, never>> = () => {
                 ))
             }
         </ActionList>
-    )
+    );
 
     return (
         <Card style={{ maxWidth: '1100px', margin: 'auto' }}>
@@ -127,8 +133,20 @@ const App: React.FunctionComponent<Record<string, never>> = () => {
                             isLineNumbersVisible={true}
                             isMinimapVisible={true}
                             isLanguageLabelVisible
-                            code={prettyPrintJson(schema)}
-                            onChange={(value: string) => setSchema(JSON.parse(value) as ChartSchemaElement[])}
+                            isCopyEnabled
+                            customControls={
+                                <CodeEditorControl
+                                    icon={<SaveIcon />}
+                                    aria-label="Save code"
+                                    toolTipText="Save code"
+                                    onClick={() => {
+                                        setSchema(JSON.parse(editorCode));
+                                    }}
+                                    isVisible={prettyPrintJson(schema) !== editorCode}
+                                />
+                            }
+                            code={editorCode}
+                            onChange={(value: string) => setEditorCode(value)}
                             language={Language.json}
                             height='500px'
                         />
