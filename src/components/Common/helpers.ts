@@ -12,13 +12,19 @@ export const snakeToSentence = (str: string): string => {
 }
 
 export const getLabels = (
-    fnc = null as ChartTooltipCustomFunction
+    fnc = null as ChartTooltipCustomFunction,
+    standalone = false
 ): GetLabelReturnType => {
     if (fnc) {
         return ({ datum }: { datum: Record<string, string> }) => fnc(datum);
     } else {
-        return ({ datum }: { datum: Record<string, string> }) =>
-            `${datum.labelName}: ${datum.y}`;
+        return ({ datum }: { datum: Record<string, string> }) => {
+            if (!standalone && datum.ignored) {
+                return null;
+            } else {
+                return `${datum.labelName}: ${datum.y}`;
+            }
+        };
     }
 }
 

@@ -19,9 +19,6 @@ export default [
                 }
             }
         },
-        tooltip: {
-            cursor: true
-        },
         xAxis: {
             label: 'Time'
         },
@@ -36,6 +33,10 @@ export default [
             params: {},
             url: 'groupedStacked',
             method: 'GET'
+        },
+        tooltip: {
+            mouseFollow: false,
+            stickToAxis: null
         }
     },
     {
@@ -94,6 +95,7 @@ export default [
                     strokeWidth: 5
                 }
             }
-        }
+        },
+        tooltip: {}
     }
 ];

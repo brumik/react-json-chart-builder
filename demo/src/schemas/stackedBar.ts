@@ -1,4 +1,4 @@
-import { ChartKind, ChartTooltipType, ChartTopLevelType, ChartType } from '../../../src';
+import { ChartKind, ChartTopLevelType, ChartType } from '../../../src';
 
 export default [
     {
@@ -43,8 +43,7 @@ export default [
             }
         },
         tooltip: {
-            type: ChartTooltipType.default,
-            props: {},
+            standalone: true,
             labelName: 'Failed'
         },
         onClick: 'consoleLog'
@@ -64,8 +63,7 @@ export default [
             }
         },
         tooltip: {
-            type: ChartTooltipType.default,
-            props: {}
+            standalone: true
         }
     }
 ];

@@ -61,6 +61,7 @@ export type ChartTooltipCustomFunction = (datum: Record<string, any>) => string;
 export interface ChartTooltipProps {
     type?: ChartTooltipType,
     props?: PFChartTooltipProps,
+    standalone?: boolean,
     labelName?: string,
     customFnc?: ChartTooltipCustomFunction
 }
@@ -119,6 +120,8 @@ export interface ChartWrapper extends ChartTopLevelElement {
     yAxis: ChartAxisProps,
     legend?: ChartLegendProps,
     tooltip?: {
+        mouseFollow?: boolean,
+        stickToAxis?: 'x' | 'y',
         cursor?: boolean,
         customFnc?: ChartTooltipCustomFunction,
     }

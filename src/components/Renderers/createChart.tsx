@@ -10,6 +10,7 @@ import {
     ChartDataSerie,
     ChartSchema,
     ChartSimple,
+    ChartTooltipType,
     ChartType
 } from '../types';
 import legendMapper from '../Tooltips';
@@ -33,14 +34,17 @@ const components: Partial<Record<ChartType, React.ElementType>> = {
 const getData = (
     data: ChartDataSerie,
     y = 'y',
-    labelName: string
+    props: {
+        labelName: string,
+        ignored?: string
+    }
 ): Record<string, string | number>[] =>
     data.hidden
         ? [{ [y]: null }]
         : data.serie.map(el => ({
             ...el,
             y: el[y],
-            ...labelName && { labelName }
+            ...props
         }));
 
 const createChart = (
@@ -53,11 +57,11 @@ const createChart = (
     const SelectedChart = components[chart.type];
 
     let props = {...chart.props};
-    if (chart.tooltip?.type) {
-        const LegendComponent = legendMapper[chart.tooltip.type];
+    if (chart.tooltip?.standalone) {
+        const LegendComponent = legendMapper[chart.tooltip.type ?? ChartTooltipType.default];
         props = {
             ...props,
-            labels: getLabels(chart.tooltip.customFnc),
+            labels: getLabels(chart.tooltip.customFnc, chart.tooltip.standalone),
             labelComponent: <LegendComponent
                 {...chart.tooltip.props}
                 dy={0}
@@ -77,6 +81,15 @@ const createChart = (
         }
     }
 
+    const getLabelName = () =>
+        chart.tooltip
+            ? chart.tooltip.labelName ?? snakeToSentence(chart.props.y as string)
+            : '';
+
+    // If standalone dont ignore
+    // if no tooltip ignore
+    const isIgnoredTooltip = () => !chart.tooltip || chart.tooltip?.standalone;
+
     return (
         <SelectedChart
             {...props}
@@ -84,7 +97,10 @@ const createChart = (
             data={getData(
                 chartData.data[0],
                 props.y as string,
-                chart.tooltip?.labelName ?? snakeToSentence(props.y as string)
+                {
+                    labelName: getLabelName(),
+                    ...isIgnoredTooltip() && { ignored: 'true' }
+                }
             )}
             name={chartData.data[0].name}
         />

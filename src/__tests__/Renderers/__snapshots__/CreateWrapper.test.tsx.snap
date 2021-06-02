@@ -55,8 +55,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="93.41264445955133"
-                x2="93.41264445955133"
+                x1="94"
+                x2="94"
                 y1="230"
                 y2="235"
               />
@@ -64,7 +64,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-0"
-                x="93.41264445955133"
+                x="94"
                 y="256.97"
               >
                 <tspan
@@ -72,7 +72,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="93.41264445955133"
+                  x="94"
                 >
                   2021-04-11
                 </tspan>
@@ -86,8 +86,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="210.00000000000003"
-                x2="210.00000000000003"
+                x1="210"
+                x2="210"
                 y1="230"
                 y2="235"
               />
@@ -95,7 +95,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="210.00000000000003"
+                x="210"
                 y="256.97"
               >
                 <tspan
@@ -103,7 +103,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="210.00000000000003"
+                  x="210"
                 >
                   2021-04-12
                 </tspan>
@@ -117,8 +117,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="326.5873555404487"
-                x2="326.5873555404487"
+                x1="326"
+                x2="326"
                 y1="230"
                 y2="235"
               />
@@ -126,7 +126,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="326.5873555404487"
+                x="326"
                 y="256.97"
               >
                 <tspan
@@ -134,7 +134,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="326.5873555404487"
+                  x="326"
                 >
                   2021-04-13
                 </tspan>
@@ -333,147 +333,147 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               role="presentation"
             >
               <path
-                d="M 69.41264445955133, 230 
-A 0 0 0 0 1, 69.41264445955133, 230 
-L 69.41264445955133, 162.0127580997146 
-A 0 0 0 0 1, 69.41264445955133, 162.0127580997146 
-L 85.41264445955133, 162.0127580997146 
-A 0 0 0 0 1, 85.41264445955133, 162.0127580997146 
-L 85.41264445955133, 230 
-A 0 0 0 0 1, 85.41264445955133, 230 
+                d="M 69.99999999999999, 230 
+A 0 0 0 0 1, 69.99999999999999, 230 
+L 69.99999999999999, 162.0127580997146 
+A 0 0 0 0 1, 69.99999999999999, 162.0127580997146 
+L 85.99999999999999, 162.0127580997146 
+A 0 0 0 0 1, 85.99999999999999, 162.0127580997146 
+L 85.99999999999999, 230 
+A 0 0 0 0 1, 85.99999999999999, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 186.00000000000003, 230 
-A 0 0 0 0 1, 186.00000000000003, 230 
-L 186.00000000000003, 162.0127580997146 
-A 0 0 0 0 1, 186.00000000000003, 162.0127580997146 
-L 202.00000000000003, 162.0127580997146 
-A 0 0 0 0 1, 202.00000000000003, 162.0127580997146 
-L 202.00000000000003, 230 
-A 0 0 0 0 1, 202.00000000000003, 230 
+                d="M 186, 230 
+A 0 0 0 0 1, 186, 230 
+L 186, 162.0127580997146 
+A 0 0 0 0 1, 186, 162.0127580997146 
+L 202, 162.0127580997146 
+A 0 0 0 0 1, 202, 162.0127580997146 
+L 202, 230 
+A 0 0 0 0 1, 202, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 302.58735554044875, 230 
-A 0 0 0 0 1, 302.58735554044875, 230 
-L 302.58735554044875, 155.2140339096861 
-A 0 0 0 0 1, 302.58735554044875, 155.2140339096861 
-L 318.58735554044875, 155.2140339096861 
-A 0 0 0 0 1, 318.58735554044875, 155.2140339096861 
-L 318.58735554044875, 230 
-A 0 0 0 0 1, 318.58735554044875, 230 
+                d="M 302, 230 
+A 0 0 0 0 1, 302, 230 
+L 302, 155.2140339096861 
+A 0 0 0 0 1, 302, 155.2140339096861 
+L 318, 155.2140339096861 
+A 0 0 0 0 1, 318, 155.2140339096861 
+L 318, 230 
+A 0 0 0 0 1, 318, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
               role="presentation"
             >
               <path
-                d="M 85.41264445955133, 230 
-A 0 0 0 0 1, 85.41264445955133, 230 
-L 85.41264445955133, 73.62934362934362 
-A 0 0 0 0 1, 85.41264445955133, 73.62934362934362 
-L 101.41264445955133, 73.62934362934362 
-A 0 0 0 0 1, 101.41264445955133, 73.62934362934362 
-L 101.41264445955133, 230 
-A 0 0 0 0 1, 101.41264445955133, 230 
+                d="M 86, 230 
+A 0 0 0 0 1, 86, 230 
+L 86, 73.62934362934362 
+A 0 0 0 0 1, 86, 73.62934362934362 
+L 102, 73.62934362934362 
+A 0 0 0 0 1, 102, 73.62934362934362 
+L 102, 230 
+A 0 0 0 0 1, 102, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 202.00000000000003, 230 
-A 0 0 0 0 1, 202.00000000000003, 230 
-L 202.00000000000003, 73.62934362934362 
-A 0 0 0 0 1, 202.00000000000003, 73.62934362934362 
-L 218.00000000000003, 73.62934362934362 
-A 0 0 0 0 1, 218.00000000000003, 73.62934362934362 
-L 218.00000000000003, 230 
-A 0 0 0 0 1, 218.00000000000003, 230 
- z"
-                index="1"
-                role="presentation"
-                shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
-              />
-              <path
-                d="M 318.5873555404487, 230 
-A 0 0 0 0 1, 318.5873555404487, 230 
-L 318.5873555404487, 80.42806781937216 
-A 0 0 0 0 1, 318.5873555404487, 80.42806781937216 
-L 334.5873555404487, 80.42806781937216 
-A 0 0 0 0 1, 334.5873555404487, 80.42806781937216 
-L 334.5873555404487, 230 
-A 0 0 0 0 1, 334.5873555404487, 230 
- z"
-                index="2"
-                role="presentation"
-                shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
-              />
-            </g>
-            <g
-              role="presentation"
-            >
-              <path
-                d="M 101.41264445955133, 230 
-A 0 0 0 0 1, 101.41264445955133, 230 
-L 101.41264445955133, 114.42168876951484 
-A 0 0 0 0 1, 101.41264445955133, 114.42168876951484 
-L 117.41264445955133, 114.42168876951484 
-A 0 0 0 0 1, 117.41264445955133, 114.42168876951484 
-L 117.41264445955133, 230 
-A 0 0 0 0 1, 117.41264445955133, 230 
- z"
-                index="0"
-                role="presentation"
-                shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
-              />
-              <path
-                d="M 218, 230 
+                d="M 202, 230 
+A 0 0 0 0 1, 202, 230 
+L 202, 73.62934362934362 
+A 0 0 0 0 1, 202, 73.62934362934362 
+L 218, 73.62934362934362 
+A 0 0 0 0 1, 218, 73.62934362934362 
+L 218, 230 
 A 0 0 0 0 1, 218, 230 
-L 218, 114.42168876951484 
-A 0 0 0 0 1, 218, 114.42168876951484 
-L 234, 114.42168876951484 
-A 0 0 0 0 1, 234, 114.42168876951484 
-L 234, 230 
-A 0 0 0 0 1, 234, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 334.5873555404487, 230 
-A 0 0 0 0 1, 334.5873555404487, 230 
-L 334.5873555404487, 121.2204129595434 
-A 0 0 0 0 1, 334.5873555404487, 121.2204129595434 
-L 350.5873555404487, 121.2204129595434 
-A 0 0 0 0 1, 350.5873555404487, 121.2204129595434 
-L 350.5873555404487, 230 
-A 0 0 0 0 1, 350.5873555404487, 230 
+                d="M 318, 230 
+A 0 0 0 0 1, 318, 230 
+L 318, 80.42806781937216 
+A 0 0 0 0 1, 318, 80.42806781937216 
+L 334, 80.42806781937216 
+A 0 0 0 0 1, 334, 80.42806781937216 
+L 334, 230 
+A 0 0 0 0 1, 334, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+              />
+            </g>
+            <g
+              role="presentation"
+            >
+              <path
+                d="M 102, 230 
+A 0 0 0 0 1, 102, 230 
+L 102, 114.42168876951484 
+A 0 0 0 0 1, 102, 114.42168876951484 
+L 118, 114.42168876951484 
+A 0 0 0 0 1, 118, 114.42168876951484 
+L 118, 230 
+A 0 0 0 0 1, 118, 230 
+ z"
+                index="0"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+              />
+              <path
+                d="M 217.99999999999997, 230 
+A 0 0 0 0 1, 217.99999999999997, 230 
+L 217.99999999999997, 114.42168876951484 
+A 0 0 0 0 1, 217.99999999999997, 114.42168876951484 
+L 233.99999999999997, 114.42168876951484 
+A 0 0 0 0 1, 233.99999999999997, 114.42168876951484 
+L 233.99999999999997, 230 
+A 0 0 0 0 1, 233.99999999999997, 230 
+ z"
+                index="1"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+              />
+              <path
+                d="M 334, 230 
+A 0 0 0 0 1, 334, 230 
+L 334, 121.2204129595434 
+A 0 0 0 0 1, 334, 121.2204129595434 
+L 350, 121.2204129595434 
+A 0 0 0 0 1, 350, 121.2204129595434 
+L 350, 230 
+A 0 0 0 0 1, 350, 230 
+ z"
+                index="2"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
             </g>
           </g>
@@ -642,8 +642,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="93.41264445955133"
-                x2="93.41264445955133"
+                x1="94"
+                x2="94"
                 y1="230"
                 y2="235"
               />
@@ -651,7 +651,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-0"
-                x="93.41264445955133"
+                x="94"
                 y="256.97"
               >
                 <tspan
@@ -659,7 +659,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="93.41264445955133"
+                  x="94"
                 >
                   2021-04-11
                 </tspan>
@@ -673,8 +673,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="210.00000000000003"
-                x2="210.00000000000003"
+                x1="210"
+                x2="210"
                 y1="230"
                 y2="235"
               />
@@ -682,7 +682,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="210.00000000000003"
+                x="210"
                 y="256.97"
               >
                 <tspan
@@ -690,7 +690,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="210.00000000000003"
+                  x="210"
                 >
                   2021-04-12
                 </tspan>
@@ -704,8 +704,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="326.5873555404487"
-                x2="326.5873555404487"
+                x1="326"
+                x2="326"
                 y1="230"
                 y2="235"
               />
@@ -713,7 +713,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="326.5873555404487"
+                x="326"
                 y="256.97"
               >
                 <tspan
@@ -721,7 +721,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="326.5873555404487"
+                  x="326"
                 >
                   2021-04-13
                 </tspan>
@@ -858,49 +858,49 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               role="presentation"
             >
               <path
-                d="M 69.41264445955133, 230 
-A 0 0 0 0 1, 69.41264445955133, 230 
-L 69.41264445955133, 138.01726095843745 
-A 0 0 0 0 1, 69.41264445955133, 138.01726095843745 
-L 85.41264445955133, 138.01726095843745 
-A 0 0 0 0 1, 85.41264445955133, 138.01726095843745 
-L 85.41264445955133, 230 
-A 0 0 0 0 1, 85.41264445955133, 230 
+                d="M 69.99999999999999, 230 
+A 0 0 0 0 1, 69.99999999999999, 230 
+L 69.99999999999999, 138.01726095843745 
+A 0 0 0 0 1, 69.99999999999999, 138.01726095843745 
+L 85.99999999999999, 138.01726095843745 
+A 0 0 0 0 1, 85.99999999999999, 138.01726095843745 
+L 85.99999999999999, 230 
+A 0 0 0 0 1, 85.99999999999999, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 186.00000000000003, 230 
-A 0 0 0 0 1, 186.00000000000003, 230 
-L 186.00000000000003, 138.01726095843745 
-A 0 0 0 0 1, 186.00000000000003, 138.01726095843745 
-L 202.00000000000003, 138.01726095843745 
-A 0 0 0 0 1, 202.00000000000003, 138.01726095843745 
-L 202.00000000000003, 230 
-A 0 0 0 0 1, 202.00000000000003, 230 
+                d="M 186, 230 
+A 0 0 0 0 1, 186, 230 
+L 186, 138.01726095843745 
+A 0 0 0 0 1, 186, 138.01726095843745 
+L 202, 138.01726095843745 
+A 0 0 0 0 1, 202, 138.01726095843745 
+L 202, 230 
+A 0 0 0 0 1, 202, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 302.58735554044875, 230 
-A 0 0 0 0 1, 302.58735554044875, 230 
-L 302.58735554044875, 128.81898705428117 
-A 0 0 0 0 1, 302.58735554044875, 128.81898705428117 
-L 318.58735554044875, 128.81898705428117 
-A 0 0 0 0 1, 318.58735554044875, 128.81898705428117 
-L 318.58735554044875, 230 
-A 0 0 0 0 1, 318.58735554044875, 230 
+                d="M 302, 230 
+A 0 0 0 0 1, 302, 230 
+L 302, 128.81898705428117 
+A 0 0 0 0 1, 302, 128.81898705428117 
+L 318, 128.81898705428117 
+A 0 0 0 0 1, 318, 128.81898705428117 
+L 318, 230 
+A 0 0 0 0 1, 318, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
@@ -910,49 +910,49 @@ A 0 0 0 0 1, 318.58735554044875, 230
               role="presentation"
             >
               <path
-                d="M 101.41264445955133, 230 
-A 0 0 0 0 1, 101.41264445955133, 230 
-L 101.41264445955133, 73.62934362934362 
-A 0 0 0 0 1, 101.41264445955133, 73.62934362934362 
-L 117.41264445955133, 73.62934362934362 
-A 0 0 0 0 1, 117.41264445955133, 73.62934362934362 
-L 117.41264445955133, 230 
-A 0 0 0 0 1, 117.41264445955133, 230 
+                d="M 102, 230 
+A 0 0 0 0 1, 102, 230 
+L 102, 73.62934362934362 
+A 0 0 0 0 1, 102, 73.62934362934362 
+L 118, 73.62934362934362 
+A 0 0 0 0 1, 118, 73.62934362934362 
+L 118, 230 
+A 0 0 0 0 1, 118, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 218, 230 
-A 0 0 0 0 1, 218, 230 
-L 218, 73.62934362934362 
-A 0 0 0 0 1, 218, 73.62934362934362 
-L 234, 73.62934362934362 
-A 0 0 0 0 1, 234, 73.62934362934362 
-L 234, 230 
-A 0 0 0 0 1, 234, 230 
+                d="M 217.99999999999997, 230 
+A 0 0 0 0 1, 217.99999999999997, 230 
+L 217.99999999999997, 73.62934362934362 
+A 0 0 0 0 1, 217.99999999999997, 73.62934362934362 
+L 233.99999999999997, 73.62934362934362 
+A 0 0 0 0 1, 233.99999999999997, 73.62934362934362 
+L 233.99999999999997, 230 
+A 0 0 0 0 1, 233.99999999999997, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 334.5873555404487, 230 
-A 0 0 0 0 1, 334.5873555404487, 230 
-L 334.5873555404487, 82.82761753349988 
-A 0 0 0 0 1, 334.5873555404487, 82.82761753349988 
-L 350.5873555404487, 82.82761753349988 
-A 0 0 0 0 1, 350.5873555404487, 82.82761753349988 
-L 350.5873555404487, 230 
-A 0 0 0 0 1, 350.5873555404487, 230 
+                d="M 334, 230 
+A 0 0 0 0 1, 334, 230 
+L 334, 82.82761753349988 
+A 0 0 0 0 1, 334, 82.82761753349988 
+L 350, 82.82761753349988 
+A 0 0 0 0 1, 350, 82.82761753349988 
+L 350, 230 
+A 0 0 0 0 1, 350, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
             </g>
           </g>
@@ -2041,8 +2041,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="89.80148883374692"
-                x2="89.80148883374692"
+                x1="90"
+                x2="90"
                 y1="230"
                 y2="235"
               />
@@ -2050,7 +2050,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-0"
-                x="89.80148883374692"
+                x="90"
                 y="256.97"
               >
                 <tspan
@@ -2058,7 +2058,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="89.80148883374692"
+                  x="90"
                 >
                   10/31
                 </tspan>
@@ -2072,8 +2072,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="157.88089330024815"
-                x2="157.88089330024815"
+                x1="158"
+                x2="158"
                 y1="230"
                 y2="235"
               />
@@ -2081,7 +2081,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="157.88089330024815"
+                x="158"
                 y="256.97"
               >
                 <tspan
@@ -2089,7 +2089,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="157.88089330024815"
+                  x="158"
                 >
                   11/01
                 </tspan>
@@ -2103,8 +2103,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="225.96029776674942"
-                x2="225.96029776674942"
+                x1="226"
+                x2="226"
                 y1="230"
                 y2="235"
               />
@@ -2112,7 +2112,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="225.96029776674942"
+                x="226"
                 y="256.97"
               >
                 <tspan
@@ -2120,7 +2120,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="225.96029776674942"
+                  x="226"
                 >
                   11/02
                 </tspan>
@@ -2134,8 +2134,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="294.03970223325064"
-                x2="294.03970223325064"
+                x1="294.00000000000006"
+                x2="294.00000000000006"
                 y1="230"
                 y2="235"
               />
@@ -2143,7 +2143,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-3"
-                x="294.03970223325064"
+                x="294.00000000000006"
                 y="256.97"
               >
                 <tspan
@@ -2151,7 +2151,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="294.03970223325064"
+                  x="294.00000000000006"
                 >
                   11/03
                 </tspan>
@@ -2165,8 +2165,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="362.1191066997519"
-                x2="362.1191066997519"
+                x1="362.00000000000006"
+                x2="362.00000000000006"
                 y1="230"
                 y2="235"
               />
@@ -2174,7 +2174,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="362.1191066997519"
+                x="362.00000000000006"
                 y="256.97"
               >
                 <tspan
@@ -2182,7 +2182,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="362.1191066997519"
+                  x="362.00000000000006"
                 >
                   11/04
                 </tspan>
@@ -2196,8 +2196,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="430.1985111662531"
-                x2="430.1985111662531"
+                x1="430"
+                x2="430"
                 y1="230"
                 y2="235"
               />
@@ -2205,7 +2205,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-5"
-                x="430.1985111662531"
+                x="430"
                 y="256.97"
               >
                 <tspan
@@ -2213,7 +2213,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="430.1985111662531"
+                  x="430"
                 >
                   11/05
                 </tspan>
@@ -2349,14 +2349,14 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
             role="presentation"
           >
             <path
-              d="M 84.80148883374692, 230 
-A 0 0 0 0 1, 84.80148883374692, 230 
-L 84.80148883374692, 109.83516483516485 
-A 0 0 0 0 1, 84.80148883374692, 109.83516483516485 
-L 94.80148883374692, 109.83516483516485 
-A 0 0 0 0 1, 94.80148883374692, 109.83516483516485 
-L 94.80148883374692, 230 
-A 0 0 0 0 1, 94.80148883374692, 230 
+              d="M 85, 230 
+A 0 0 0 0 1, 85, 230 
+L 85, 109.83516483516485 
+A 0 0 0 0 1, 85, 109.83516483516485 
+L 95, 109.83516483516485 
+A 0 0 0 0 1, 95, 109.83516483516485 
+L 95, 230 
+A 0 0 0 0 1, 95, 230 
  z"
               index="0"
               role="presentation"
@@ -2364,14 +2364,14 @@ A 0 0 0 0 1, 94.80148883374692, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 152.88089330024815, 230 
-A 0 0 0 0 1, 152.88089330024815, 230 
-L 152.88089330024815, 109.83516483516485 
-A 0 0 0 0 1, 152.88089330024815, 109.83516483516485 
-L 162.88089330024815, 109.83516483516485 
-A 0 0 0 0 1, 162.88089330024815, 109.83516483516485 
-L 162.88089330024815, 230 
-A 0 0 0 0 1, 162.88089330024815, 230 
+              d="M 153, 230 
+A 0 0 0 0 1, 153, 230 
+L 153, 109.83516483516485 
+A 0 0 0 0 1, 153, 109.83516483516485 
+L 163, 109.83516483516485 
+A 0 0 0 0 1, 163, 109.83516483516485 
+L 163, 230 
+A 0 0 0 0 1, 163, 230 
  z"
               index="1"
               role="presentation"
@@ -2379,14 +2379,14 @@ A 0 0 0 0 1, 162.88089330024815, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 220.96029776674942, 230 
-A 0 0 0 0 1, 220.96029776674942, 230 
-L 220.96029776674942, 69.7802197802198 
-A 0 0 0 0 1, 220.96029776674942, 69.7802197802198 
-L 230.96029776674942, 69.7802197802198 
-A 0 0 0 0 1, 230.96029776674942, 69.7802197802198 
-L 230.96029776674942, 230 
-A 0 0 0 0 1, 230.96029776674942, 230 
+              d="M 221, 230 
+A 0 0 0 0 1, 221, 230 
+L 221, 69.7802197802198 
+A 0 0 0 0 1, 221, 69.7802197802198 
+L 231, 69.7802197802198 
+A 0 0 0 0 1, 231, 69.7802197802198 
+L 231, 230 
+A 0 0 0 0 1, 231, 230 
  z"
               index="2"
               role="presentation"
@@ -2394,14 +2394,14 @@ A 0 0 0 0 1, 230.96029776674942, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 289.03970223325064, 230 
-A 0 0 0 0 1, 289.03970223325064, 230 
-L 289.03970223325064, 109.83516483516485 
-A 0 0 0 0 1, 289.03970223325064, 109.83516483516485 
-L 299.03970223325064, 109.83516483516485 
-A 0 0 0 0 1, 299.03970223325064, 109.83516483516485 
-L 299.03970223325064, 230 
-A 0 0 0 0 1, 299.03970223325064, 230 
+              d="M 289.00000000000006, 230 
+A 0 0 0 0 1, 289.00000000000006, 230 
+L 289.00000000000006, 109.83516483516485 
+A 0 0 0 0 1, 289.00000000000006, 109.83516483516485 
+L 299.00000000000006, 109.83516483516485 
+A 0 0 0 0 1, 299.00000000000006, 109.83516483516485 
+L 299.00000000000006, 230 
+A 0 0 0 0 1, 299.00000000000006, 230 
  z"
               index="3"
               role="presentation"
@@ -2409,14 +2409,14 @@ A 0 0 0 0 1, 299.03970223325064, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 357.1191066997519, 230 
-A 0 0 0 0 1, 357.1191066997519, 230 
-L 357.1191066997519, 109.83516483516485 
-A 0 0 0 0 1, 357.1191066997519, 109.83516483516485 
-L 367.1191066997519, 109.83516483516485 
-A 0 0 0 0 1, 367.1191066997519, 109.83516483516485 
-L 367.1191066997519, 230 
-A 0 0 0 0 1, 367.1191066997519, 230 
+              d="M 357.00000000000006, 230 
+A 0 0 0 0 1, 357.00000000000006, 230 
+L 357.00000000000006, 109.83516483516485 
+A 0 0 0 0 1, 357.00000000000006, 109.83516483516485 
+L 367.00000000000006, 109.83516483516485 
+A 0 0 0 0 1, 367.00000000000006, 109.83516483516485 
+L 367.00000000000006, 230 
+A 0 0 0 0 1, 367.00000000000006, 230 
  z"
               index="4"
               role="presentation"
@@ -2424,14 +2424,14 @@ A 0 0 0 0 1, 367.1191066997519, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 425.1985111662531, 230 
-A 0 0 0 0 1, 425.1985111662531, 230 
-L 425.1985111662531, 109.83516483516485 
-A 0 0 0 0 1, 425.1985111662531, 109.83516483516485 
-L 435.1985111662531, 109.83516483516485 
-A 0 0 0 0 1, 435.1985111662531, 109.83516483516485 
-L 435.1985111662531, 230 
-A 0 0 0 0 1, 435.1985111662531, 230 
+              d="M 425, 230 
+A 0 0 0 0 1, 425, 230 
+L 425, 109.83516483516485 
+A 0 0 0 0 1, 425, 109.83516483516485 
+L 435, 109.83516483516485 
+A 0 0 0 0 1, 435, 109.83516483516485 
+L 435, 230 
+A 0 0 0 0 1, 435, 230 
  z"
               index="5"
               role="presentation"
@@ -2511,8 +2511,8 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="93.41264445955133"
-                x2="93.41264445955133"
+                x1="94"
+                x2="94"
                 y1="230"
                 y2="235"
               />
@@ -2520,7 +2520,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-0"
-                x="93.41264445955133"
+                x="94"
                 y="256.97"
               >
                 <tspan
@@ -2528,7 +2528,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="93.41264445955133"
+                  x="94"
                 >
                   2021-04-11
                 </tspan>
@@ -2542,8 +2542,8 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="210.00000000000003"
-                x2="210.00000000000003"
+                x1="210"
+                x2="210"
                 y1="230"
                 y2="235"
               />
@@ -2551,7 +2551,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="210.00000000000003"
+                x="210"
                 y="256.97"
               >
                 <tspan
@@ -2559,7 +2559,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="210.00000000000003"
+                  x="210"
                 >
                   2021-04-12
                 </tspan>
@@ -2573,8 +2573,8 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="326.5873555404487"
-                x2="326.5873555404487"
+                x1="326"
+                x2="326"
                 y1="230"
                 y2="235"
               />
@@ -2582,7 +2582,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="326.5873555404487"
+                x="326"
                 y="256.97"
               >
                 <tspan
@@ -2590,7 +2590,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="326.5873555404487"
+                  x="326"
                 >
                   2021-04-13
                 </tspan>
@@ -2789,147 +2789,147 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
               role="presentation"
             >
               <path
-                d="M 69.41264445955133, 230 
-A 0 0 0 0 1, 69.41264445955133, 230 
-L 69.41264445955133, 162.0127580997146 
-A 0 0 0 0 1, 69.41264445955133, 162.0127580997146 
-L 85.41264445955133, 162.0127580997146 
-A 0 0 0 0 1, 85.41264445955133, 162.0127580997146 
-L 85.41264445955133, 230 
-A 0 0 0 0 1, 85.41264445955133, 230 
+                d="M 69.99999999999999, 230 
+A 0 0 0 0 1, 69.99999999999999, 230 
+L 69.99999999999999, 162.0127580997146 
+A 0 0 0 0 1, 69.99999999999999, 162.0127580997146 
+L 85.99999999999999, 162.0127580997146 
+A 0 0 0 0 1, 85.99999999999999, 162.0127580997146 
+L 85.99999999999999, 230 
+A 0 0 0 0 1, 85.99999999999999, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 186.00000000000003, 230 
-A 0 0 0 0 1, 186.00000000000003, 230 
-L 186.00000000000003, 162.0127580997146 
-A 0 0 0 0 1, 186.00000000000003, 162.0127580997146 
-L 202.00000000000003, 162.0127580997146 
-A 0 0 0 0 1, 202.00000000000003, 162.0127580997146 
-L 202.00000000000003, 230 
-A 0 0 0 0 1, 202.00000000000003, 230 
+                d="M 186, 230 
+A 0 0 0 0 1, 186, 230 
+L 186, 162.0127580997146 
+A 0 0 0 0 1, 186, 162.0127580997146 
+L 202, 162.0127580997146 
+A 0 0 0 0 1, 202, 162.0127580997146 
+L 202, 230 
+A 0 0 0 0 1, 202, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 302.58735554044875, 230 
-A 0 0 0 0 1, 302.58735554044875, 230 
-L 302.58735554044875, 155.2140339096861 
-A 0 0 0 0 1, 302.58735554044875, 155.2140339096861 
-L 318.58735554044875, 155.2140339096861 
-A 0 0 0 0 1, 318.58735554044875, 155.2140339096861 
-L 318.58735554044875, 230 
-A 0 0 0 0 1, 318.58735554044875, 230 
+                d="M 302, 230 
+A 0 0 0 0 1, 302, 230 
+L 302, 155.2140339096861 
+A 0 0 0 0 1, 302, 155.2140339096861 
+L 318, 155.2140339096861 
+A 0 0 0 0 1, 318, 155.2140339096861 
+L 318, 230 
+A 0 0 0 0 1, 318, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
               role="presentation"
             >
               <path
-                d="M 85.41264445955133, 230 
-A 0 0 0 0 1, 85.41264445955133, 230 
-L 85.41264445955133, 73.62934362934362 
-A 0 0 0 0 1, 85.41264445955133, 73.62934362934362 
-L 101.41264445955133, 73.62934362934362 
-A 0 0 0 0 1, 101.41264445955133, 73.62934362934362 
-L 101.41264445955133, 230 
-A 0 0 0 0 1, 101.41264445955133, 230 
+                d="M 86, 230 
+A 0 0 0 0 1, 86, 230 
+L 86, 73.62934362934362 
+A 0 0 0 0 1, 86, 73.62934362934362 
+L 102, 73.62934362934362 
+A 0 0 0 0 1, 102, 73.62934362934362 
+L 102, 230 
+A 0 0 0 0 1, 102, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 202.00000000000003, 230 
-A 0 0 0 0 1, 202.00000000000003, 230 
-L 202.00000000000003, 73.62934362934362 
-A 0 0 0 0 1, 202.00000000000003, 73.62934362934362 
-L 218.00000000000003, 73.62934362934362 
-A 0 0 0 0 1, 218.00000000000003, 73.62934362934362 
-L 218.00000000000003, 230 
-A 0 0 0 0 1, 218.00000000000003, 230 
- z"
-                index="1"
-                role="presentation"
-                shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
-              />
-              <path
-                d="M 318.5873555404487, 230 
-A 0 0 0 0 1, 318.5873555404487, 230 
-L 318.5873555404487, 80.42806781937216 
-A 0 0 0 0 1, 318.5873555404487, 80.42806781937216 
-L 334.5873555404487, 80.42806781937216 
-A 0 0 0 0 1, 334.5873555404487, 80.42806781937216 
-L 334.5873555404487, 230 
-A 0 0 0 0 1, 334.5873555404487, 230 
- z"
-                index="2"
-                role="presentation"
-                shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
-              />
-            </g>
-            <g
-              role="presentation"
-            >
-              <path
-                d="M 101.41264445955133, 230 
-A 0 0 0 0 1, 101.41264445955133, 230 
-L 101.41264445955133, 114.42168876951484 
-A 0 0 0 0 1, 101.41264445955133, 114.42168876951484 
-L 117.41264445955133, 114.42168876951484 
-A 0 0 0 0 1, 117.41264445955133, 114.42168876951484 
-L 117.41264445955133, 230 
-A 0 0 0 0 1, 117.41264445955133, 230 
- z"
-                index="0"
-                role="presentation"
-                shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
-              />
-              <path
-                d="M 218, 230 
+                d="M 202, 230 
+A 0 0 0 0 1, 202, 230 
+L 202, 73.62934362934362 
+A 0 0 0 0 1, 202, 73.62934362934362 
+L 218, 73.62934362934362 
+A 0 0 0 0 1, 218, 73.62934362934362 
+L 218, 230 
 A 0 0 0 0 1, 218, 230 
-L 218, 114.42168876951484 
-A 0 0 0 0 1, 218, 114.42168876951484 
-L 234, 114.42168876951484 
-A 0 0 0 0 1, 234, 114.42168876951484 
-L 234, 230 
-A 0 0 0 0 1, 234, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 334.5873555404487, 230 
-A 0 0 0 0 1, 334.5873555404487, 230 
-L 334.5873555404487, 121.2204129595434 
-A 0 0 0 0 1, 334.5873555404487, 121.2204129595434 
-L 350.5873555404487, 121.2204129595434 
-A 0 0 0 0 1, 350.5873555404487, 121.2204129595434 
-L 350.5873555404487, 230 
-A 0 0 0 0 1, 350.5873555404487, 230 
+                d="M 318, 230 
+A 0 0 0 0 1, 318, 230 
+L 318, 80.42806781937216 
+A 0 0 0 0 1, 318, 80.42806781937216 
+L 334, 80.42806781937216 
+A 0 0 0 0 1, 334, 80.42806781937216 
+L 334, 230 
+A 0 0 0 0 1, 334, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 13px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+              />
+            </g>
+            <g
+              role="presentation"
+            >
+              <path
+                d="M 102, 230 
+A 0 0 0 0 1, 102, 230 
+L 102, 114.42168876951484 
+A 0 0 0 0 1, 102, 114.42168876951484 
+L 118, 114.42168876951484 
+A 0 0 0 0 1, 118, 114.42168876951484 
+L 118, 230 
+A 0 0 0 0 1, 118, 230 
+ z"
+                index="0"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+              />
+              <path
+                d="M 217.99999999999997, 230 
+A 0 0 0 0 1, 217.99999999999997, 230 
+L 217.99999999999997, 114.42168876951484 
+A 0 0 0 0 1, 217.99999999999997, 114.42168876951484 
+L 233.99999999999997, 114.42168876951484 
+A 0 0 0 0 1, 233.99999999999997, 114.42168876951484 
+L 233.99999999999997, 230 
+A 0 0 0 0 1, 233.99999999999997, 230 
+ z"
+                index="1"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+              />
+              <path
+                d="M 334, 230 
+A 0 0 0 0 1, 334, 230 
+L 334, 121.2204129595434 
+A 0 0 0 0 1, 334, 121.2204129595434 
+L 350, 121.2204129595434 
+A 0 0 0 0 1, 350, 121.2204129595434 
+L 350, 230 
+A 0 0 0 0 1, 350, 230 
+ z"
+                index="2"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
               />
             </g>
           </g>
@@ -4442,7 +4442,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 d="M70,95L146,95L222,50L298,95L374,95L450,95"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: none; stroke: #06c; width: 14px; opacity: 1; stroke-width: 2;"
+                style="fill: none; stroke: #06c; width: 16px; opacity: 1; stroke-width: 2;"
               />
             </g>
             <g>
@@ -4453,7 +4453,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
       a 7, 7 0 1,0 -14,0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #c43a31; width: 14px; opacity: 1; stroke: transparent; stroke-width: 0;"
+                style="fill: #c43a31; width: 16px; opacity: 1; stroke: transparent; stroke-width: 0;"
               />
             </g>
           </g>

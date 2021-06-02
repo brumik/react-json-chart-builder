@@ -17,7 +17,8 @@ export default [
             label: 'Job runs'
         },
         tooltip: {
-            cursor: true
+            cursor: true,
+            stickToAxis: 'x'
         },
         api: {
             url: 'demoByTimeStacked',
@@ -62,6 +63,7 @@ export default [
                     stroke: '#6EC664'
                 }
             }
-        }
+        },
+        tooltip: {}
     }
 ];

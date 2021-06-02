@@ -3,7 +3,6 @@ import {
     ChartLegendOrientation,
     ChartLegendPosition,
     ChartThemeColor,
-    ChartTooltipType,
     ChartTopLevelType,
     ChartType
 } from '../../../src';
@@ -50,8 +49,7 @@ export default [
                 y: 'total_count'
             },
             tooltip: {
-                type: ChartTooltipType.default,
-                props: {}
+                standalone: true
             }
         }
     }
