@@ -11,8 +11,10 @@ export const formatDateAsDayMonth = (i: string): string => {
     return `${parts[1]}/${parts[2]}`;
 }
 
-export const formatNumberAsK = (i: number): string =>
-    (i && i >= 1000 ? `${i / 1000}k` : `${i}`);
+export const formatNumberAsK = (n: string | number = 0): string =>
+    (Math.abs(+n) > 1000)
+        ? `${(+n / 1000).toFixed(1)}k`
+        : `${(+n).toFixed(0)}`;
 
 const axisFormat: Record<string, ChartAxisFormatFunction> = {
     default: returnSame,
