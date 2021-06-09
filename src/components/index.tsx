@@ -25,24 +25,17 @@ const ChartRenderer: FunctionComponent<Props> = ({
         functions
     };
 
-    const charts = (): ChartTopSchemaElement[] => {
-        const top = data.charts.filter(({ kind }) => kind === ChartKind.wrapper) as ChartTopSchemaElement[];
-        return top.filter(({ parent }) => parent === null).sort((a,b) => a.id - b.id);
-    };
+    const chart = data.charts.find(
+        ({ kind, parent }) => kind === ChartKind.wrapper && parent === null
+    ) as ChartTopSchemaElement;
 
-    return (
-        <React.Fragment>
-            {charts().map(el => {
-                if(el.type === ChartTopLevelType.chart) {
-                    return (<CreateWrapper key={el.id + Math.random()} id={el.id} data={data} />);
-                } else if (el.type === ChartTopLevelType.pie) {
-                    return (<CreatePieChart key={el.id + Math.random()} id={el.id} data={data} />);
-                } else {
-                    return null;
-                }
-            })}
-        </React.Fragment>
-    );
+    if (chart.type === ChartTopLevelType.chart) {
+        return (<CreateWrapper key={chart.id + Math.random()} id={chart.id} data={data} />);
+    } else if (chart.type === ChartTopLevelType.pie) {
+        return (<CreatePieChart key={chart.id + Math.random()} id={chart.id} data={data} />);
+    } else {
+        return null;
+    }
 }
 
 export default ChartRenderer;

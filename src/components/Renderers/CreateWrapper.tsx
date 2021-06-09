@@ -3,8 +3,7 @@ import {
     Chart as PFChart,
     ChartAxis,
     ChartVoronoiContainer,
-    createContainer,
-    ChartDomain
+    createContainer
 } from '@patternfly/react-charts';
 import {
     ChartApiData,
@@ -12,6 +11,7 @@ import {
     ChartKind,
     ChartSchema,
     ChartSchemaElement,
+    ChartSimple,
     ChartType,
     ChartWrapper
 } from '../types';
@@ -42,6 +42,8 @@ interface Props {
     data: ChartSchema
 }
 
+interface PaddingProps { top?: number, bottom?: number, left?: number, right?: number }
+
 const getDomainPadding = (
     data: ChartData,
     child: ChartSchemaElement
@@ -58,6 +60,72 @@ const getDomainPadding = (
     }
 }
 
+/* Domain functions */
+const getAllDisplayedValues = (charts: ChartSchemaElement[]): string[] =>
+    (charts.filter(
+        ({ kind }) => kind === ChartKind.simple) as ChartSimple[]
+    ).map(({ props }) => props?.y as string ?? 'y');
+
+const getNiceNumber = (n: number): number => {
+    const rounded = Math.pow(10, Math.floor(Math.log10(Math.abs(n))));
+    return rounded === 0 ?
+        0 :
+        rounded * Math.ceil(Math.abs(n) / rounded);
+}
+
+const getMinMaxFromData = (data: ChartData, dataKeys: string[]): [number, number] => {
+    let maxInAnyData = 1;
+    let minInAnyData = 0;
+
+    data.map(({ serie, hidden }) => {
+        if (hidden) return;
+
+        serie.map(el => {
+            dataKeys.forEach((key) => {
+                if (!isNaN(+el[key])) {
+                    if (el[key] > 0) {
+                        maxInAnyData = Math.max(maxInAnyData, getNiceNumber(+el[key]));
+                    } else {
+                        minInAnyData = Math.min(minInAnyData, -getNiceNumber(+el[key]));
+                    }
+                }
+            });
+        });
+    });
+
+    return [minInAnyData, maxInAnyData];
+}
+
+const getTicksFromMinMax = (minMaxValue: [number, number]): number[] => {
+    // I don't know why it works only with the power of 2...
+    const no = Math.pow(2, 3);
+    const interval = Math.abs(minMaxValue[0]) + Math.abs(minMaxValue[1]);
+    const ticksInterval = interval / no + 1;
+
+    let firstTick = 0;
+    if (minMaxValue[0] < 0) {
+        firstTick = -ticksInterval;
+        while (firstTick > minMaxValue[0]) {
+            firstTick -= ticksInterval;
+        }
+    }
+
+    const ticks: number[] = [];
+    for (let i = 0; i <= no; i++) {
+        ticks.push(firstTick + ticksInterval * i);
+    }
+    return ticks;
+}
+
+const getDomainFromTicks = (ticks: number[]): [number, number] => [ticks[0] * 1.25, ticks[ticks.length - 1] * 1.25];
+
+const getOffsetY= (ticks: number[], height: number, padding: PaddingProps): number =>
+    (
+        (height - padding.top - padding.bottom) /
+        (ticks.length - 1)
+    ) * ticks.filter(n => n < 0).length;
+/* End Domain Functions */
+
 const CreateWrapper: FunctionComponent<Props> = ({
     id,
     data
@@ -70,21 +138,38 @@ const CreateWrapper: FunctionComponent<Props> = ({
         data: []
     } as ChartApiData);
 
-    const xAxis = {
-        fixLabelOverlap: true,
-        ...wrapper.xAxis,
-        ...wrapper.xAxis.tickFormat && { tickFormat: functions.axisFormat[wrapper.xAxis.tickFormat] }
-    };
-
-    const yAxis = {
-        domain: { x: [0, 1], y: [0, 1] } as ChartDomain,
-        ...wrapper.yAxis,
-        tickFormat: functions.axisFormat[wrapper.yAxis.tickFormat]
-    };
-
-    const props = {
+    let props = {
         height: 200,
-        ...wrapper.props
+        ...wrapper.props,
+        padding: {
+            top: 10,
+            left: 70,
+            bottom: 70,
+            right: 10
+        }
+    }
+
+    if (wrapper.props.padding) {
+        const padding = wrapper.props.padding;
+        if (isNaN(+padding)) {
+            props = {
+                ...props,
+                padding: {
+                    ...props.padding,
+                    ...wrapper.props.padding as PaddingProps
+                }
+            };
+        } else {
+            props = {
+                ...props,
+                padding: {
+                    top: padding as number,
+                    left: padding as number,
+                    bottom: padding as number,
+                    right: padding as number
+                }
+            };
+        }
     }
 
     let legendProps = getLegendProps(wrapper, resolvedApi)
@@ -113,6 +198,30 @@ const CreateWrapper: FunctionComponent<Props> = ({
             />
         }
     }
+
+    /* calculations for y axis with negative values */
+    const dataKeys: string[] = getAllDisplayedValues(data.charts);
+    const minMaxValue: [number, number] = getMinMaxFromData(resolvedApi.data, dataKeys);
+    const yTicks: number[] = getTicksFromMinMax(minMaxValue);
+    const yDomain: [number, number] = getDomainFromTicks(yTicks);
+    const xOffsetY: number = getOffsetY(yTicks, props.height, props.padding);
+    /* end of caluclations */
+
+    const xAxis = {
+        fixLabelOverlap: true,
+        ...minMaxValue[0] < 0 && { offsetY: xOffsetY },
+        ...wrapper.xAxis,
+        ...wrapper.xAxis.tickFormat && { tickFormat: functions.axisFormat[wrapper.xAxis.tickFormat] }
+    };
+
+    const yAxis = {
+        ...minMaxValue[0] < 0 && {
+            domain: yDomain,
+            tickValues: yTicks
+        },
+        ...wrapper.yAxis,
+        tickFormat: functions.axisFormat[wrapper.yAxis.tickFormat]
+    };
 
     return (
         <ResponsiveContainer

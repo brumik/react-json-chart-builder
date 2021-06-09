@@ -26,7 +26,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="350"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -34,7 +34,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="210"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -42,7 +42,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="210"
+                x="280"
               >
                 Date
               </tspan>
@@ -86,8 +86,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="210"
-                x2="210"
+                x1="280"
+                x2="280"
                 y1="230"
                 y2="235"
               />
@@ -95,7 +95,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="210"
+                x="280"
                 y="256.97"
               >
                 <tspan
@@ -103,7 +103,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="210"
+                  x="280"
                 >
                   2021-04-12
                 </tspan>
@@ -117,8 +117,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="326"
-                x2="326"
+                x1="466.00000000000006"
+                x2="466.00000000000006"
                 y1="230"
                 y2="235"
               />
@@ -126,7 +126,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="326"
+                x="466.00000000000006"
                 y="256.97"
               >
                 <tspan
@@ -134,7 +134,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="326"
+                  x="466.00000000000006"
                 >
                   2021-04-13
                 </tspan>
@@ -151,16 +151,16 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -182,15 +182,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="196.0063790498573"
-                y2="196.0063790498573"
+                y1="187.33591476158117"
+                y2="187.33591476158117"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="200.9763790498573"
+                y="192.30591476158116"
               >
                 <tspan
                   dx="0"
@@ -213,15 +213,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="162.0127580997146"
-                y2="162.0127580997146"
+                y1="144.67182952316236"
+                y2="144.67182952316236"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="166.9827580997146"
+                y="149.64182952316236"
               >
                 <tspan
                   dx="0"
@@ -244,15 +244,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="128.01913714957192"
-                y2="128.01913714957192"
+                y1="102.0077442847435"
+                y2="102.0077442847435"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="132.98913714957192"
+                y="106.9777442847435"
               >
                 <tspan
                   dx="0"
@@ -275,15 +275,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="94.02551619942925"
-                y2="94.02551619942925"
+                y1="59.34365904632467"
+                y2="59.34365904632467"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="98.99551619942925"
+                y="64.31365904632467"
               >
                 <tspan
                   dx="0"
@@ -306,15 +306,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="60.03189524928655"
-                y2="60.03189524928655"
+                y1="16.67957380790584"
+                y2="16.67957380790584"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-4"
                 x="55"
-                y="65.00189524928655"
+                y="21.64957380790584"
               >
                 <tspan
                   dx="0"
@@ -333,49 +333,49 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               role="presentation"
             >
               <path
-                d="M 69.99999999999999, 230 
-A 0 0 0 0 1, 69.99999999999999, 230 
-L 69.99999999999999, 162.0127580997146 
-A 0 0 0 0 1, 69.99999999999999, 162.0127580997146 
-L 85.99999999999999, 162.0127580997146 
-A 0 0 0 0 1, 85.99999999999999, 162.0127580997146 
-L 85.99999999999999, 230 
-A 0 0 0 0 1, 85.99999999999999, 230 
+                d="M 70, 230 
+A 0 0 0 0 1, 70, 230 
+L 70, 144.67182952316236 
+A 0 0 0 0 1, 70, 144.67182952316236 
+L 86, 144.67182952316236 
+A 0 0 0 0 1, 86, 144.67182952316236 
+L 86, 230 
+A 0 0 0 0 1, 86, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 186, 230 
-A 0 0 0 0 1, 186, 230 
-L 186, 162.0127580997146 
-A 0 0 0 0 1, 186, 162.0127580997146 
-L 202, 162.0127580997146 
-A 0 0 0 0 1, 202, 162.0127580997146 
-L 202, 230 
-A 0 0 0 0 1, 202, 230 
+                d="M 256, 230 
+A 0 0 0 0 1, 256, 230 
+L 256, 144.67182952316236 
+A 0 0 0 0 1, 256, 144.67182952316236 
+L 272, 144.67182952316236 
+A 0 0 0 0 1, 272, 144.67182952316236 
+L 272, 230 
+A 0 0 0 0 1, 272, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 302, 230 
-A 0 0 0 0 1, 302, 230 
-L 302, 155.2140339096861 
-A 0 0 0 0 1, 302, 155.2140339096861 
-L 318, 155.2140339096861 
-A 0 0 0 0 1, 318, 155.2140339096861 
-L 318, 230 
-A 0 0 0 0 1, 318, 230 
+                d="M 442.00000000000006, 230 
+A 0 0 0 0 1, 442.00000000000006, 230 
+L 442.00000000000006, 136.13901247547858 
+A 0 0 0 0 1, 442.00000000000006, 136.13901247547858 
+L 458.00000000000006, 136.13901247547858 
+A 0 0 0 0 1, 458.00000000000006, 136.13901247547858 
+L 458.00000000000006, 230 
+A 0 0 0 0 1, 458.00000000000006, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
@@ -384,47 +384,47 @@ A 0 0 0 0 1, 318, 230
               <path
                 d="M 86, 230 
 A 0 0 0 0 1, 86, 230 
-L 86, 73.62934362934362 
-A 0 0 0 0 1, 86, 73.62934362934362 
-L 102, 73.62934362934362 
-A 0 0 0 0 1, 102, 73.62934362934362 
+L 86, 33.74520790327338 
+A 0 0 0 0 1, 86, 33.74520790327338 
+L 102, 33.74520790327338 
+A 0 0 0 0 1, 102, 33.74520790327338 
 L 102, 230 
 A 0 0 0 0 1, 102, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 202, 230 
-A 0 0 0 0 1, 202, 230 
-L 202, 73.62934362934362 
-A 0 0 0 0 1, 202, 73.62934362934362 
-L 218, 73.62934362934362 
-A 0 0 0 0 1, 218, 73.62934362934362 
-L 218, 230 
-A 0 0 0 0 1, 218, 230 
+                d="M 272, 230 
+A 0 0 0 0 1, 272, 230 
+L 272, 33.74520790327338 
+A 0 0 0 0 1, 272, 33.74520790327338 
+L 288, 33.74520790327338 
+A 0 0 0 0 1, 288, 33.74520790327338 
+L 288, 230 
+A 0 0 0 0 1, 288, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 318, 230 
-A 0 0 0 0 1, 318, 230 
-L 318, 80.42806781937216 
-A 0 0 0 0 1, 318, 80.42806781937216 
-L 334, 80.42806781937216 
-A 0 0 0 0 1, 334, 80.42806781937216 
-L 334, 230 
-A 0 0 0 0 1, 334, 230 
+                d="M 458.00000000000006, 230 
+A 0 0 0 0 1, 458.00000000000006, 230 
+L 458.00000000000006, 42.278024950957146 
+A 0 0 0 0 1, 458.00000000000006, 42.278024950957146 
+L 474.00000000000006, 42.278024950957146 
+A 0 0 0 0 1, 474.00000000000006, 42.278024950957146 
+L 474.00000000000006, 230 
+A 0 0 0 0 1, 474.00000000000006, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
@@ -433,47 +433,47 @@ A 0 0 0 0 1, 334, 230
               <path
                 d="M 102, 230 
 A 0 0 0 0 1, 102, 230 
-L 102, 114.42168876951484 
-A 0 0 0 0 1, 102, 114.42168876951484 
-L 118, 114.42168876951484 
-A 0 0 0 0 1, 118, 114.42168876951484 
+L 102, 84.94211018937597 
+A 0 0 0 0 1, 102, 84.94211018937597 
+L 118, 84.94211018937597 
+A 0 0 0 0 1, 118, 84.94211018937597 
 L 118, 230 
 A 0 0 0 0 1, 118, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 217.99999999999997, 230 
-A 0 0 0 0 1, 217.99999999999997, 230 
-L 217.99999999999997, 114.42168876951484 
-A 0 0 0 0 1, 217.99999999999997, 114.42168876951484 
-L 233.99999999999997, 114.42168876951484 
-A 0 0 0 0 1, 233.99999999999997, 114.42168876951484 
-L 233.99999999999997, 230 
-A 0 0 0 0 1, 233.99999999999997, 230 
+                d="M 287.99999999999994, 230 
+A 0 0 0 0 1, 287.99999999999994, 230 
+L 287.99999999999994, 84.94211018937597 
+A 0 0 0 0 1, 287.99999999999994, 84.94211018937597 
+L 303.99999999999994, 84.94211018937597 
+A 0 0 0 0 1, 303.99999999999994, 84.94211018937597 
+L 303.99999999999994, 230 
+A 0 0 0 0 1, 303.99999999999994, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 334, 230 
-A 0 0 0 0 1, 334, 230 
-L 334, 121.2204129595434 
-A 0 0 0 0 1, 334, 121.2204129595434 
-L 350, 121.2204129595434 
-A 0 0 0 0 1, 350, 121.2204129595434 
-L 350, 230 
-A 0 0 0 0 1, 350, 230 
+                d="M 474, 230 
+A 0 0 0 0 1, 474, 230 
+L 474, 93.47492723705973 
+A 0 0 0 0 1, 474, 93.47492723705973 
+L 490, 93.47492723705973 
+A 0 0 0 0 1, 490, 93.47492723705973 
+L 490, 230 
+A 0 0 0 0 1, 490, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
           </g>
@@ -485,34 +485,34 @@ A 0 0 0 0 1, 350, 230
               style="fill: none;"
               vector-effect="non-scaling-stroke"
               width="132.896875"
-              x="366"
-              y="95.64250000000001"
+              x="506"
+              y="75.64250000000001"
             />
             <path
-              d="M 375.128, 114.51450000000001
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 94.51450000000001
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #4cb140;"
             />
             <path
-              d="M 375.128, 145.41950000000003
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 125.41950000000001
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #bde2b9;"
             />
             <path
-              d="M 375.128, 176.3245
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 156.3245
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
@@ -522,15 +522,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-0"
-              x="396.8"
-              y="114.61250000000001"
+              x="536.8"
+              y="94.61250000000001"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 No Name
               </tspan>
@@ -539,15 +539,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-1"
-              x="396.8"
-              y="145.5175"
+              x="536.8"
+              y="125.51750000000001"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 organization_0
               </tspan>
@@ -556,15 +556,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-2"
-              x="396.8"
-              y="176.4225"
+              x="536.8"
+              y="156.4225"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 organization_1
               </tspan>
@@ -613,7 +613,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="350"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -621,7 +621,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="210"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -629,7 +629,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="210"
+                x="280"
               >
                 Date
               </tspan>
@@ -673,8 +673,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="210"
-                x2="210"
+                x1="280"
+                x2="280"
                 y1="230"
                 y2="235"
               />
@@ -682,7 +682,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="210"
+                x="280"
                 y="256.97"
               >
                 <tspan
@@ -690,7 +690,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="210"
+                  x="280"
                 >
                   2021-04-12
                 </tspan>
@@ -704,8 +704,8 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="326"
-                x2="326"
+                x1="466.00000000000006"
+                x2="466.00000000000006"
                 y1="230"
                 y2="235"
               />
@@ -713,7 +713,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="326"
+                x="466.00000000000006"
                 y="256.97"
               >
                 <tspan
@@ -721,7 +721,7 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="326"
+                  x="466.00000000000006"
                 >
                   2021-04-13
                 </tspan>
@@ -738,16 +738,16 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -769,15 +769,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="184.00863047921874"
-                y2="184.00863047921874"
+                y1="172.27800232449218"
+                y2="172.27800232449218"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="188.97863047921874"
+                y="177.24800232449218"
               >
                 <tspan
                   dx="0"
@@ -800,15 +800,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="138.01726095843745"
-                y2="138.01726095843745"
+                y1="114.55600464898433"
+                y2="114.55600464898433"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="142.98726095843745"
+                y="119.52600464898433"
               >
                 <tspan
                   dx="0"
@@ -831,15 +831,15 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="92.02589143765616"
-                y2="92.02589143765616"
+                y1="56.83400697347649"
+                y2="56.83400697347649"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="96.99589143765616"
+                y="61.80400697347649"
               >
                 <tspan
                   dx="0"
@@ -858,49 +858,49 @@ exports[`Chart/Renderers/CreateWrapper should re-render a grouped bar after lege
               role="presentation"
             >
               <path
-                d="M 69.99999999999999, 230 
-A 0 0 0 0 1, 69.99999999999999, 230 
-L 69.99999999999999, 138.01726095843745 
-A 0 0 0 0 1, 69.99999999999999, 138.01726095843745 
-L 85.99999999999999, 138.01726095843745 
-A 0 0 0 0 1, 85.99999999999999, 138.01726095843745 
-L 85.99999999999999, 230 
-A 0 0 0 0 1, 85.99999999999999, 230 
+                d="M 70, 230 
+A 0 0 0 0 1, 70, 230 
+L 70, 114.55600464898433 
+A 0 0 0 0 1, 70, 114.55600464898433 
+L 86, 114.55600464898433 
+A 0 0 0 0 1, 86, 114.55600464898433 
+L 86, 230 
+A 0 0 0 0 1, 86, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 186, 230 
-A 0 0 0 0 1, 186, 230 
-L 186, 138.01726095843745 
-A 0 0 0 0 1, 186, 138.01726095843745 
-L 202, 138.01726095843745 
-A 0 0 0 0 1, 202, 138.01726095843745 
-L 202, 230 
-A 0 0 0 0 1, 202, 230 
+                d="M 256, 230 
+A 0 0 0 0 1, 256, 230 
+L 256, 114.55600464898433 
+A 0 0 0 0 1, 256, 114.55600464898433 
+L 272, 114.55600464898433 
+A 0 0 0 0 1, 272, 114.55600464898433 
+L 272, 230 
+A 0 0 0 0 1, 272, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 302, 230 
-A 0 0 0 0 1, 302, 230 
-L 302, 128.81898705428117 
-A 0 0 0 0 1, 302, 128.81898705428117 
-L 318, 128.81898705428117 
-A 0 0 0 0 1, 318, 128.81898705428117 
-L 318, 230 
-A 0 0 0 0 1, 318, 230 
+                d="M 442.00000000000006, 230 
+A 0 0 0 0 1, 442.00000000000006, 230 
+L 442.00000000000006, 103.01160511388278 
+A 0 0 0 0 1, 442.00000000000006, 103.01160511388278 
+L 458.00000000000006, 103.01160511388278 
+A 0 0 0 0 1, 458.00000000000006, 103.01160511388278 
+L 458.00000000000006, 230 
+A 0 0 0 0 1, 458.00000000000006, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
@@ -912,47 +912,47 @@ A 0 0 0 0 1, 318, 230
               <path
                 d="M 102, 230 
 A 0 0 0 0 1, 102, 230 
-L 102, 73.62934362934362 
-A 0 0 0 0 1, 102, 73.62934362934362 
-L 118, 73.62934362934362 
-A 0 0 0 0 1, 118, 73.62934362934362 
+L 102, 33.74520790327336 
+A 0 0 0 0 1, 102, 33.74520790327336 
+L 118, 33.74520790327336 
+A 0 0 0 0 1, 118, 33.74520790327336 
 L 118, 230 
 A 0 0 0 0 1, 118, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 217.99999999999997, 230 
-A 0 0 0 0 1, 217.99999999999997, 230 
-L 217.99999999999997, 73.62934362934362 
-A 0 0 0 0 1, 217.99999999999997, 73.62934362934362 
-L 233.99999999999997, 73.62934362934362 
-A 0 0 0 0 1, 233.99999999999997, 73.62934362934362 
-L 233.99999999999997, 230 
-A 0 0 0 0 1, 233.99999999999997, 230 
+                d="M 287.99999999999994, 230 
+A 0 0 0 0 1, 287.99999999999994, 230 
+L 287.99999999999994, 33.74520790327336 
+A 0 0 0 0 1, 287.99999999999994, 33.74520790327336 
+L 303.99999999999994, 33.74520790327336 
+A 0 0 0 0 1, 303.99999999999994, 33.74520790327336 
+L 303.99999999999994, 230 
+A 0 0 0 0 1, 303.99999999999994, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 334, 230 
-A 0 0 0 0 1, 334, 230 
-L 334, 82.82761753349988 
-A 0 0 0 0 1, 334, 82.82761753349988 
-L 350, 82.82761753349988 
-A 0 0 0 0 1, 350, 82.82761753349988 
-L 350, 230 
-A 0 0 0 0 1, 350, 230 
+                d="M 474, 230 
+A 0 0 0 0 1, 474, 230 
+L 474, 45.289607438374944 
+A 0 0 0 0 1, 474, 45.289607438374944 
+L 490, 45.289607438374944 
+A 0 0 0 0 1, 490, 45.289607438374944 
+L 490, 230 
+A 0 0 0 0 1, 490, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
           </g>
@@ -964,30 +964,30 @@ A 0 0 0 0 1, 350, 230
               style="fill: none;"
               vector-effect="non-scaling-stroke"
               width="132.896875"
-              x="366"
-              y="95.64250000000001"
+              x="506"
+              y="75.64250000000001"
             />
             <path
-              d="M 375.128, 114.51450000000001
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 94.51450000000001
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #4cb140;"
             />
             <path
-              d="m375.128, 133.5475 .013 .013 0 0 2.179 2.219c.7-.204 1.418-.307 2.152-.307 2.859 0 5.464 1.551 7.814 4.654.243 .321.268 .753.073 1.097l-.073.111-.236.305c-.632.801-1.282 1.491-1.951 2.071l1.773 1.806c.382.389 .382 1.012 0 1.401l-.058.059c-.387.394-1.02.4-1.414.013l-.013-.013-11.732-11.956c-.382-.389-.382-1.012 0-1.401l.058-.059c.387-.394 1.02-.4 1.414-.013zm-.674 3.71 1.407 1.436c-.329.604-.516 1.298-.516 2.038 0 2.323 1.848 4.206 4.127 4.206.726 0 1.408-.191 2-.526l.966.984c-.956.396-1.945.593-2.966.593-2.859 0-5.464-1.551-7.814-4.654-.243-.321-.268-.753-.073-1.097l.073-.111.236-.305c.823-1.042 1.676-1.897 2.56-2.565zm2.177 2.22 4.072 4.149c-.377.167-.793.259-1.23.259-1.71 0-3.096-1.412-3.096-3.155 0-.445.091-.869.254-1.253zm2.842-2.953c-.43 0-.845.067-1.234.191l.865.882c.121-.015.244-.022.369-.022 1.71 0 3.096 1.412 3.096 3.155 0 .127-.007.252-.022.375l.866.882c.122-.397.187-.819.187-1.257 0-2.323-1.848-4.206-4.127-4.206z"
+              d="m515.128, 113.54750000000001 .013 .013 0 0 2.179 2.219c.7-.204 1.418-.307 2.152-.307 2.859 0 5.464 1.551 7.814 4.654.243 .321.268 .753.073 1.097l-.073.111-.236.305c-.632.801-1.282 1.491-1.951 2.071l1.773 1.806c.382.389 .382 1.012 0 1.401l-.058.059c-.387.394-1.02.4-1.414.013l-.013-.013-11.732-11.956c-.382-.389-.382-1.012 0-1.401l.058-.059c.387-.394 1.02-.4 1.414-.013zm-.674 3.71 1.407 1.436c-.329.604-.516 1.298-.516 2.038 0 2.323 1.848 4.206 4.127 4.206.726 0 1.408-.191 2-.526l.966.984c-.956.396-1.945.593-2.966.593-2.859 0-5.464-1.551-7.814-4.654-.243-.321-.268-.753-.073-1.097l.073-.111.236-.305c.823-1.042 1.676-1.897 2.56-2.565zm2.177 2.22 4.072 4.149c-.377.167-.793.259-1.23.259-1.71 0-3.096-1.412-3.096-3.155 0-.445.091-.869.254-1.253zm2.842-2.953c-.43 0-.845.067-1.234.191l.865.882c.121-.015.244-.022.369-.022 1.71 0 3.096 1.412 3.096 3.155 0 .127-.007.252-.022.375l.866.882c.122-.397.187-.819.187-1.257 0-2.323-1.848-4.206-4.127-4.206z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #6a6e73;"
             />
             <path
-              d="M 375.128, 176.3245
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 156.3245
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
@@ -997,15 +997,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-0"
-              x="396.8"
-              y="114.61250000000001"
+              x="536.8"
+              y="94.61250000000001"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 No Name
               </tspan>
@@ -1014,15 +1014,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-1"
-              x="396.8"
-              y="145.5175"
+              x="536.8"
+              y="125.51750000000001"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #6a6e73;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 organization_0
               </tspan>
@@ -1031,15 +1031,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-2"
-              x="396.8"
-              y="176.4225"
+              x="536.8"
+              y="156.4225"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 organization_1
               </tspan>
@@ -1088,7 +1088,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="450"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -1096,7 +1096,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="260"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -1104,7 +1104,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="260"
+                x="280"
               >
                 Date
               </tspan>
@@ -1148,8 +1148,8 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="146"
-                x2="146"
+                x1="154"
+                x2="154"
                 y1="230"
                 y2="235"
               />
@@ -1157,7 +1157,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="146"
+                x="154"
                 y="256.97"
               >
                 <tspan
@@ -1165,7 +1165,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="146"
+                  x="154"
                 >
                   11/01
                 </tspan>
@@ -1179,8 +1179,8 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="222"
-                x2="222"
+                x1="238"
+                x2="238"
                 y1="230"
                 y2="235"
               />
@@ -1188,7 +1188,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="222"
+                x="238"
                 y="256.97"
               >
                 <tspan
@@ -1196,7 +1196,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="222"
+                  x="238"
                 >
                   11/02
                 </tspan>
@@ -1210,8 +1210,8 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="298"
-                x2="298"
+                x1="322"
+                x2="322"
                 y1="230"
                 y2="235"
               />
@@ -1219,7 +1219,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-3"
-                x="298"
+                x="322"
                 y="256.97"
               >
                 <tspan
@@ -1227,7 +1227,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="298"
+                  x="322"
                 >
                   11/03
                 </tspan>
@@ -1241,8 +1241,8 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="374"
-                x2="374"
+                x1="406"
+                x2="406"
                 y1="230"
                 y2="235"
               />
@@ -1250,7 +1250,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="374"
+                x="406"
                 y="256.97"
               >
                 <tspan
@@ -1258,7 +1258,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="374"
+                  x="406"
                 >
                   11/04
                 </tspan>
@@ -1272,8 +1272,8 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="450"
-                x2="450"
+                x1="490"
+                x2="490"
                 y1="230"
                 y2="235"
               />
@@ -1281,7 +1281,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-5"
-                x="450"
+                x="490"
                 y="256.97"
               >
                 <tspan
@@ -1289,7 +1289,7 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="450"
+                  x="490"
                 >
                   11/05
                 </tspan>
@@ -1306,16 +1306,16 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -1337,15 +1337,15 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="187.6470588235294"
-                y2="187.6470588235294"
+                y1="178.23529411764704"
+                y2="178.23529411764704"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="192.6170588235294"
+                y="183.20529411764704"
               >
                 <tspan
                   dx="0"
@@ -1368,15 +1368,15 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="145.2941176470588"
-                y2="145.2941176470588"
+                y1="126.47058823529412"
+                y2="126.47058823529412"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="150.2641176470588"
+                y="131.44058823529411"
               >
                 <tspan
                   dx="0"
@@ -1399,15 +1399,15 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="102.94117647058823"
-                y2="102.94117647058823"
+                y1="74.70588235294117"
+                y2="74.70588235294117"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="107.91117647058823"
+                y="79.67588235294117"
               >
                 <tspan
                   dx="0"
@@ -1430,15 +1430,15 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="60.588235294117645"
-                y2="60.588235294117645"
+                y1="22.94117647058824"
+                y2="22.94117647058824"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="65.55823529411765"
+                y="27.911176470588238"
               >
                 <tspan
                   dx="0"
@@ -1461,16 +1461,16 @@ exports[`Chart/Renderers/CreateWrapper should render "y" attr when not specified
                 id="victory-clip-7"
               >
                 <rect
-                  height="180"
+                  height="220"
                   vector-effect="non-scaling-stroke"
-                  width="380"
+                  width="420"
                   x="70"
-                  y="50"
+                  y="10"
                 />
               </clippath>
             </defs>
             <path
-              d="M70,198.23529411764704L146,230L222,177.05882352941177L298,206.7058823529412L374,191.88235294117646L450,50L450,230L374,230L298,230L222,230L146,230L70,230Z"
+              d="M70,191.17647058823528L154,230L238,165.2941176470588L322,201.52941176470588L406,183.41176470588235L490,10L490,230L406,230L322,230L238,230L154,230L70,230Z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #06c; fill-opacity: 0.3; stroke-width: 2; stroke: #06c;"
@@ -1519,7 +1519,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="450"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -1527,7 +1527,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="260"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -1535,7 +1535,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="260"
+                x="280"
               >
                 Date
               </tspan>
@@ -1579,8 +1579,8 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="146"
-                x2="146"
+                x1="154"
+                x2="154"
                 y1="230"
                 y2="235"
               />
@@ -1588,7 +1588,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="146"
+                x="154"
                 y="256.97"
               >
                 <tspan
@@ -1596,7 +1596,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="146"
+                  x="154"
                 >
                   11/01
                 </tspan>
@@ -1610,8 +1610,8 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="222"
-                x2="222"
+                x1="238"
+                x2="238"
                 y1="230"
                 y2="235"
               />
@@ -1619,7 +1619,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="222"
+                x="238"
                 y="256.97"
               >
                 <tspan
@@ -1627,7 +1627,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="222"
+                  x="238"
                 >
                   11/02
                 </tspan>
@@ -1641,8 +1641,8 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="298"
-                x2="298"
+                x1="322"
+                x2="322"
                 y1="230"
                 y2="235"
               />
@@ -1650,7 +1650,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-3"
-                x="298"
+                x="322"
                 y="256.97"
               >
                 <tspan
@@ -1658,7 +1658,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="298"
+                  x="322"
                 >
                   11/03
                 </tspan>
@@ -1672,8 +1672,8 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="374"
-                x2="374"
+                x1="406"
+                x2="406"
                 y1="230"
                 y2="235"
               />
@@ -1681,7 +1681,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="374"
+                x="406"
                 y="256.97"
               >
                 <tspan
@@ -1689,7 +1689,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="374"
+                  x="406"
                 >
                   11/04
                 </tspan>
@@ -1703,8 +1703,8 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="450"
-                x2="450"
+                x1="490"
+                x2="490"
                 y1="230"
                 y2="235"
               />
@@ -1712,7 +1712,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-5"
-                x="450"
+                x="490"
                 y="256.97"
               >
                 <tspan
@@ -1720,7 +1720,7 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="450"
+                  x="490"
                 >
                   11/05
                 </tspan>
@@ -1737,16 +1737,16 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -1768,15 +1768,15 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="201.875"
-                y2="201.875"
+                y1="195.625"
+                y2="195.625"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="206.845"
+                y="200.595"
               >
                 <tspan
                   dx="0"
@@ -1799,15 +1799,15 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="173.75"
-                y2="173.75"
+                y1="161.25"
+                y2="161.25"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="178.72"
+                y="166.22"
               >
                 <tspan
                   dx="0"
@@ -1830,15 +1830,15 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="145.625"
-                y2="145.625"
+                y1="126.875"
+                y2="126.875"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="150.595"
+                y="131.845"
               >
                 <tspan
                   dx="0"
@@ -1861,15 +1861,15 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="117.5"
-                y2="117.5"
+                y1="92.5"
+                y2="92.5"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="122.47"
+                y="97.47"
               >
                 <tspan
                   dx="0"
@@ -1892,15 +1892,15 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="89.375"
-                y2="89.375"
+                y1="58.125"
+                y2="58.125"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-4"
                 x="55"
-                y="94.345"
+                y="63.095"
               >
                 <tspan
                   dx="0"
@@ -1923,15 +1923,15 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="61.25"
-                y2="61.25"
+                y1="23.75"
+                y2="23.75"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-5"
                 x="55"
-                y="66.22"
+                y="28.72"
               >
                 <tspan
                   dx="0"
@@ -1954,16 +1954,16 @@ exports[`Chart/Renderers/CreateWrapper should render a area chart 1`] = `
                 id="victory-clip-5"
               >
                 <rect
-                  height="180"
+                  height="220"
                   vector-effect="non-scaling-stroke"
-                  width="380"
+                  width="420"
                   x="70"
-                  y="50"
+                  y="10"
                 />
               </clippath>
             </defs>
             <path
-              d="M70,95L146,95L222,50L298,95L374,95L450,95L450,230L374,230L298,230L222,230L146,230L70,230Z"
+              d="M70,65L154,65L238,10L322,65L406,65L490,65L490,230L406,230L322,230L238,230L154,230L70,230Z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #06c; fill-opacity: 0.3; stroke-width: 2; stroke: #06c;"
@@ -2012,7 +2012,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="450"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -2020,7 +2020,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="260"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -2028,7 +2028,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="260"
+                x="280"
               >
                 Date
               </tspan>
@@ -2072,8 +2072,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="158"
-                x2="158"
+                x1="166"
+                x2="166"
                 y1="230"
                 y2="235"
               />
@@ -2081,7 +2081,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="158"
+                x="166"
                 y="256.97"
               >
                 <tspan
@@ -2089,7 +2089,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="158"
+                  x="166"
                 >
                   11/01
                 </tspan>
@@ -2103,8 +2103,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="226"
-                x2="226"
+                x1="241.99999999999997"
+                x2="241.99999999999997"
                 y1="230"
                 y2="235"
               />
@@ -2112,7 +2112,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="226"
+                x="241.99999999999997"
                 y="256.97"
               >
                 <tspan
@@ -2120,7 +2120,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="226"
+                  x="241.99999999999997"
                 >
                   11/02
                 </tspan>
@@ -2134,8 +2134,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="294.00000000000006"
-                x2="294.00000000000006"
+                x1="317.99999999999994"
+                x2="317.99999999999994"
                 y1="230"
                 y2="235"
               />
@@ -2143,7 +2143,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-3"
-                x="294.00000000000006"
+                x="317.99999999999994"
                 y="256.97"
               >
                 <tspan
@@ -2151,7 +2151,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="294.00000000000006"
+                  x="317.99999999999994"
                 >
                   11/03
                 </tspan>
@@ -2165,8 +2165,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="362.00000000000006"
-                x2="362.00000000000006"
+                x1="393.99999999999994"
+                x2="393.99999999999994"
                 y1="230"
                 y2="235"
               />
@@ -2174,7 +2174,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="362.00000000000006"
+                x="393.99999999999994"
                 y="256.97"
               >
                 <tspan
@@ -2182,7 +2182,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="362.00000000000006"
+                  x="393.99999999999994"
                 >
                   11/04
                 </tspan>
@@ -2196,8 +2196,8 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="430"
-                x2="430"
+                x1="469.99999999999994"
+                x2="469.99999999999994"
                 y1="230"
                 y2="235"
               />
@@ -2205,7 +2205,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-5"
-                x="430"
+                x="469.99999999999994"
                 y="256.97"
               >
                 <tspan
@@ -2213,7 +2213,7 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="430"
+                  x="469.99999999999994"
                 >
                   11/05
                 </tspan>
@@ -2230,16 +2230,16 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -2261,15 +2261,46 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="179.93131868131871"
-                y2="179.93131868131871"
+                y1="198.7265037593985"
+                y2="198.7265037593985"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="184.9013186813187"
+                y="203.6965037593985"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
+                  text-anchor="end"
+                  x="55"
+                >
+                  5
+                </tspan>
+              </text>
+            </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
+                vector-effect="non-scaling-stroke"
+                x1="70"
+                x2="65"
+                y1="167.45300751879702"
+                y2="167.45300751879702"
+              />
+              <text
+                direction="inherit"
+                dx="0"
+                id="chart-axis-1-tickLabels-1"
+                x="55"
+                y="172.42300751879702"
               >
                 <tspan
                   dx="0"
@@ -2292,15 +2323,46 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="129.86263736263737"
-                y2="129.86263736263737"
+                y1="136.17951127819546"
+                y2="136.17951127819546"
               />
               <text
                 direction="inherit"
                 dx="0"
-                id="chart-axis-1-tickLabels-1"
+                id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="134.83263736263737"
+                y="141.14951127819546"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
+                  text-anchor="end"
+                  x="55"
+                >
+                  15
+                </tspan>
+              </text>
+            </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
+                vector-effect="non-scaling-stroke"
+                x1="70"
+                x2="65"
+                y1="104.90601503759399"
+                y2="104.90601503759399"
+              />
+              <text
+                direction="inherit"
+                dx="0"
+                id="chart-axis-1-tickLabels-3"
+                x="55"
+                y="109.87601503759399"
               >
                 <tspan
                   dx="0"
@@ -2323,15 +2385,46 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="79.79395604395606"
-                y2="79.79395604395606"
+                y1="73.63251879699246"
+                y2="73.63251879699246"
               />
               <text
                 direction="inherit"
                 dx="0"
-                id="chart-axis-1-tickLabels-2"
+                id="chart-axis-1-tickLabels-4"
                 x="55"
-                y="84.76395604395606"
+                y="78.60251879699246"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
+                  text-anchor="end"
+                  x="55"
+                >
+                  25
+                </tspan>
+              </text>
+            </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
+                vector-effect="non-scaling-stroke"
+                x1="70"
+                x2="65"
+                y1="42.359022556390954"
+                y2="42.359022556390954"
+              />
+              <text
+                direction="inherit"
+                dx="0"
+                id="chart-axis-1-tickLabels-5"
+                x="55"
+                y="47.32902255639095"
               >
                 <tspan
                   dx="0"
@@ -2344,6 +2437,37 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
                 </tspan>
               </text>
             </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
+                vector-effect="non-scaling-stroke"
+                x1="70"
+                x2="65"
+                y1="11.085526315789455"
+                y2="11.085526315789455"
+              />
+              <text
+                direction="inherit"
+                dx="0"
+                id="chart-axis-1-tickLabels-6"
+                x="55"
+                y="16.055526315789454"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
+                  text-anchor="end"
+                  x="55"
+                >
+                  35
+                </tspan>
+              </text>
+            </g>
           </g>
           <g
             role="presentation"
@@ -2351,10 +2475,10 @@ exports[`Chart/Renderers/CreateWrapper should render a bar chart 1`] = `
             <path
               d="M 85, 230 
 A 0 0 0 0 1, 85, 230 
-L 85, 109.83516483516485 
-A 0 0 0 0 1, 85, 109.83516483516485 
-L 95, 109.83516483516485 
-A 0 0 0 0 1, 95, 109.83516483516485 
+L 85, 79.88721804511276 
+A 0 0 0 0 1, 85, 79.88721804511276 
+L 95, 79.88721804511276 
+A 0 0 0 0 1, 95, 79.88721804511276 
 L 95, 230 
 A 0 0 0 0 1, 95, 230 
  z"
@@ -2364,14 +2488,14 @@ A 0 0 0 0 1, 95, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 153, 230 
-A 0 0 0 0 1, 153, 230 
-L 153, 109.83516483516485 
-A 0 0 0 0 1, 153, 109.83516483516485 
-L 163, 109.83516483516485 
-A 0 0 0 0 1, 163, 109.83516483516485 
-L 163, 230 
-A 0 0 0 0 1, 163, 230 
+              d="M 161, 230 
+A 0 0 0 0 1, 161, 230 
+L 161, 79.88721804511276 
+A 0 0 0 0 1, 161, 79.88721804511276 
+L 171, 79.88721804511276 
+A 0 0 0 0 1, 171, 79.88721804511276 
+L 171, 230 
+A 0 0 0 0 1, 171, 230 
  z"
               index="1"
               role="presentation"
@@ -2379,14 +2503,14 @@ A 0 0 0 0 1, 163, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 221, 230 
-A 0 0 0 0 1, 221, 230 
-L 221, 69.7802197802198 
-A 0 0 0 0 1, 221, 69.7802197802198 
-L 231, 69.7802197802198 
-A 0 0 0 0 1, 231, 69.7802197802198 
-L 231, 230 
-A 0 0 0 0 1, 231, 230 
+              d="M 236.99999999999997, 230 
+A 0 0 0 0 1, 236.99999999999997, 230 
+L 236.99999999999997, 29.849624060150347 
+A 0 0 0 0 1, 236.99999999999997, 29.849624060150347 
+L 246.99999999999997, 29.849624060150347 
+A 0 0 0 0 1, 246.99999999999997, 29.849624060150347 
+L 246.99999999999997, 230 
+A 0 0 0 0 1, 246.99999999999997, 230 
  z"
               index="2"
               role="presentation"
@@ -2394,14 +2518,14 @@ A 0 0 0 0 1, 231, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 289.00000000000006, 230 
-A 0 0 0 0 1, 289.00000000000006, 230 
-L 289.00000000000006, 109.83516483516485 
-A 0 0 0 0 1, 289.00000000000006, 109.83516483516485 
-L 299.00000000000006, 109.83516483516485 
-A 0 0 0 0 1, 299.00000000000006, 109.83516483516485 
-L 299.00000000000006, 230 
-A 0 0 0 0 1, 299.00000000000006, 230 
+              d="M 312.99999999999994, 230 
+A 0 0 0 0 1, 312.99999999999994, 230 
+L 312.99999999999994, 79.88721804511276 
+A 0 0 0 0 1, 312.99999999999994, 79.88721804511276 
+L 322.99999999999994, 79.88721804511276 
+A 0 0 0 0 1, 322.99999999999994, 79.88721804511276 
+L 322.99999999999994, 230 
+A 0 0 0 0 1, 322.99999999999994, 230 
  z"
               index="3"
               role="presentation"
@@ -2409,14 +2533,14 @@ A 0 0 0 0 1, 299.00000000000006, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 357.00000000000006, 230 
-A 0 0 0 0 1, 357.00000000000006, 230 
-L 357.00000000000006, 109.83516483516485 
-A 0 0 0 0 1, 357.00000000000006, 109.83516483516485 
-L 367.00000000000006, 109.83516483516485 
-A 0 0 0 0 1, 367.00000000000006, 109.83516483516485 
-L 367.00000000000006, 230 
-A 0 0 0 0 1, 367.00000000000006, 230 
+              d="M 388.99999999999994, 230 
+A 0 0 0 0 1, 388.99999999999994, 230 
+L 388.99999999999994, 79.88721804511276 
+A 0 0 0 0 1, 388.99999999999994, 79.88721804511276 
+L 398.99999999999994, 79.88721804511276 
+A 0 0 0 0 1, 398.99999999999994, 79.88721804511276 
+L 398.99999999999994, 230 
+A 0 0 0 0 1, 398.99999999999994, 230 
  z"
               index="4"
               role="presentation"
@@ -2424,14 +2548,14 @@ A 0 0 0 0 1, 367.00000000000006, 230
               style="fill: #06c; stroke: none; padding: 8px; stroke-width: 0;"
             />
             <path
-              d="M 425, 230 
-A 0 0 0 0 1, 425, 230 
-L 425, 109.83516483516485 
-A 0 0 0 0 1, 425, 109.83516483516485 
-L 435, 109.83516483516485 
-A 0 0 0 0 1, 435, 109.83516483516485 
-L 435, 230 
-A 0 0 0 0 1, 435, 230 
+              d="M 464.99999999999994, 230 
+A 0 0 0 0 1, 464.99999999999994, 230 
+L 464.99999999999994, 79.88721804511276 
+A 0 0 0 0 1, 464.99999999999994, 79.88721804511276 
+L 474.99999999999994, 79.88721804511276 
+A 0 0 0 0 1, 474.99999999999994, 79.88721804511276 
+L 474.99999999999994, 230 
+A 0 0 0 0 1, 474.99999999999994, 230 
  z"
               index="5"
               role="presentation"
@@ -2482,7 +2606,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="350"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -2490,7 +2614,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="210"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -2498,7 +2622,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="210"
+                x="280"
               >
                 Date
               </tspan>
@@ -2542,8 +2666,8 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="210"
-                x2="210"
+                x1="280"
+                x2="280"
                 y1="230"
                 y2="235"
               />
@@ -2551,7 +2675,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="210"
+                x="280"
                 y="256.97"
               >
                 <tspan
@@ -2559,7 +2683,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="210"
+                  x="280"
                 >
                   2021-04-12
                 </tspan>
@@ -2573,8 +2697,8 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="326"
-                x2="326"
+                x1="466.00000000000006"
+                x2="466.00000000000006"
                 y1="230"
                 y2="235"
               />
@@ -2582,7 +2706,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="326"
+                x="466.00000000000006"
                 y="256.97"
               >
                 <tspan
@@ -2590,7 +2714,7 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="326"
+                  x="466.00000000000006"
                 >
                   2021-04-13
                 </tspan>
@@ -2607,16 +2731,16 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -2638,15 +2762,15 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="196.0063790498573"
-                y2="196.0063790498573"
+                y1="187.33591476158117"
+                y2="187.33591476158117"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="200.9763790498573"
+                y="192.30591476158116"
               >
                 <tspan
                   dx="0"
@@ -2669,15 +2793,15 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="162.0127580997146"
-                y2="162.0127580997146"
+                y1="144.67182952316236"
+                y2="144.67182952316236"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="166.9827580997146"
+                y="149.64182952316236"
               >
                 <tspan
                   dx="0"
@@ -2700,15 +2824,15 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="128.01913714957192"
-                y2="128.01913714957192"
+                y1="102.0077442847435"
+                y2="102.0077442847435"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="132.98913714957192"
+                y="106.9777442847435"
               >
                 <tspan
                   dx="0"
@@ -2731,15 +2855,15 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="94.02551619942925"
-                y2="94.02551619942925"
+                y1="59.34365904632467"
+                y2="59.34365904632467"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="98.99551619942925"
+                y="64.31365904632467"
               >
                 <tspan
                   dx="0"
@@ -2762,15 +2886,15 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="60.03189524928655"
-                y2="60.03189524928655"
+                y1="16.67957380790584"
+                y2="16.67957380790584"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-4"
                 x="55"
-                y="65.00189524928655"
+                y="21.64957380790584"
               >
                 <tspan
                   dx="0"
@@ -2789,49 +2913,49 @@ exports[`Chart/Renderers/CreateWrapper should render a grouped bar with legend 1
               role="presentation"
             >
               <path
-                d="M 69.99999999999999, 230 
-A 0 0 0 0 1, 69.99999999999999, 230 
-L 69.99999999999999, 162.0127580997146 
-A 0 0 0 0 1, 69.99999999999999, 162.0127580997146 
-L 85.99999999999999, 162.0127580997146 
-A 0 0 0 0 1, 85.99999999999999, 162.0127580997146 
-L 85.99999999999999, 230 
-A 0 0 0 0 1, 85.99999999999999, 230 
+                d="M 70, 230 
+A 0 0 0 0 1, 70, 230 
+L 70, 144.67182952316236 
+A 0 0 0 0 1, 70, 144.67182952316236 
+L 86, 144.67182952316236 
+A 0 0 0 0 1, 86, 144.67182952316236 
+L 86, 230 
+A 0 0 0 0 1, 86, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 186, 230 
-A 0 0 0 0 1, 186, 230 
-L 186, 162.0127580997146 
-A 0 0 0 0 1, 186, 162.0127580997146 
-L 202, 162.0127580997146 
-A 0 0 0 0 1, 202, 162.0127580997146 
-L 202, 230 
-A 0 0 0 0 1, 202, 230 
+                d="M 256, 230 
+A 0 0 0 0 1, 256, 230 
+L 256, 144.67182952316236 
+A 0 0 0 0 1, 256, 144.67182952316236 
+L 272, 144.67182952316236 
+A 0 0 0 0 1, 272, 144.67182952316236 
+L 272, 230 
+A 0 0 0 0 1, 272, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 302, 230 
-A 0 0 0 0 1, 302, 230 
-L 302, 155.2140339096861 
-A 0 0 0 0 1, 302, 155.2140339096861 
-L 318, 155.2140339096861 
-A 0 0 0 0 1, 318, 155.2140339096861 
-L 318, 230 
-A 0 0 0 0 1, 318, 230 
+                d="M 442.00000000000006, 230 
+A 0 0 0 0 1, 442.00000000000006, 230 
+L 442.00000000000006, 136.13901247547858 
+A 0 0 0 0 1, 442.00000000000006, 136.13901247547858 
+L 458.00000000000006, 136.13901247547858 
+A 0 0 0 0 1, 458.00000000000006, 136.13901247547858 
+L 458.00000000000006, 230 
+A 0 0 0 0 1, 458.00000000000006, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #4cb140; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #4cb140; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
@@ -2840,47 +2964,47 @@ A 0 0 0 0 1, 318, 230
               <path
                 d="M 86, 230 
 A 0 0 0 0 1, 86, 230 
-L 86, 73.62934362934362 
-A 0 0 0 0 1, 86, 73.62934362934362 
-L 102, 73.62934362934362 
-A 0 0 0 0 1, 102, 73.62934362934362 
+L 86, 33.74520790327338 
+A 0 0 0 0 1, 86, 33.74520790327338 
+L 102, 33.74520790327338 
+A 0 0 0 0 1, 102, 33.74520790327338 
 L 102, 230 
 A 0 0 0 0 1, 102, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 202, 230 
-A 0 0 0 0 1, 202, 230 
-L 202, 73.62934362934362 
-A 0 0 0 0 1, 202, 73.62934362934362 
-L 218, 73.62934362934362 
-A 0 0 0 0 1, 218, 73.62934362934362 
-L 218, 230 
-A 0 0 0 0 1, 218, 230 
+                d="M 272, 230 
+A 0 0 0 0 1, 272, 230 
+L 272, 33.74520790327338 
+A 0 0 0 0 1, 272, 33.74520790327338 
+L 288, 33.74520790327338 
+A 0 0 0 0 1, 288, 33.74520790327338 
+L 288, 230 
+A 0 0 0 0 1, 288, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 318, 230 
-A 0 0 0 0 1, 318, 230 
-L 318, 80.42806781937216 
-A 0 0 0 0 1, 318, 80.42806781937216 
-L 334, 80.42806781937216 
-A 0 0 0 0 1, 334, 80.42806781937216 
-L 334, 230 
-A 0 0 0 0 1, 334, 230 
+                d="M 458.00000000000006, 230 
+A 0 0 0 0 1, 458.00000000000006, 230 
+L 458.00000000000006, 42.278024950957146 
+A 0 0 0 0 1, 458.00000000000006, 42.278024950957146 
+L 474.00000000000006, 42.278024950957146 
+A 0 0 0 0 1, 474.00000000000006, 42.278024950957146 
+L 474.00000000000006, 230 
+A 0 0 0 0 1, 474.00000000000006, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #bde2b9; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #bde2b9; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
             <g
@@ -2889,47 +3013,47 @@ A 0 0 0 0 1, 334, 230
               <path
                 d="M 102, 230 
 A 0 0 0 0 1, 102, 230 
-L 102, 114.42168876951484 
-A 0 0 0 0 1, 102, 114.42168876951484 
-L 118, 114.42168876951484 
-A 0 0 0 0 1, 118, 114.42168876951484 
+L 102, 84.94211018937597 
+A 0 0 0 0 1, 102, 84.94211018937597 
+L 118, 84.94211018937597 
+A 0 0 0 0 1, 118, 84.94211018937597 
 L 118, 230 
 A 0 0 0 0 1, 118, 230 
  z"
                 index="0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 217.99999999999997, 230 
-A 0 0 0 0 1, 217.99999999999997, 230 
-L 217.99999999999997, 114.42168876951484 
-A 0 0 0 0 1, 217.99999999999997, 114.42168876951484 
-L 233.99999999999997, 114.42168876951484 
-A 0 0 0 0 1, 233.99999999999997, 114.42168876951484 
-L 233.99999999999997, 230 
-A 0 0 0 0 1, 233.99999999999997, 230 
+                d="M 287.99999999999994, 230 
+A 0 0 0 0 1, 287.99999999999994, 230 
+L 287.99999999999994, 84.94211018937597 
+A 0 0 0 0 1, 287.99999999999994, 84.94211018937597 
+L 303.99999999999994, 84.94211018937597 
+A 0 0 0 0 1, 303.99999999999994, 84.94211018937597 
+L 303.99999999999994, 230 
+A 0 0 0 0 1, 303.99999999999994, 230 
  z"
                 index="1"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
               <path
-                d="M 334, 230 
-A 0 0 0 0 1, 334, 230 
-L 334, 121.2204129595434 
-A 0 0 0 0 1, 334, 121.2204129595434 
-L 350, 121.2204129595434 
-A 0 0 0 0 1, 350, 121.2204129595434 
-L 350, 230 
-A 0 0 0 0 1, 350, 230 
+                d="M 474, 230 
+A 0 0 0 0 1, 474, 230 
+L 474, 93.47492723705973 
+A 0 0 0 0 1, 474, 93.47492723705973 
+L 490, 93.47492723705973 
+A 0 0 0 0 1, 490, 93.47492723705973 
+L 490, 230 
+A 0 0 0 0 1, 490, 230 
  z"
                 index="2"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #23511e; stroke: none; width: 16px; padding: 8px; stroke-width: 0;"
+                style="fill: #23511e; stroke: none; width: 23px; padding: 8px; stroke-width: 0;"
               />
             </g>
           </g>
@@ -2941,34 +3065,34 @@ A 0 0 0 0 1, 350, 230
               style="fill: none;"
               vector-effect="non-scaling-stroke"
               width="132.896875"
-              x="366"
-              y="95.64250000000001"
+              x="506"
+              y="75.64250000000001"
             />
             <path
-              d="M 375.128, 114.51450000000001
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 94.51450000000001
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #4cb140;"
             />
             <path
-              d="M 375.128, 145.41950000000003
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 125.41950000000001
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
               style="fill: #bde2b9;"
             />
             <path
-              d="M 375.128, 176.3245
-      h9.744000000000028
-      v-9.744000000000028
-      h-9.744000000000028
+              d="M 515.128, 156.3245
+      h9.743999999999915
+      v-9.743999999999915
+      h-9.743999999999915
       z"
               role="presentation"
               shape-rendering="auto"
@@ -2978,15 +3102,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-0"
-              x="396.8"
-              y="114.61250000000001"
+              x="536.8"
+              y="94.61250000000001"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 No Name
               </tspan>
@@ -2995,15 +3119,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-1"
-              x="396.8"
-              y="145.5175"
+              x="536.8"
+              y="125.51750000000001"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 organization_0
               </tspan>
@@ -3012,15 +3136,15 @@ A 0 0 0 0 1, 350, 230
               direction="inherit"
               dx="0"
               id="legend-3000-labels-2"
-              x="396.8"
-              y="176.4225"
+              x="536.8"
+              y="156.4225"
             >
               <tspan
                 dx="0"
                 dy="0"
                 style="cursor: pointer; font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #252525;"
                 text-anchor="start"
-                x="396.8"
+                x="536.8"
               >
                 organization_1
               </tspan>
@@ -3069,7 +3193,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="450"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -3077,7 +3201,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="260"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -3085,7 +3209,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="260"
+                x="280"
               >
                 Date
               </tspan>
@@ -3129,8 +3253,8 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="146"
-                x2="146"
+                x1="154"
+                x2="154"
                 y1="230"
                 y2="235"
               />
@@ -3138,7 +3262,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="146"
+                x="154"
                 y="256.97"
               >
                 <tspan
@@ -3146,7 +3270,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="146"
+                  x="154"
                 >
                   11/01
                 </tspan>
@@ -3160,8 +3284,8 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="222"
-                x2="222"
+                x1="238"
+                x2="238"
                 y1="230"
                 y2="235"
               />
@@ -3169,7 +3293,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="222"
+                x="238"
                 y="256.97"
               >
                 <tspan
@@ -3177,7 +3301,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="222"
+                  x="238"
                 >
                   11/02
                 </tspan>
@@ -3191,8 +3315,8 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="298"
-                x2="298"
+                x1="322"
+                x2="322"
                 y1="230"
                 y2="235"
               />
@@ -3200,7 +3324,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-3"
-                x="298"
+                x="322"
                 y="256.97"
               >
                 <tspan
@@ -3208,7 +3332,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="298"
+                  x="322"
                 >
                   11/03
                 </tspan>
@@ -3222,8 +3346,8 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="374"
-                x2="374"
+                x1="406"
+                x2="406"
                 y1="230"
                 y2="235"
               />
@@ -3231,7 +3355,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="374"
+                x="406"
                 y="256.97"
               >
                 <tspan
@@ -3239,7 +3363,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="374"
+                  x="406"
                 >
                   11/04
                 </tspan>
@@ -3253,8 +3377,8 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="450"
-                x2="450"
+                x1="490"
+                x2="490"
                 y1="230"
                 y2="235"
               />
@@ -3262,7 +3386,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-5"
-                x="450"
+                x="490"
                 y="256.97"
               >
                 <tspan
@@ -3270,7 +3394,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="450"
+                  x="490"
                 >
                   11/05
                 </tspan>
@@ -3287,16 +3411,16 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -3318,15 +3442,15 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="201.875"
-                y2="201.875"
+                y1="230"
+                y2="230"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="206.845"
+                y="234.97"
               >
                 <tspan
                   dx="0"
@@ -3335,7 +3459,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   text-anchor="end"
                   x="55"
                 >
-                  5
+                  24
                 </tspan>
               </text>
             </g>
@@ -3349,15 +3473,15 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="173.75"
-                y2="173.75"
+                y1="175"
+                y2="175"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="178.72"
+                y="179.97"
               >
                 <tspan
                   dx="0"
@@ -3366,7 +3490,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   text-anchor="end"
                   x="55"
                 >
-                  10
+                  26
                 </tspan>
               </text>
             </g>
@@ -3380,15 +3504,15 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="145.625"
-                y2="145.625"
+                y1="120"
+                y2="120"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="150.595"
+                y="124.97"
               >
                 <tspan
                   dx="0"
@@ -3397,7 +3521,7 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   text-anchor="end"
                   x="55"
                 >
-                  15
+                  28
                 </tspan>
               </text>
             </g>
@@ -3411,77 +3535,15 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="117.5"
-                y2="117.5"
+                y1="65"
+                y2="65"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="122.47"
-              >
-                <tspan
-                  dx="0"
-                  dy="0"
-                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
-                  text-anchor="end"
-                  x="55"
-                >
-                  20
-                </tspan>
-              </text>
-            </g>
-            <g
-              role="presentation"
-            >
-              <line
-                role="presentation"
-                shape-rendering="auto"
-                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
-                vector-effect="non-scaling-stroke"
-                x1="70"
-                x2="65"
-                y1="89.375"
-                y2="89.375"
-              />
-              <text
-                direction="inherit"
-                dx="0"
-                id="chart-axis-1-tickLabels-4"
-                x="55"
-                y="94.345"
-              >
-                <tspan
-                  dx="0"
-                  dy="0"
-                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
-                  text-anchor="end"
-                  x="55"
-                >
-                  25
-                </tspan>
-              </text>
-            </g>
-            <g
-              role="presentation"
-            >
-              <line
-                role="presentation"
-                shape-rendering="auto"
-                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
-                vector-effect="non-scaling-stroke"
-                x1="70"
-                x2="65"
-                y1="61.25"
-                y2="61.25"
-              />
-              <text
-                direction="inherit"
-                dx="0"
-                id="chart-axis-1-tickLabels-5"
-                x="55"
-                y="66.22"
+                y="69.97"
               >
                 <tspan
                   dx="0"
@@ -3491,6 +3553,37 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                   x="55"
                 >
                   30
+                </tspan>
+              </text>
+            </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
+                vector-effect="non-scaling-stroke"
+                x1="70"
+                x2="65"
+                y1="10"
+                y2="10"
+              />
+              <text
+                direction="inherit"
+                dx="0"
+                id="chart-axis-1-tickLabels-4"
+                x="55"
+                y="14.969999999999999"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
+                  text-anchor="end"
+                  x="55"
+                >
+                  32
                 </tspan>
               </text>
             </g>
@@ -3504,16 +3597,16 @@ exports[`Chart/Renderers/CreateWrapper should render a line chart 1`] = `
                 id="victory-clip-2"
               >
                 <rect
-                  height="180"
+                  height="220"
                   vector-effect="non-scaling-stroke"
-                  width="380"
+                  width="420"
                   x="70"
-                  y="50"
+                  y="10"
                 />
               </clippath>
             </defs>
             <path
-              d="M70,95L146,95L222,50L298,95L374,95L450,95"
+              d="M70,230L154,230L238,10L322,230L406,230L490,230"
               role="presentation"
               shape-rendering="auto"
               style="fill: transparent; stroke: #06c; opacity: 1; stroke-width: 2;"
@@ -3562,7 +3655,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="450"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -3570,7 +3663,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="260"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -3578,7 +3671,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="260"
+                x="280"
               >
                 Date
               </tspan>
@@ -3622,8 +3715,8 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="146"
-                x2="146"
+                x1="154"
+                x2="154"
                 y1="230"
                 y2="235"
               />
@@ -3631,7 +3724,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="146"
+                x="154"
                 y="256.97"
               >
                 <tspan
@@ -3639,7 +3732,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="146"
+                  x="154"
                 >
                   11/01
                 </tspan>
@@ -3653,8 +3746,8 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="222"
-                x2="222"
+                x1="238"
+                x2="238"
                 y1="230"
                 y2="235"
               />
@@ -3662,7 +3755,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="222"
+                x="238"
                 y="256.97"
               >
                 <tspan
@@ -3670,7 +3763,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="222"
+                  x="238"
                 >
                   11/02
                 </tspan>
@@ -3684,8 +3777,8 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="298"
-                x2="298"
+                x1="322"
+                x2="322"
                 y1="230"
                 y2="235"
               />
@@ -3693,7 +3786,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-3"
-                x="298"
+                x="322"
                 y="256.97"
               >
                 <tspan
@@ -3701,7 +3794,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="298"
+                  x="322"
                 >
                   11/03
                 </tspan>
@@ -3715,8 +3808,8 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="374"
-                x2="374"
+                x1="406"
+                x2="406"
                 y1="230"
                 y2="235"
               />
@@ -3724,7 +3817,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="374"
+                x="406"
                 y="256.97"
               >
                 <tspan
@@ -3732,7 +3825,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="374"
+                  x="406"
                 >
                   11/04
                 </tspan>
@@ -3746,8 +3839,8 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="450"
-                x2="450"
+                x1="490"
+                x2="490"
                 y1="230"
                 y2="235"
               />
@@ -3755,7 +3848,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-5"
-                x="450"
+                x="490"
                 y="256.97"
               >
                 <tspan
@@ -3763,7 +3856,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="450"
+                  x="490"
                 >
                   11/05
                 </tspan>
@@ -3780,16 +3873,16 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -3811,15 +3904,15 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="201.875"
-                y2="201.875"
+                y1="230"
+                y2="230"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="206.845"
+                y="234.97"
               >
                 <tspan
                   dx="0"
@@ -3828,7 +3921,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   text-anchor="end"
                   x="55"
                 >
-                  5
+                  24
                 </tspan>
               </text>
             </g>
@@ -3842,15 +3935,15 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="173.75"
-                y2="173.75"
+                y1="175"
+                y2="175"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="178.72"
+                y="179.97"
               >
                 <tspan
                   dx="0"
@@ -3859,7 +3952,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   text-anchor="end"
                   x="55"
                 >
-                  10
+                  26
                 </tspan>
               </text>
             </g>
@@ -3873,15 +3966,15 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="145.625"
-                y2="145.625"
+                y1="120"
+                y2="120"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="150.595"
+                y="124.97"
               >
                 <tspan
                   dx="0"
@@ -3890,7 +3983,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                   text-anchor="end"
                   x="55"
                 >
-                  15
+                  28
                 </tspan>
               </text>
             </g>
@@ -3904,77 +3997,15 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="117.5"
-                y2="117.5"
+                y1="65"
+                y2="65"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="122.47"
-              >
-                <tspan
-                  dx="0"
-                  dy="0"
-                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
-                  text-anchor="end"
-                  x="55"
-                >
-                  20
-                </tspan>
-              </text>
-            </g>
-            <g
-              role="presentation"
-            >
-              <line
-                role="presentation"
-                shape-rendering="auto"
-                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
-                vector-effect="non-scaling-stroke"
-                x1="70"
-                x2="65"
-                y1="89.375"
-                y2="89.375"
-              />
-              <text
-                direction="inherit"
-                dx="0"
-                id="chart-axis-1-tickLabels-4"
-                x="55"
-                y="94.345"
-              >
-                <tspan
-                  dx="0"
-                  dy="0"
-                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
-                  text-anchor="end"
-                  x="55"
-                >
-                  25
-                </tspan>
-              </text>
-            </g>
-            <g
-              role="presentation"
-            >
-              <line
-                role="presentation"
-                shape-rendering="auto"
-                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
-                vector-effect="non-scaling-stroke"
-                x1="70"
-                x2="65"
-                y1="61.25"
-                y2="61.25"
-              />
-              <text
-                direction="inherit"
-                dx="0"
-                id="chart-axis-1-tickLabels-5"
-                x="55"
-                y="66.22"
+                y="69.97"
               >
                 <tspan
                   dx="0"
@@ -3987,10 +4018,41 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
                 </tspan>
               </text>
             </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
+                vector-effect="non-scaling-stroke"
+                x1="70"
+                x2="65"
+                y1="10"
+                y2="10"
+              />
+              <text
+                direction="inherit"
+                dx="0"
+                id="chart-axis-1-tickLabels-4"
+                x="55"
+                y="14.969999999999999"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
+                  text-anchor="end"
+                  x="55"
+                >
+                  32
+                </tspan>
+              </text>
+            </g>
           </g>
           <g>
             <path
-              d="M 70, 95
+              d="M 70, 230
       m -3, 0
       a 3, 3 0 1,0 6,0
       a 3, 3 0 1,0 -6,0"
@@ -3999,7 +4061,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               style="fill: #151515; opacity: 1; stroke: transparent; stroke-width: 0;"
             />
             <path
-              d="M 146, 95
+              d="M 154, 230
       m -3, 0
       a 3, 3 0 1,0 6,0
       a 3, 3 0 1,0 -6,0"
@@ -4008,7 +4070,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               style="fill: #151515; opacity: 1; stroke: transparent; stroke-width: 0;"
             />
             <path
-              d="M 222, 50
+              d="M 238, 10
       m -3, 0
       a 3, 3 0 1,0 6,0
       a 3, 3 0 1,0 -6,0"
@@ -4017,7 +4079,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               style="fill: #151515; opacity: 1; stroke: transparent; stroke-width: 0;"
             />
             <path
-              d="M 298, 95
+              d="M 322, 230
       m -3, 0
       a 3, 3 0 1,0 6,0
       a 3, 3 0 1,0 -6,0"
@@ -4026,7 +4088,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               style="fill: #151515; opacity: 1; stroke: transparent; stroke-width: 0;"
             />
             <path
-              d="M 374, 95
+              d="M 406, 230
       m -3, 0
       a 3, 3 0 1,0 6,0
       a 3, 3 0 1,0 -6,0"
@@ -4035,7 +4097,7 @@ exports[`Chart/Renderers/CreateWrapper should render a scatter chart 1`] = `
               style="fill: #151515; opacity: 1; stroke: transparent; stroke-width: 0;"
             />
             <path
-              d="M 450, 95
+              d="M 490, 230
       m -3, 0
       a 3, 3 0 1,0 6,0
       a 3, 3 0 1,0 -6,0"
@@ -4087,7 +4149,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="450"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -4095,7 +4157,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="260"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -4103,7 +4165,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="260"
+                x="280"
               >
                 Date
               </tspan>
@@ -4147,8 +4209,8 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="222"
-                x2="222"
+                x1="238"
+                x2="238"
                 y1="230"
                 y2="235"
               />
@@ -4156,7 +4218,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="222"
+                x="238"
                 y="256.97"
               >
                 <tspan
@@ -4164,7 +4226,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="222"
+                  x="238"
                 >
                   2020-11-02
                 </tspan>
@@ -4178,8 +4240,8 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="374"
-                x2="374"
+                x1="406"
+                x2="406"
                 y1="230"
                 y2="235"
               />
@@ -4187,7 +4249,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="374"
+                x="406"
                 y="256.97"
               >
                 <tspan
@@ -4195,7 +4257,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="374"
+                  x="406"
                 >
                   2020-11-04
                 </tspan>
@@ -4212,16 +4274,16 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -4243,15 +4305,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="201.875"
-                y2="201.875"
+                y1="195.625"
+                y2="195.625"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="206.845"
+                y="200.595"
               >
                 <tspan
                   dx="0"
@@ -4274,15 +4336,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="173.75"
-                y2="173.75"
+                y1="161.25"
+                y2="161.25"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="178.72"
+                y="166.22"
               >
                 <tspan
                   dx="0"
@@ -4305,15 +4367,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="145.625"
-                y2="145.625"
+                y1="126.875"
+                y2="126.875"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="150.595"
+                y="131.845"
               >
                 <tspan
                   dx="0"
@@ -4336,15 +4398,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="117.5"
-                y2="117.5"
+                y1="92.5"
+                y2="92.5"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="122.47"
+                y="97.47"
               >
                 <tspan
                   dx="0"
@@ -4367,15 +4429,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="89.375"
-                y2="89.375"
+                y1="58.125"
+                y2="58.125"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-4"
                 x="55"
-                y="94.345"
+                y="63.095"
               >
                 <tspan
                   dx="0"
@@ -4398,15 +4460,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="61.25"
-                y2="61.25"
+                y1="23.75"
+                y2="23.75"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-5"
                 x="55"
-                y="66.22"
+                y="28.72"
               >
                 <tspan
                   dx="0"
@@ -4430,30 +4492,30 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line and scatter 
                   id="victory-clip-19"
                 >
                   <rect
-                    height="180"
+                    height="220"
                     vector-effect="non-scaling-stroke"
-                    width="380"
+                    width="420"
                     x="70"
-                    y="50"
+                    y="10"
                   />
                 </clippath>
               </defs>
               <path
-                d="M70,95L146,95L222,50L298,95L374,95L450,95"
+                d="M70,65L154,65L238,10L322,65L406,65L490,65"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: none; stroke: #06c; width: 16px; opacity: 1; stroke-width: 2;"
+                style="fill: none; stroke: #06c; width: 18px; opacity: 1; stroke-width: 2;"
               />
             </g>
             <g>
               <path
-                d="M 222, 50
+                d="M 238, 10
       m -7, 0
       a 7, 7 0 1,0 14,0
       a 7, 7 0 1,0 -14,0"
                 role="presentation"
                 shape-rendering="auto"
-                style="fill: #c43a31; width: 16px; opacity: 1; stroke: transparent; stroke-width: 0;"
+                style="fill: #c43a31; width: 18px; opacity: 1; stroke: transparent; stroke-width: 0;"
               />
             </g>
           </g>
@@ -4500,7 +4562,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
               style="stroke: #d2d2d2; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
               vector-effect="non-scaling-stroke"
               x1="70"
-              x2="450"
+              x2="490"
               y1="230"
               y2="230"
             />
@@ -4508,7 +4570,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
               direction="inherit"
               dx="0"
               id="chart-axis-0-axisLabel-0"
-              x="260"
+              x="280"
               y="281.97"
             >
               <tspan
@@ -4516,7 +4578,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 dy="0"
                 style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 40px; stroke: transparent; text-anchor: middle; fill: #252525;"
                 text-anchor="middle"
-                x="260"
+                x="280"
               >
                 Date
               </tspan>
@@ -4560,8 +4622,8 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="146"
-                x2="146"
+                x1="154"
+                x2="154"
                 y1="230"
                 y2="235"
               />
@@ -4569,7 +4631,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-1"
-                x="146"
+                x="154"
                 y="256.97"
               >
                 <tspan
@@ -4577,7 +4639,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="146"
+                  x="154"
                 >
                   11/01
                 </tspan>
@@ -4591,8 +4653,8 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="222"
-                x2="222"
+                x1="238"
+                x2="238"
                 y1="230"
                 y2="235"
               />
@@ -4600,7 +4662,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-2"
-                x="222"
+                x="238"
                 y="256.97"
               >
                 <tspan
@@ -4608,7 +4670,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="222"
+                  x="238"
                 >
                   11/02
                 </tspan>
@@ -4622,8 +4684,8 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="298"
-                x2="298"
+                x1="322"
+                x2="322"
                 y1="230"
                 y2="235"
               />
@@ -4631,7 +4693,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-3"
-                x="298"
+                x="322"
                 y="256.97"
               >
                 <tspan
@@ -4639,7 +4701,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="298"
+                  x="322"
                 >
                   11/03
                 </tspan>
@@ -4653,8 +4715,8 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="374"
-                x2="374"
+                x1="406"
+                x2="406"
                 y1="230"
                 y2="235"
               />
@@ -4662,7 +4724,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-4"
-                x="374"
+                x="406"
                 y="256.97"
               >
                 <tspan
@@ -4670,7 +4732,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="374"
+                  x="406"
                 >
                   11/04
                 </tspan>
@@ -4684,8 +4746,8 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 shape-rendering="auto"
                 style="stroke: #d2d2d2; fill: transparent; size: 5px; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"
                 vector-effect="non-scaling-stroke"
-                x1="450"
-                x2="450"
+                x1="490"
+                x2="490"
                 y1="230"
                 y2="235"
               />
@@ -4693,7 +4755,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 direction="inherit"
                 dx="0"
                 id="chart-axis-0-tickLabels-5"
-                x="450"
+                x="490"
                 y="256.97"
               >
                 <tspan
@@ -4701,7 +4763,7 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                   dy="0"
                   style="font-family: \\"RedHatText\\",\\"Overpass\\",overpass,helvetica,arial,sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; stroke: transparent; fill: #4f5255;"
                   text-anchor="middle"
-                  x="450"
+                  x="490"
                 >
                   11/05
                 </tspan>
@@ -4718,16 +4780,16 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
               vector-effect="non-scaling-stroke"
               x1="70"
               x2="70"
-              y1="50"
+              y1="10"
               y2="230"
             />
             <text
               direction="inherit"
               dx="0"
               id="chart-axis-1-axisLabel-0"
-              transform="rotate(-90,30,140)"
+              transform="rotate(-90,30,120)"
               x="30"
-              y="137.97"
+              y="117.97"
             >
               <tspan
                 dx="0"
@@ -4749,15 +4811,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="194.35643564356437"
-                y2="194.35643564356437"
+                y1="186.43564356435644"
+                y2="186.43564356435644"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-0"
                 x="55"
-                y="199.32643564356437"
+                y="191.40564356435644"
               >
                 <tspan
                   dx="0"
@@ -4780,15 +4842,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="158.7128712871287"
-                y2="158.7128712871287"
+                y1="142.87128712871285"
+                y2="142.87128712871285"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-1"
                 x="55"
-                y="163.6828712871287"
+                y="147.84128712871285"
               >
                 <tspan
                   dx="0"
@@ -4811,15 +4873,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="123.06930693069307"
-                y2="123.06930693069307"
+                y1="99.3069306930693"
+                y2="99.3069306930693"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-2"
                 x="55"
-                y="128.03930693069307"
+                y="104.2769306930693"
               >
                 <tspan
                   dx="0"
@@ -4842,15 +4904,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="87.42574257425741"
-                y2="87.42574257425741"
+                y1="55.74257425742574"
+                y2="55.74257425742574"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-3"
                 x="55"
-                y="92.39574257425741"
+                y="60.712574257425736"
               >
                 <tspan
                   dx="0"
@@ -4873,15 +4935,15 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                 vector-effect="non-scaling-stroke"
                 x1="70"
                 x2="65"
-                y1="51.78217821782179"
-                y2="51.78217821782179"
+                y1="12.17821782178218"
+                y2="12.17821782178218"
               />
               <text
                 direction="inherit"
                 dx="0"
                 id="chart-axis-1-tickLabels-4"
                 x="55"
-                y="56.752178217821786"
+                y="17.14821782178218"
               >
                 <tspan
                   dx="0"
@@ -4905,16 +4967,16 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                   id="victory-clip-10"
                 >
                   <rect
-                    height="180"
+                    height="220"
                     vector-effect="non-scaling-stroke"
-                    width="380"
+                    width="420"
                     x="70"
-                    y="50"
+                    y="10"
                   />
                 </clippath>
               </defs>
               <path
-                d="M70,153.3663366336634L146,140.89108910891088L222,92.77227722772278L298,153.3663366336634L374,50L450,187.22772277227722"
+                d="M70,136.33663366336637L154,121.08910891089108L238,62.277227722772274L322,136.33663366336637L406,10L490,177.7227722772277"
                 role="presentation"
                 shape-rendering="auto"
                 style="fill: #6EC664; stroke: #8bc1f7; stroke-width: 1; opacity: 1;"
@@ -4929,16 +4991,16 @@ exports[`Chart/Renderers/CreateWrapper should render a stacked line chart 1`] = 
                   id="victory-clip-11"
                 >
                   <rect
-                    height="180"
+                    height="220"
                     vector-effect="non-scaling-stroke"
-                    width="380"
+                    width="420"
                     x="70"
-                    y="50"
+                    y="10"
                   />
                 </clippath>
               </defs>
               <path
-                d="M70,187.22772277227722L146,187.22772277227722L222,172.97029702970298L298,187.22772277227722L374,187.22772277227722L450,187.22772277227722"
+                d="M70,177.7227722772277L154,177.7227722772277L238,160.2970297029703L322,177.7227722772277L406,177.7227722772277L490,177.7227722772277"
                 role="presentation"
                 shape-rendering="auto"
                 style="fill: #A30000; stroke: #06c; stroke-width: 1; opacity: 1;"

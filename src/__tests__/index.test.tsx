@@ -43,27 +43,6 @@ const charts: ChartSchemaElement[] = [
             x: 'created_date',
             y: 'success_count'
         }
-    },
-    {
-        id: 100,
-        kind: ChartKind.wrapper,
-        type: ChartTopLevelType.pie,
-        parent: null,
-        props: {
-            height: 300,
-            x: '',
-            y: 'host_count'
-        },
-        api: {
-            params: {
-                group_by: 'org',
-                include_others: true,
-                attributes: ['host_count'],
-                sort_by: `total_count:desc`
-            },
-            url: 'http://chart2.url',
-            method: 'POST'
-        }
     }
 ];
 
@@ -71,39 +50,10 @@ const charts: ChartSchemaElement[] = [
 describe('Chart/Renderers/CreateWrapper', () => {
     afterEach(() => fetchMock.restore());
 
-    xtest('should render all charts', async () => {
-        fetchMock.post({ url: 'http://chart1.url' }, stackedChartResponse);
-        fetchMock.post({ url: 'http://chart2.url' }, pieChartResponse);
-
-        const { container } = render(<ChartRenderer
-            schema={charts}
-            functions={functions}
-        />);
-
-        expect(container).toMatchSnapshot();
-    });
-
     test('should render one chart specified in the id', async () => {
         fetchMock.post({ url: 'http://chart1.url' }, stackedChartResponse);
-        fetchMock.post({ url: 'http://chart2.url' }, pieChartResponse);
 
         const { container } = render(<ChartRenderer
-            ids={[1000]}
-            schema={charts}
-            functions={functions}
-        />);
-        await waitFor(() => container.querySelector('svg'));
-
-        expect(container).toMatchSnapshot();
-
-    });
-
-    test('should render two charts specified in the id', async () => {
-        fetchMock.post({ url: 'http://chart1.url' }, stackedChartResponse);
-        fetchMock.post({ url: 'http://chart2.url' }, pieChartResponse);
-
-        const { container } = render(<ChartRenderer
-            ids={[1000, 100]}
             schema={charts}
             functions={functions}
         />);

@@ -9,15 +9,9 @@ export default [
         props: {
             height: 600,
             domainPadding: {
-                y: 20,
                 x: 100
             },
-            themeColor: ChartThemeColor.gray,
-            style: {
-                parent: {
-                    border: '1px solid gray'
-                }
-            }
+            themeColor: ChartThemeColor.gray
         },
         xAxis: {
             label: 'Time'
