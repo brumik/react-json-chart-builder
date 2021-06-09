@@ -12,13 +12,11 @@ import CreateWrapper from './Renderers/CreateWrapper';
 import CreatePieChart from './Renderers/CreatePieChart';
 
 interface Props {
-    ids?: number[],
     schema: ChartSchemaElement[],
     functions: ChartFunctions
 }
 
 const ChartRenderer: FunctionComponent<Props> = ({
-    ids = [] as number[],
     schema,
     functions
 }) => {
@@ -29,11 +27,7 @@ const ChartRenderer: FunctionComponent<Props> = ({
 
     const charts = (): ChartTopSchemaElement[] => {
         const top = data.charts.filter(({ kind }) => kind === ChartKind.wrapper) as ChartTopSchemaElement[];
-        if (ids.length > 0) {
-            return top.filter(({ id }) => ids.includes(id)).sort((a,b) => a.id - b.id);
-        } else {
-            return top.filter(({ parent }) => parent === null).sort((a,b) => a.id - b.id);
-        }
+        return top.filter(({ parent }) => parent === null).sort((a,b) => a.id - b.id);
     };
 
     return (
