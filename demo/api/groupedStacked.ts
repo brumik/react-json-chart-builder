@@ -16,7 +16,7 @@ export default {
             'total_hours_saved': 1140,
             'cumulative_time_net_benefits': 888,
             'total_costs': -75,
-            'total_benefits': 68,
+            'total_benefits': 1168,
             'cumulative_net_benefits': 53
         },
         {
@@ -24,7 +24,7 @@ export default {
             'total_hours_spent_risk_adjusted': 6,
             'total_hours_saved': 1311,
             'cumulative_time_net_benefits': 2193,
-            'total_costs': -36,
+            'total_costs': -3226,
             'total_benefits': 78,
             'cumulative_net_benefits': 13
         },

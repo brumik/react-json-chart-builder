@@ -67,7 +67,7 @@ const getAllDisplayedValues = (charts: ChartSchemaElement[]): string[] =>
     ).map(({ props }) => props?.y as string ?? 'y');
 
 const getNiceNumber = (n: number): number => {
-    const rounded = Math.pow(10, Math.floor(Math.log10(Math.abs(n))));
+    const rounded = Math.pow(10, Math.floor(Math.log10(Math.abs(n)))) / 2;
     return rounded === 0 ?
         0 :
         rounded * Math.ceil(Math.abs(n) / rounded);
@@ -102,22 +102,21 @@ const getTicksFromMinMax = (minMaxValue: [number, number]): number[] => {
     const interval = Math.abs(minMaxValue[0]) + Math.abs(minMaxValue[1]);
     const ticksInterval = interval / no + 1;
 
-    let firstTick = 0;
-    if (minMaxValue[0] < 0) {
-        firstTick = -ticksInterval;
-        while (firstTick > minMaxValue[0]) {
-            firstTick -= ticksInterval;
-        }
+    const ticks: number[] = [];
+    let currTick = 0;
+    while (currTick > minMaxValue[0] - ticksInterval) {
+        currTick -= ticksInterval;
     }
 
-    const ticks: number[] = [];
-    for (let i = 0; i <= no; i++) {
-        ticks.push(firstTick + ticksInterval * i);
+    while (currTick < minMaxValue[1]) {
+        currTick += ticksInterval;
+        ticks.push(currTick);
     }
+
     return ticks;
 }
 
-const getDomainFromTicks = (ticks: number[]): [number, number] => [ticks[0] * 1.25, ticks[ticks.length - 1] * 1.25];
+const getDomainFromTicks = (ticks: number[]): [number, number] => [ticks[0], ticks[ticks.length - 1]];
 
 const getOffsetY= (ticks: number[], height: number, padding: PaddingProps): number =>
     (
@@ -217,7 +216,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
     const yAxis = {
         ...minMaxValue[0] < 0 && {
             domain: yDomain,
-            tickValues: yTicks
+            tickValues: yTicks.slice(1, -1)
         },
         ...wrapper.yAxis,
         tickFormat: functions.axisFormat[wrapper.yAxis.tickFormat]
