@@ -1,3 +1,4 @@
+import '@patternfly/react-core/dist/styles/base.css';
 import React, { RefObject, useState, useEffect } from 'react';
 import ChartRenderer, { ChartKind, ChartSchemaElement, ChartTopSchemaElement, functions } from '../../src/';
 import presets, {
