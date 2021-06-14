@@ -1,6 +1,8 @@
 # react-json-chart-builder
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
+**Live editor (docs and examples)**: [https://brumik.github.io/react-json-chart-builder](https://brumik.github.io/react-json-chart-builder)
+
 ## Intall the npm package
 * `npm i --save react-json-chart-builder`
 
@@ -14,7 +16,7 @@
     * The branch served as a webpage on: [https://brumik.github.io/react-json-chart-builder](https://brumik.github.io/react-json-chart-builder)
 
 ### Semantic release commit messages
-Using semantic release (disabled until the app is in <v1.0.0)
+Using semantic release
 * Patch release: `fix(pencil): stop graphite breaking when too much pressure applied`
 * Feature release: `feat(pencil): add 'graphiteWidth' option`
 * Breaking release: `BREAKING CHANGE: The graphiteWidth option has been removed.
@@ -31,12 +33,6 @@ The default graphite width of 10mm is always used for performance reasons.`
 * `npm start` - start the local web server
 * go to `localhost:8080`
 
-### Currently accepted API format
-To see what data format is accepted from the API in the chart builder the `/demo/api/` folder contains API response mockups.
-
 ### Testing
 * `npm i` if not done before
 * `npm test`
-
-## Examples (docs)
-For seeing the components in work there are examples in the `demo` folder. The schema contains most of the basic usage. A proper documentation is coming when hitting the magic v1.0.0.
