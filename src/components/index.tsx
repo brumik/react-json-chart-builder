@@ -1,4 +1,3 @@
-import '@patternfly/react-core/dist/styles/base.css';
 import React, { FunctionComponent } from 'react';
 import {
     ChartFunctions,
