@@ -44,8 +44,9 @@ const CreatePieChart: FunctionComponent<Props> = ({
     }, [ resolvedApi ])
 
     const props = {
-        height: 200,
-        ...wrapper.props
+        height: 300,
+        y: 'y',
+        ...wrapper?.props
     }
 
     let legendProps = getLegendProps(wrapper, resolvedApi)
@@ -70,7 +71,7 @@ const CreatePieChart: FunctionComponent<Props> = ({
                 {...props}
                 data={serie.map(el =>
                     el.hidden
-                        ? ({...el, [props.y as string ?? 'y']: 0})
+                        ? ({...el, [props.y as string]: 0})
                         : ({...el})
                 )}
                 key={resolvedApi.data[0].name}

@@ -12,8 +12,6 @@ export default [
         type: ChartTopLevelType.pie,
         parent: null,
         props: {
-            height: 300,
-            x: '',
             y: 'host_count'
         },
         api: {

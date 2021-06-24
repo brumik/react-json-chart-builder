@@ -28,8 +28,7 @@ export default [
     {
         id: 2,
         kind: ChartKind.group,
-        parent: 1,
-        props: {}
+        parent: 1
     },
     {
         id: 3,

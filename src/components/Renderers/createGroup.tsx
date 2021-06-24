@@ -77,7 +77,7 @@ const createGroup = (
                 && group.template.type === ChartType.bar
                 && { offset: getBarWidthFromData(resolvedApi.data) }
             }
-            {...group.props}
+            {...group?.props}
         >
             { renderedChildren }
         </PFChartGroup>

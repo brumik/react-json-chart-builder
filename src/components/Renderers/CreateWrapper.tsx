@@ -125,6 +125,15 @@ const getOffsetY= (ticks: number[], height: number, padding: PaddingProps): numb
     ) * ticks.filter(n => n < 0).length;
 /* End Domain Functions */
 
+const paddingNumberToObject = (padding: PaddingProps | number): PaddingProps => (isNaN(+padding))
+    ? padding as PaddingProps
+    : {
+        top: padding as number,
+        bottom: padding as number,
+        left: padding as number,
+        right: padding as number
+    };
+
 const CreateWrapper: FunctionComponent<Props> = ({
     id,
     data
@@ -137,38 +146,17 @@ const CreateWrapper: FunctionComponent<Props> = ({
         data: []
     } as ChartApiData);
 
-    let props = {
-        height: 200,
+    const props = {
+        height: 300,
         ...wrapper.props,
-        padding: {
-            top: 10,
-            left: 70,
-            bottom: 70,
-            right: 10
-        }
-    }
-
-    if (wrapper.props.padding) {
-        const padding = wrapper.props.padding;
-        if (isNaN(+padding)) {
-            props = {
-                ...props,
-                padding: {
-                    ...props.padding,
-                    ...wrapper.props.padding as PaddingProps
-                }
-            };
-        } else {
-            props = {
-                ...props,
-                padding: {
-                    top: padding as number,
-                    left: padding as number,
-                    bottom: padding as number,
-                    right: padding as number
-                }
-            };
-        }
+        ...wrapper?.props?.padding
+            ? { padding: paddingNumberToObject(wrapper.props.padding) }
+            : { padding: {
+                top: 10,
+                left: 70,
+                bottom: 70,
+                right: 10
+            }}
     }
 
     let legendProps = getLegendProps(wrapper, resolvedApi)

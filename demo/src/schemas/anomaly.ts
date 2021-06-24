@@ -6,9 +6,6 @@ export default [
         kind: ChartKind.wrapper,
         type: ChartTopLevelType.chart,
         parent: null,
-        props: {
-            height: 300
-        },
         xAxis: {
             label: 'Date',
             tickFormat: 'formatDateAsDayMonth'
@@ -24,8 +21,7 @@ export default [
     {
         id: 2,
         kind: ChartKind.group,
-        parent: 1,
-        props: {}
+        parent: 1
     },
     {
         id: 3,

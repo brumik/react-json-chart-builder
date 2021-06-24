@@ -23,7 +23,7 @@ const createStack = (
     return (
         <PFChartStack
             key={stack.id}
-            {...stack.props}
+            {...stack?.props}
         >
             { children.map(child => components[child.kind](child.id, data, resolvedApi)) }
         </PFChartStack>

@@ -38,7 +38,6 @@ export default [
         id: 3100,
         kind: ChartKind.group,
         parent: 3000,
-        props: {},
         template: {
             id: 0,
             kind: ChartKind.simple,

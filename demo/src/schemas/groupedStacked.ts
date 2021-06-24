@@ -36,8 +36,7 @@ export default [
     {
         id: 2,
         kind: ChartKind.stack,
-        parent: 1,
-        props: {}
+        parent: 1
     },
     {
         id: 3,

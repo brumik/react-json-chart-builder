@@ -78,13 +78,13 @@ export interface ChartSimple extends ChartBase {
 
 export interface ChartGroup extends ChartBase {
     kind: ChartKind.group,
-    props: ChartGroupProps
+    props?: ChartGroupProps
     template?: ChartSimple
 }
 
 export interface ChartStack extends ChartBase {
     kind: ChartKind.stack,
-    props: ChartStackProps,
+    props?: ChartStackProps,
 }
 
 export interface ChartAxisProps extends Omit<PFChartAxisProps, 'tickFormat'> {
@@ -115,7 +115,7 @@ export interface ChartTopLevelElement extends ChartBase {
 
 export interface ChartWrapper extends ChartTopLevelElement {
     type: ChartTopLevelType.chart,
-    props: ChartProps,
+    props?: ChartProps,
     xAxis: ChartAxisProps,
     yAxis: ChartAxisProps,
     legend?: ChartLegendProps,
@@ -135,7 +135,7 @@ export interface ChartPieLegendProps {
 
 export interface ChartPie extends ChartTopLevelElement {
     type: ChartTopLevelType.pie,
-    props: ChartPieProps,
+    props?: ChartPieProps,
     legend?: ChartPieLegendProps,
     tooltip?: PFChartTooltipProps
 }
