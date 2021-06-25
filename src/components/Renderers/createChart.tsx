@@ -51,7 +51,7 @@ const createChart = (
     id: number,
     data: ChartSchema,
     chartData: ChartApiData
-): React.ReactElement => {
+): React.ReactElement[] => {
     const { charts, functions } = data;
     const chart = charts.find(({ id: i }) => i === id) as ChartSimple;
     const SelectedChart = components[chart.type];
@@ -90,7 +90,7 @@ const createChart = (
     // if no tooltip ignore
     const isIgnoredTooltip = () => !chart.tooltip || chart.tooltip?.standalone;
 
-    return (
+    return ([
         <SelectedChart
             {...props}
             key={chartData.data[0].name}
@@ -104,7 +104,7 @@ const createChart = (
             )}
             name={chartData.data[0].name}
         />
-    );
+    ]);
 };
 
 export default createChart;

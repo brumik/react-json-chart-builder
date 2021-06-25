@@ -18,13 +18,12 @@ const components: Partial<Record<ChartKind, (
     id: number,
     data: ChartSchema,
     resolvedApi: ChartApiData
-) => React.ReactElement>> = {
+) => React.ReactElement[]>> = {
     [ChartKind.simple]: createChart,
     [ChartKind.stack]: createStack
 };
 
 const createDynamicChildren = (
-    charts: ChartSchemaElement[],
     template: ChartSimple,
     parent: number,
     data: ChartData
@@ -44,16 +43,16 @@ const createGroup = (
     id: number,
     data: ChartSchema,
     resolvedApi: ChartApiData
-): React.ReactElement => {
+): React.ReactElement[] => {
     let { charts } =  data;
     const group = charts.find(({ id: i }) => i === id) as ChartGroup;
     let children = charts.filter(({ parent }) => parent === id);
 
-    let renderedChildren: React.ReactElement[] = [];
+    let renderedChildren: React.ReactElement[] | React.ReactElement[][] = [];
+    let extraProps = {};
 
     if (group.template) {
         charts = createDynamicChildren(
-            charts,
             group.template,
             group.id,
             resolvedApi.data
@@ -64,24 +63,31 @@ const createGroup = (
                 // Pass only the data which needs the child
                 data: [resolvedApi.data[idx]]
             }
-            return components[child.kind](child.id, { ...data, charts }, calculatedApi)
+            return components[child.kind](child.id, { ...data, charts }, calculatedApi);
         });
+
+        if (group.template.type === ChartType.bar) {
+            extraProps = {
+                ...extraProps,
+                offset: getBarWidthFromData(resolvedApi.data),
+                barWidth: getBarWidthFromData(resolvedApi.data)
+            }
+            // If returning bar array it produces a barWidth calculation error in the VictoryCharts.
+            renderedChildren = renderedChildren.map(el => el[0]);
+        }
     } else {
         renderedChildren = children.map(child => components[child.kind](child.id, data, resolvedApi));
     }
 
-    return (
+    return ([
         <PFChartGroup
             key={id}
-            {...group.template
-                && group.template.type === ChartType.bar
-                && { offset: getBarWidthFromData(resolvedApi.data) }
-            }
+            {...extraProps}
             {...group?.props}
         >
             { renderedChildren }
         </PFChartGroup>
-    );
+    ]);
 };
 
 export default createGroup;

@@ -31,7 +31,7 @@ const components: Partial<Record<ChartKind, (
     id: number,
     data: ChartSchema,
     resolvedApi: ChartApiData
-) => React.ReactElement>> = {
+) => React.ReactElement[]>> = {
     [ChartKind.group]: createGroup,
     [ChartKind.stack]: createStack,
     [ChartKind.simple]: createChart
