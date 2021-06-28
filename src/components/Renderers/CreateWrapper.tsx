@@ -117,12 +117,6 @@ const getTicksFromMinMax = (minMaxValue: [number, number]): number[] => {
 }
 
 const getDomainFromTicks = (ticks: number[]): [number, number] => [ticks[0], ticks[ticks.length - 1]];
-
-const getOffsetY= (ticks: number[], height: number, padding: PaddingProps): number =>
-    (
-        (height - padding.top - padding.bottom) /
-        (ticks.length - 1)
-    ) * ticks.filter(n => n < 0).length;
 /* End Domain Functions */
 
 const paddingNumberToObject = (padding: PaddingProps | number): PaddingProps => (isNaN(+padding))
@@ -191,7 +185,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
     const minMaxValue: [number, number] = getMinMaxFromData(resolvedApi.data, dataKeys);
     const yTicks: number[] = getTicksFromMinMax(minMaxValue);
     const yDomain: [number, number] = getDomainFromTicks(yTicks);
-    const xOffsetY: number = getOffsetY(yTicks, props.height, props.padding);
+    const xOffsetY: number = props.padding.bottom;
     /* end of caluclations */
 
     const xAxis = {
