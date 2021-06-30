@@ -102,7 +102,7 @@ const createChart = (
                     ...isIgnoredTooltip() && { ignored: 'true' }
                 }
             )}
-            name={chartData.data[0].name}
+            name={chart.name || chartData.data[0].name}
         />
     );
 };

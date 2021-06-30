@@ -29,8 +29,35 @@ export default [
             method: 'GET'
         },
         tooltip: {
-            mouseFollow: false,
-            stickToAxis: null
+            cursor: true,
+            stickToAxis: 'x',
+            mouseFollow: true,
+            legendTooltip: {
+                legendData: [
+                    {
+                        childName: 'total_costs',
+                        name: 'Total costs',
+                        symbol: {
+                            fill: '#8B8D8F'
+                        }
+                    },
+                    {
+                        childName: 'total_benefits',
+                        name: 'Total benefits',
+                        symbol: {
+                            fill: '#81C46B'
+                        }
+                    },
+                    {
+                        childName: 'cumulative',
+                        name: 'Cumulative benefits',
+                        symbol: {
+                            fill: '#EE7A00'
+                        }
+                    }
+                ],
+                titleProperyForLegend: 'year'
+            }
         }
     },
     {
@@ -43,6 +70,7 @@ export default [
         kind: ChartKind.simple,
         type: ChartType.bar,
         parent: 2,
+        name: 'total_costs',
         props: {
             x: 'year',
             y: 'total_costs',
@@ -54,6 +82,9 @@ export default [
                     width: 120
                 }
             }
+        },
+        tooltip: {
+            labelName: ''
         }
     },
     {
@@ -61,6 +92,7 @@ export default [
         kind: ChartKind.simple,
         type: ChartType.bar,
         parent: 2,
+        name: 'total_benefits',
         props: {
             x: 'year',
             y: 'total_benefits',
@@ -72,6 +104,9 @@ export default [
                     width: 120
                 }
             }
+        },
+        tooltip: {
+            labelName: ''
         }
     },
     {
@@ -79,6 +114,7 @@ export default [
         kind: ChartKind.simple,
         type: ChartType.line,
         parent: 1,
+        name: 'cumulative',
         props: {
             x: 'year',
             y: 'cumulative_net_benefits',
@@ -89,6 +125,8 @@ export default [
                 }
             }
         },
-        tooltip: {}
+        tooltip: {
+            labelName: ''
+        }
     }
 ];
