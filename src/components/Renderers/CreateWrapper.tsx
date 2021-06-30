@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 import {
     Chart as PFChart,
     ChartAxis,
+    ChartLegendTooltip,
     ChartVoronoiContainer,
     createContainer
 } from '@patternfly/react-charts';
@@ -164,17 +165,25 @@ const CreateWrapper: FunctionComponent<Props> = ({
 
     let labelProps = {};
     if (wrapper.tooltip) {
+        const tooltip = wrapper.tooltip;
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        const ContainerComponent = wrapper.tooltip.cursor
+        const ContainerComponent = tooltip.cursor
             ? createContainer('voronoi', 'cursor')
             : ChartVoronoiContainer;
 
         labelProps = {
             containerComponent: <ContainerComponent
-                cursorDimension={wrapper.tooltip?.stickToAxis}
-                labels={getLabels(wrapper.tooltip.customFnc)}
-                voronoiDimension={wrapper.tooltip?.stickToAxis}
-                mouseFollowTooltips={wrapper.tooltip?.mouseFollow}
+                cursorDimension={tooltip.stickToAxis}
+                labels={getLabels(tooltip.customFnc)}
+                {...tooltip.legendTooltip && {
+                    labelComponent: (<ChartLegendTooltip
+                        legendData={tooltip.legendTooltip.legendData}
+                        title={(datum: Record<string, string>) =>
+                            datum[tooltip.legendTooltip.titleProperyForLegend || 'x']}
+                    />)
+                }}
+                voronoiDimension={tooltip.stickToAxis}
+                mouseFollowTooltips={tooltip.mouseFollow}
                 constrainToVisibleArea
             />
         }

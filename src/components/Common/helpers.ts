@@ -22,7 +22,9 @@ export const getLabels = (
             if (!standalone && datum.ignored) {
                 return null;
             } else {
-                return `${datum.labelName}: ${datum.y}`;
+                return datum.labelName
+                    ? `${datum.labelName}: ${datum.y}`
+                    : `${datum.y}`;
             }
         };
     }

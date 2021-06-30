@@ -70,7 +70,8 @@ export type ChartSimpleProps = ChartBarProps | ChartLineProps | ChartAreaProps |
 
 export interface ChartSimple extends ChartBase {
     kind: ChartKind.simple,
-    props: ChartSimpleProps
+    props: ChartSimpleProps,
+    name?: string,
     type: ChartType,
     tooltip?: ChartTooltipProps
     onClick?: string
@@ -124,6 +125,16 @@ export interface ChartWrapper extends ChartTopLevelElement {
         stickToAxis?: 'x' | 'y',
         cursor?: boolean,
         customFnc?: ChartTooltipCustomFunction,
+        legendTooltip?: {
+            legendData: {
+                childName: string,
+                name: string,
+                symbol?: {
+                    fill?: string
+                }
+            }[],
+            titleProperyForLegend: string
+        }
     }
 }
 
