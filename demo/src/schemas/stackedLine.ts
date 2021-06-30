@@ -18,7 +18,8 @@ export default [
         },
         tooltip: {
             cursor: true,
-            stickToAxis: 'x'
+            stickToAxis: 'x',
+            mouseFollow: true
         },
         api: {
             url: 'demoByTimeStacked',

@@ -172,10 +172,10 @@ const CreateWrapper: FunctionComponent<Props> = ({
         labelProps = {
             containerComponent: <ContainerComponent
                 cursorDimension={wrapper.tooltip?.stickToAxis}
-                constrainToVisibleArea
                 labels={getLabels(wrapper.tooltip.customFnc)}
-                mouseFollowTooltip={wrapper.tooltip?.mouseFollow}
                 voronoiDimension={wrapper.tooltip?.stickToAxis}
+                mouseFollowTooltips={wrapper.tooltip?.mouseFollow}
+                constrainToVisibleArea
             />
         }
     }
