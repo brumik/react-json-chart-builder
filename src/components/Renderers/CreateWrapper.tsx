@@ -21,7 +21,8 @@ import createGroup from './createGroup';
 import createStack from './createStack';
 import {
     getBarWidthFromData,
-    getLabels
+    getLabels,
+    paddingNumberToObject
 } from '../Common/helpers';
 import ResponsiveContainer from '../Common/ResponsiveContainer';
 import {
@@ -42,8 +43,6 @@ interface Props {
     id: number,
     data: ChartSchema
 }
-
-interface PaddingProps { top?: number, bottom?: number, left?: number, right?: number }
 
 const getDomainPadding = (
     data: ChartData,
@@ -120,15 +119,6 @@ const getTicksFromMinMax = (minMaxValue: [number, number]): number[] => {
 const getDomainFromTicks = (ticks: number[]): [number, number] => [ticks[0], ticks[ticks.length - 1]];
 /* End Domain Functions */
 
-const paddingNumberToObject = (padding: PaddingProps | number): PaddingProps => (isNaN(+padding))
-    ? padding as PaddingProps
-    : {
-        top: padding as number,
-        bottom: padding as number,
-        left: padding as number,
-        right: padding as number
-    };
-
 const CreateWrapper: FunctionComponent<Props> = ({
     id,
     data
@@ -147,14 +137,14 @@ const CreateWrapper: FunctionComponent<Props> = ({
         ...wrapper?.props?.padding
             ? { padding: paddingNumberToObject(wrapper.props.padding) }
             : { padding: {
-                top: 10,
-                left: 70,
                 bottom: 70,
-                right: 10
+                left: 70,
+                right: 50,
+                top: 50
             }}
     }
 
-    let legendProps = getLegendProps(wrapper, resolvedApi)
+    let legendProps = getLegendProps(wrapper, resolvedApi, props.padding)
     if (wrapper.legend?.interactive) {
         legendProps = {
             ...legendProps,
@@ -222,10 +212,10 @@ const CreateWrapper: FunctionComponent<Props> = ({
             fetchFnc={functions.fetchFnc}
         >
             {resolvedApi.data.length > 0 && <PFChart
-                {...legendProps}
                 // Get the domain padding if it has a grouped bar chart from template or a bar chart
                 domainPadding={children.length === 1 ? getDomainPadding(resolvedApi.data, children[0]) : 0}
                 {...props}
+                {...legendProps}
                 key={id}
                 width={width}
                 {...labelProps}

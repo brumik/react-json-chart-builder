@@ -12,6 +12,7 @@ import {
     getInteractiveLegendForSingleSeries as getInteractiveLegend,
     getLegendProps
 } from '../Common/getLegendProps';
+import { paddingNumberToObject } from '../Common/helpers';
 
 interface Props {
     id: number,
@@ -46,10 +47,20 @@ const CreatePieChart: FunctionComponent<Props> = ({
     const props = {
         height: 300,
         y: 'y',
-        ...wrapper?.props
+        ...wrapper?.props,
+        ...wrapper?.props?.padding
+            ? { padding: paddingNumberToObject(wrapper.props.padding) }
+            : {
+                padding: {
+                    bottom: 70,
+                    left: 70,
+                    right: 50,
+                    top: 50
+                }
+            }
     }
 
-    let legendProps = getLegendProps(wrapper, resolvedApi)
+    let legendProps = getLegendProps(wrapper, resolvedApi, props.padding)
     if (wrapper.legend?.interactive) {
         legendProps = {
             ...legendProps,
@@ -67,8 +78,8 @@ const CreatePieChart: FunctionComponent<Props> = ({
             fetchFnc={data.functions.fetchFnc}
         >
             { resolvedApi.data.length > 0 && <PFChartPie
-                {...legendProps}
                 {...props}
+                {...legendProps}
                 data={serie.map(el =>
                     el.hidden
                         ? ({...el, [props.y as string]: 0})

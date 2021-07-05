@@ -9,7 +9,8 @@ import {
     ChartLegendPosition,
     ChartPie,
     ChartTopSchemaElement,
-    ChartLegendOrientation
+    ChartLegendOrientation,
+    PaddingProps
 } from '../types';
 
 export type LegendComponentType = React.ReactElement<typeof ChartLegend>;
@@ -130,24 +131,19 @@ interface LegendProps {
 
 export const getLegendProps = (
     element: ChartTopSchemaElement,
-    chartData: ChartApiData
+    chartData: ChartApiData,
+    originalPadding: PaddingProps
 ): LegendProps => {
     let props: LegendProps = {
-        padding: {
-            bottom: 70,
-            left: 70,
-            right: 50,
-            top: 50
-        }
+        padding: originalPadding
     };
     if (element.legend) {
         const { legend } = element;
-        const { padding } = props;
         if (
             legend.position === ChartLegendPosition.bottom ||
             legend.position === ChartLegendPosition.right
         ) {
-            padding[legend.position] += 100;
+            props.padding[legend.position] += 100;
         }
 
         if (
@@ -158,7 +154,6 @@ export const getLegendProps = (
 
         props = {
             ...props,
-            padding,
             ...legend.position && { legendPosition: legend.position },
             ...legend.orientation && { legendOrientation: legend.orientation },
             legendData: chartData.legend

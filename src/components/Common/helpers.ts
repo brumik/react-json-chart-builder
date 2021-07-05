@@ -1,6 +1,8 @@
 import {
     ChartData,
-    ChartTooltipCustomFunction
+    ChartTooltipCustomFunction,
+    PaddingProps,
+    PaddingPropsOptional
 } from '../types';
 
 type GetLabelReturnType = (d: any) => string;
@@ -36,3 +38,12 @@ export const getBarWidthFromData = (data: ChartData): number => {
     const max = 20;
     return Math.max(min, Math.min(max, calculated));
 }
+
+export const paddingNumberToObject = (padding: PaddingPropsOptional | number): PaddingProps => (isNaN(+padding))
+    ? padding as PaddingProps
+    : {
+        top: padding as number,
+        bottom: padding as number,
+        left: padding as number,
+        right: padding as number
+    };
