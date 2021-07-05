@@ -1,10 +1,10 @@
 import {
     ChartBarProps,
-    ChartProps,
+    ChartProps as PFChartProps,
     ChartTooltipProps as PFChartTooltipProps,
     ChartStackProps,
     ChartGroupProps,
-    ChartPieProps,
+    ChartPieProps as PFChartPieProps,
     ChartLegendOrientation,
     ChartPieLegendPosition as ChartLegendPosition,
     ChartLineProps,
@@ -117,6 +117,10 @@ export interface ChartTopLevelElement extends ChartBase {
     api?: ChartApiProps,
 }
 
+export interface ChartProps extends Omit<PFChartProps, 'padding'> {
+    padding?: PaddingPropsOptional
+}
+
 export interface ChartWrapper extends ChartTopLevelElement {
     type: ChartTopLevelType.chart,
     props?: ChartProps,
@@ -145,6 +149,10 @@ export interface ChartPieLegendProps {
     interactive?: boolean,
     position: ChartLegendPosition,
     orientation: ChartLegendOrientation
+}
+
+export interface ChartPieProps extends Omit<PFChartPieProps, 'padding'> {
+    padding?: PaddingPropsOptional
 }
 
 export interface ChartPie extends ChartTopLevelElement {

@@ -39,11 +39,10 @@ export const getBarWidthFromData = (data: ChartData): number => {
     return Math.max(min, Math.min(max, calculated));
 }
 
-export const paddingNumberToObject = (padding: PaddingPropsOptional | number): PaddingProps => (isNaN(+padding))
-    ? padding as PaddingProps
-    : {
-        top: padding as number,
-        bottom: padding as number,
-        left: padding as number,
-        right: padding as number
-    };
+export const paddingNumberToObject = (padding: PaddingPropsOptional): PaddingProps =>
+    ({
+        top: padding?.top ?? 50,
+        bottom: padding?.bottom ?? 70,
+        left: padding?.left ?? 70,
+        right: padding?.right ?? 50
+    });
