@@ -5,8 +5,7 @@ import React, {
     useState
 } from 'react';
 import {
-    getApiData,
-    getLegendData
+    getApiData
 } from '../Api';
 import { ChartFetchFunction } from '../Functions/types';
 import {
@@ -60,7 +59,7 @@ const ResponsiveContainer: FunctionComponent<Props> = ({
             .then(results => {
                 if (!didCancel) {
                     setError(false);
-                    setData({ ...results, legend: getLegendData(results)});
+                    setData(results);
                 }
             })
             .catch(() => {

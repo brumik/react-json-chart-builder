@@ -1,3 +1,5 @@
+import { ChartLegendData } from '../types';
+
 export enum ApiType {
     nonGrouped = 'nonGrouped',
     grouped = 'grouped'
@@ -6,7 +8,11 @@ export enum ApiType {
 export interface NonGroupedApi {
     type: ApiType.nonGrouped,
     items: Record<string, string | number>[]
-    response_type: string
+    response_type: string,
+    meta?: {
+        legend?: ChartLegendData,
+        [key: string]: any
+    }
 }
 
 export interface GroupedApi {
@@ -15,8 +21,11 @@ export interface GroupedApi {
         date: string,
         items: Record<string, string | number>[]
     }[],
-    meta: any,
-    response_type: string
+    response_type: string,
+    meta?: {
+        legend?: ChartLegendData,
+        [key: string]: any
+    }
 }
 
 export type ApiReturnType = NonGroupedApi | GroupedApi;
