@@ -97,7 +97,7 @@ export interface ChartAxisProps extends Omit<PFChartAxisProps, 'tickFormat'> {
 }
 
 export { ChartLegendPosition, ChartLegendOrientation };
-export type ChartLegendData = { name: string, childName?: string }[]
+export type ChartLegendData = { name: string, childName?: string, [key: string]: any }[]
 
 export interface ChartLegendProps {
     interactive?: boolean,

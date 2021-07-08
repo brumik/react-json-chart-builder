@@ -671,7 +671,7 @@ export default {
                 'total_count': 810,
                 'total_org_count': 26,
                 'id': -1,
-                'name': '26 Others'
+                'name': '27 Others'
             }
         ]
     },

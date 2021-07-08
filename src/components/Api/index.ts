@@ -31,7 +31,8 @@ export const getApiData = async (
     fetchApi: ChartFetchFunction
 ): Promise<ChartApiData> => {
     const resolvedData: ChartApiData = {
-        data: []
+        data: [],
+        legend: []
     };
 
     await fetchApi(api).then((result: ApiReturnType) => {
@@ -54,12 +55,18 @@ export const getApiData = async (
                 }];
                 break;
         }
+
+        if (result?.meta?.legend) {
+            resolvedData.legend = result.meta.legend.map(({ name }) => ({ name: name || 'No Name' }));
+        } else {
+            resolvedData.legend = getLegendData(resolvedData);
+        }
     });
     return resolvedData;
 };
 
-export const getLegendData = (resolvedApi: ChartApiData): ChartLegendData => {
-    return resolvedApi.data.length === 1
+export const getLegendData = (resolvedApi: ChartApiData): ChartLegendData =>
+    resolvedApi.data.length === 1
         ? resolvedApi.data[0].serie.map(item => ({
             name: (item.name || 'No Name') as string,
             childName: resolvedApi.data[0].name
@@ -68,4 +75,3 @@ export const getLegendData = (resolvedApi: ChartApiData): ChartLegendData => {
             name: (serie.serie[0].name || 'No Name') as string,
             childName: serie.name
         }));
-};
