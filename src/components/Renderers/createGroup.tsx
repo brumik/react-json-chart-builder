@@ -24,7 +24,6 @@ const components: Partial<Record<ChartKind, (
 };
 
 const createDynamicChildren = (
-    charts: ChartSchemaElement[],
     template: ChartSimple,
     parent: number,
     data: ChartData
@@ -52,7 +51,6 @@ const createGroup = (
     let renderedChildren: React.ReactElement[] = [];
     if (group.template) {
         charts = createDynamicChildren(
-            charts,
             group.template,
             group.id,
             resolvedApi.data
