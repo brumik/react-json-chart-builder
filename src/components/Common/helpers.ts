@@ -32,11 +32,17 @@ export const getLabels = (
     }
 }
 
-export const getBarWidthFromData = (data: ChartData): number => {
-    const calculated = Math.floor(50 / data.length);
+export const getBarWidthFromData = (data: ChartData, width: number): number => {
+    /* 1 is for the one bar witdth space between the groups */
+    const barNumber = (1 + data.length) * data[0].serie.length;
+
+    /* A group or a single bar of maximum 100 */
+    const max = 150 / data.length;
+
+    /* Always visible bars */
     const min = 1;
-    const max = 20;
-    return Math.max(min, Math.min(max, calculated));
+
+    return Math.min(max, Math.max(min, width / barNumber));
 }
 
 export const paddingNumberToObject = (padding: PaddingPropsOptional): PaddingProps =>
