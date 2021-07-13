@@ -16,6 +16,7 @@
     * The branch served as a webpage on: [https://brumik.github.io/react-json-chart-builder](https://brumik.github.io/react-json-chart-builder)
 
 ### Semantic release commit messages
+**Currently use `fix` for changes, and `feat` for schema changes as the lib is undergoing a lot of changes.
 Using semantic release
 * Patch release: `fix(pencil): stop graphite breaking when too much pressure applied`
 * Feature release: `feat(pencil): add 'graphiteWidth' option`
@@ -29,7 +30,7 @@ The default graphite width of 10mm is always used for performance reasons.`
 * npm > 7
 
 ### Setup
-* `npm i` - install the packages
+* `npm ci` - install the packages
 * `npm start` - start the local web server
 * go to `localhost:8080`
 
