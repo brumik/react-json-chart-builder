@@ -34,8 +34,8 @@ const createDynamicChildren = (
         id: idx,
         parent,
         props: {
-            ...template.props,
-            ...template.type === ChartType.bar && { barWidth: getBarWidthFromData(data) }
+            ...template.type === ChartType.bar && { barWidth: getBarWidthFromData(data) },
+            ...template.props
         }
     }))
 ]);
@@ -50,7 +50,6 @@ const createGroup = (
     let children = charts.filter(({ parent }) => parent === id);
 
     let renderedChildren: React.ReactElement[] = [];
-
     if (group.template) {
         charts = createDynamicChildren(
             charts,
