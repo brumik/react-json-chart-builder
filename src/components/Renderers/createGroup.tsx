@@ -26,14 +26,15 @@ const components: Partial<Record<ChartKind, (
 const createDynamicChildren = (
     template: ChartSimple,
     parent: number,
-    data: ChartData
+    data: ChartData,
+    width: number
 ): ChartSchemaElement[] => ([
     ...data.map((_d, idx) => ({
         ...template,
         id: idx,
         parent,
         props: {
-            ...template.type === ChartType.bar && { barWidth: getBarWidthFromData(data) },
+            ...template.type === ChartType.bar && { barWidth: getBarWidthFromData(data, width) },
             ...template.props
         }
     }))
@@ -42,7 +43,8 @@ const createDynamicChildren = (
 const createGroup = (
     id: number,
     data: ChartSchema,
-    resolvedApi: ChartApiData
+    resolvedApi: ChartApiData,
+    width: number
 ): React.ReactElement => {
     let { charts } =  data;
     const group = charts.find(({ id: i }) => i === id) as ChartGroup;
@@ -53,7 +55,8 @@ const createGroup = (
         charts = createDynamicChildren(
             group.template,
             group.id,
-            resolvedApi.data
+            resolvedApi.data,
+            width
         );
         children = charts.filter(({ parent }) => parent === id);
         renderedChildren = children.map((child, idx) => {
@@ -72,7 +75,7 @@ const createGroup = (
             key={id}
             {...group.template
                 && group.template.type === ChartType.bar
-                && { offset: getBarWidthFromData(resolvedApi.data) }
+                && { offset: getBarWidthFromData(resolvedApi.data, width) }
             }
             {...group?.props}
         >

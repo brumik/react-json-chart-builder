@@ -32,7 +32,8 @@ import {
 const components: Partial<Record<ChartKind, (
     id: number,
     data: ChartSchema,
-    resolvedApi: ChartApiData
+    resolvedApi: ChartApiData,
+    width: number
 ) => React.ReactElement>> = {
     [ChartKind.group]: createGroup,
     [ChartKind.stack]: createStack,
@@ -46,14 +47,15 @@ interface Props {
 
 const getDomainPadding = (
     data: ChartData,
-    child: ChartSchemaElement
+    child: ChartSchemaElement,
+    width: number
 ): number => {
     switch (child.kind) {
         case ChartKind.simple:
             return child.type === ChartType.bar ? 20 : 0;
         case ChartKind.group:
             return child.template && child.template.type === ChartType.bar
-                ? getBarWidthFromData(data) * data.length / 2
+                ? getBarWidthFromData(data, width) * data.length / 2
                 : 0
         default:
             return 0;
@@ -213,7 +215,12 @@ const CreateWrapper: FunctionComponent<Props> = ({
         >
             {resolvedApi.data.length > 0 && <PFChart
                 // Get the domain padding if it has a grouped bar chart from template or a bar chart
-                domainPadding={children.length === 1 ? getDomainPadding(resolvedApi.data, children[0]) : 0}
+                domainPadding={children.length === 1
+                    ? getDomainPadding(
+                        resolvedApi.data,
+                        children[0],
+                        width - props.padding.left - props.padding.right)
+                    : 0}
                 {...props}
                 {...legendProps}
                 key={id}
@@ -222,7 +229,12 @@ const CreateWrapper: FunctionComponent<Props> = ({
             >
                 <ChartAxis {...xAxis} />
                 <ChartAxis dependentAxis {...yAxis} />
-                {children && children.map(child => components[child.kind](child.id, data, resolvedApi))}
+                {children && children.map(child => components[child.kind](
+                    child.id,
+                    data,
+                    resolvedApi,
+                    width - props.padding.left - props.padding.right
+                ))}
             </PFChart>}
         </ResponsiveContainer>
     );
