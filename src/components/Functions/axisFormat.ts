@@ -12,7 +12,6 @@ export const formatDateAsDayMonth = (i: string): string => {
 }
 
 export const formatNumberAsK = (n: string | number = 0): string => {
-    // eslint-disable-next-line no-console
     if (+n === 0) {
         return String(n);
     }
