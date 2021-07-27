@@ -11,10 +11,26 @@ export const formatDateAsDayMonth = (i: string): string => {
     return `${parts[1]}/${parts[2]}`;
 }
 
-export const formatNumberAsK = (n: string | number = 0): string =>
-    (Math.abs(+n) > 1000)
-        ? `${(+n / 1000).toFixed(1)}k`
-        : `${(+n).toFixed(0)}`;
+export const formatNumberAsK = (n: string | number = 0): string => {
+    // eslint-disable-next-line no-console
+    if (+n === 0) {
+        return String(n);
+    }
+
+    let divisor = 1;
+    let suffix = '';
+    if (Math.abs(+n) > 1000000) {
+        divisor = 1000000;
+        suffix = 'M';
+    } else if (Math.abs(+n) > 1000) {
+        divisor = 1000;
+        suffix = 'k';
+    }
+
+    const output = +n / divisor;
+    const remainLen = 3 - String(output.toFixed(0)).length + (output > 0 ? 0 : 1);
+    return `${output.toFixed(remainLen > 0 ? remainLen : 0)}${suffix}`
+}
 
 const axisFormat: Record<string, ChartAxisFormatFunction> = {
     default: returnSame,
