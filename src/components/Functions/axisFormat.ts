@@ -12,6 +12,11 @@ export const formatDateAsDayMonth = (i: string): string => {
 }
 
 export const formatNumberAsK = (n: string | number = 0): string => {
+    const digits = 3;
+    if (`${n}`.length <= digits) {
+        return `${n}`;
+    }
+
     let divisor = 1;
     let suffix = '';
     if (Math.abs(+n) > 1000000) {
@@ -23,7 +28,7 @@ export const formatNumberAsK = (n: string | number = 0): string => {
     }
 
     const output = +n / divisor;
-    const remainLen = 3 - `${output.toFixed(0)}`.length + (output > 0 ? 0 : 1);
+    const remainLen = digits - `${output.toFixed(0)}`.length + (output > 0 ? 0 : 1);
     return (output % 1 === 0) ? `${output}${suffix}` : `${output.toFixed(remainLen > 0 ? remainLen : 0)}${suffix}`
 }
 
