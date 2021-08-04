@@ -19,10 +19,10 @@ export const formatNumberAsK = (n: string | number = 0): string => {
 
     let divisor = 1;
     let suffix = '';
-    if (Math.abs(+n) > 1000000) {
+    if (Math.abs(+n) >= 1000000) {
         divisor = 1000000;
         suffix = 'M';
-    } else if (Math.abs(+n) > 1000) {
+    } else if (Math.abs(+n) >= 1000) {
         divisor = 1000;
         suffix = 'k';
     }
