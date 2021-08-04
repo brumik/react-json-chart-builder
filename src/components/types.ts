@@ -11,7 +11,8 @@ import {
     ChartAreaProps,
     ChartScatterProps,
     ChartThemeColor,
-    ChartAxisProps as PFChartAxisProps
+    ChartAxisProps as PFChartAxisProps,
+    ChartLabelProps as PFChartLabelProps
 } from '@patternfly/react-charts';
 import { ChartAxisFormatFunction, ChartFunctions, ChartOnClickFunction } from './Functions/types';
 
@@ -66,7 +67,11 @@ export interface ChartTooltipProps {
     props?: PFChartTooltipProps,
     standalone?: boolean,
     labelName?: string,
-    customFnc?: ChartTooltipCustomFunction
+    customFnc?: ChartTooltipCustomFunction,
+}
+
+export interface LegendTooltipProps extends PFChartLabelProps {
+    datum?: Record<string, unknown>
 }
 
 export type ChartSimpleProps = ChartBarProps | ChartLineProps | ChartAreaProps | ChartScatterProps;
@@ -102,7 +107,8 @@ export type ChartLegendData = { name: string, childName?: string, [key: string]:
 export interface ChartLegendProps {
     interactive?: boolean,
     position: ChartLegendPosition,
-    orientation: ChartLegendOrientation
+    orientation: ChartLegendOrientation,
+    hasTooltip?: boolean
 }
 
 export enum ChartTopLevelType {
@@ -141,14 +147,15 @@ export interface ChartWrapper extends ChartTopLevelElement {
                 }
             }[],
             titleProperyForLegend: string
-        }
+        },
     }
 }
 
 export interface ChartPieLegendProps {
     interactive?: boolean,
     position: ChartLegendPosition,
-    orientation: ChartLegendOrientation
+    orientation: ChartLegendOrientation,
+    hasTooltip?: boolean
 }
 
 export interface ChartPieProps extends Omit<PFChartPieProps, 'padding'> {
