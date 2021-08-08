@@ -31,7 +31,8 @@ export default [
         legend: {
             interactive: true,
             orientation: ChartLegendOrientation.vertical,
-            position: ChartLegendPosition.right
+            position: ChartLegendPosition.right,
+            hasTooltip: true
         }
     },
     {

@@ -1,7 +1,9 @@
 import {
     getInteractiveLegendItemStyles,
-    ChartLegend
+    ChartLegend,
+    ChartLabel
 } from '@patternfly/react-charts';
+import { Tooltip } from '@patternfly/react-core';
 import React from 'react';
 import {
     ChartApiData,
@@ -10,18 +12,26 @@ import {
     ChartPie,
     ChartTopSchemaElement,
     ChartLegendOrientation,
+    LegendTooltipProps,
     PaddingProps
 } from '../types';
 
 export type LegendComponentType = React.ReactElement<typeof ChartLegend>;
 
+const LegendTip = ({datum, ...rest}: LegendTooltipProps) => (
+    <Tooltip content={datum.name} enableFlip>
+        <ChartLabel {...rest} />
+    </Tooltip>
+)
+
 const getChartLegend = (
     id: number,
     legend: ChartLegendData,
     isHidden: (i: number) => boolean,
-    handleClick: (props: { index: number }) => void
-): LegendComponentType =>
-    (<ChartLegend
+    handleClick: (props: { index: number }) => void,
+    hasTooltip = false
+): LegendComponentType => (
+    <ChartLegend
         name={`legend-${id}`}
         data={legend.map((el, index) => ({
             ...el,
@@ -46,7 +56,10 @@ const getChartLegend = (
                 ]
             }
         }]}
-    />);
+        labelComponent={hasTooltip ? <LegendTip /> : <ChartLabel />}
+    />
+)
+
 
 export const getInteractiveLegendForMultiSeries = (
     element: ChartTopSchemaElement,
@@ -80,7 +93,8 @@ export const getInteractiveLegendForMultiSeries = (
             element.id,
             chartData.legend,
             isHidden,
-            handleClick
+            handleClick,
+            element?.legend?.hasTooltip
         )
         : null;
 };
@@ -115,7 +129,8 @@ export const getInteractiveLegendForSingleSeries = (
             element.id,
             chartData.legend,
             isHidden,
-            handleClick
+            handleClick,
+            element?.legend?.hasTooltip
         )
         : null;
 };
