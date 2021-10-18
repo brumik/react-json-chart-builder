@@ -139,7 +139,7 @@ export interface ChartWrapper extends ChartTopLevelElement {
         cursor?: boolean,
         customFnc?: ChartTooltipCustomFunction,
         legendTooltip?: {
-            legendData: {
+            legendData?: {
                 childName: string,
                 name: string,
                 symbol?: {
