@@ -146,7 +146,7 @@ export interface ChartWrapper extends ChartTopLevelElement {
                     fill?: string
                 }
             }[],
-            titleProperyForLegend: string
+            titleProperyForLegend?: string
         },
     }
 }

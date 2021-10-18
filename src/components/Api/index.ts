@@ -57,7 +57,15 @@ export const getApiData = async (
         }
 
         if (result?.meta?.legend) {
-            resolvedData.legend = result.meta.legend.map(({ name }) => ({ name: name || 'No Name' }));
+            resolvedData.legend = result.meta.legend.map(({ id }) => {
+                const s = resolvedData.data.find(({ serie }) => {
+                    return serie.find(({ id: serieId }) => serieId === id);
+                });
+                return {
+                    name: s.serie[0].name as string ?? '',
+                    childName: s.name
+                };
+            });
         } else {
             resolvedData.legend = getLegendData(resolvedData);
         }
