@@ -146,7 +146,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
             }}
     }
 
-    let legendProps = getLegendProps(wrapper, resolvedApi, props.padding)
+    let legendProps = getLegendProps(wrapper, resolvedApi, props.padding);
     if (wrapper.legend?.interactive) {
         legendProps = {
             ...legendProps,
@@ -169,9 +169,11 @@ const CreateWrapper: FunctionComponent<Props> = ({
                 labels={getLabels(tooltip.customFnc)}
                 {...tooltip.legendTooltip && {
                     labelComponent: (<ChartLegendTooltip
-                        legendData={tooltip.legendTooltip.legendData}
-                        title={(datum: Record<string, string>) =>
-                            datum[tooltip.legendTooltip.titleProperyForLegend || 'x']}
+                        legendData={tooltip.legendTooltip.legendData ?? resolvedApi.legend}
+                        {...tooltip.legendTooltip.titleProperyForLegend && {
+                            title: (datum: Record<string, string>) =>
+                                datum[tooltip.legendTooltip.titleProperyForLegend]
+                        }}
                     />)
                 }}
                 voronoiDimension={tooltip.stickToAxis}

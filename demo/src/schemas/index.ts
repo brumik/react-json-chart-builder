@@ -4,6 +4,7 @@ import stackedBar from './stackedBar';
 import stackedLine from './stackedLine';
 import dynamicGrouped from './dynamicGrouped';
 import pie from './pie';
+import legendLikeTooltip from './legendLikeTooltip';
 import { ChartSchemaElement } from '../../../src';
 
 export enum PresetNames {
@@ -12,7 +13,8 @@ export enum PresetNames {
     STACKED_BAR = 'stackedBar',
     STACKED_LINE = 'stackedLine',
     DYNAMIC_GROUPED = 'dynamicGrouped',
-    PIE = 'pie'
+    PIE = 'pie',
+    LEGEND_LIKE_TOOLTIP = 'legendLikeTooltip',
 }
 
 export const humanReadableNames: Record<PresetNames, string> = {
@@ -21,7 +23,8 @@ export const humanReadableNames: Record<PresetNames, string> = {
     [PresetNames.STACKED_BAR]: 'Stacked bar',
     [PresetNames.STACKED_LINE]: 'Stacked line',
     [PresetNames.DYNAMIC_GROUPED]: 'Grouped with dynamic no. bars',
-    [PresetNames.PIE]: 'Pie'
+    [PresetNames.PIE]: 'Pie',
+    [PresetNames.LEGEND_LIKE_TOOLTIP]: 'Legend like tooltip'
 }
 
 export default {
@@ -30,5 +33,6 @@ export default {
     stackedBar,
     stackedLine,
     dynamicGrouped,
-    pie
+    pie,
+    legendLikeTooltip
 } as Record<PresetNames, ChartSchemaElement[]>;
