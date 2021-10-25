@@ -167,6 +167,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
             containerComponent: <ContainerComponent
                 cursorDimension={tooltip.stickToAxis}
                 labels={getLabels(tooltip.customFnc)}
+                voronoiPadding={props.padding}
                 {...tooltip.legendTooltip && {
                     labelComponent: (<ChartLegendTooltip
                         legendData={tooltip.legendTooltip.legendData ?? resolvedApi.legend}
