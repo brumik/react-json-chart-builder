@@ -18,7 +18,7 @@ import {
 
 export type LegendComponentType = React.ReactElement<typeof ChartLegend>;
 
-const LegendTip = ({datum, ...rest}: LegendTooltipProps) => (
+const LegendWithTooltip = ({ datum, ...rest }: LegendTooltipProps) => (
     <Tooltip content={datum.name} enableFlip>
         <ChartLabel {...rest} />
     </Tooltip>
@@ -29,7 +29,7 @@ const getChartLegend = (
     legend: ChartLegendData,
     isHidden: (i: number) => boolean,
     handleClick: (props: { index: number }) => void,
-    hasTooltip = false
+    hasTooltip = true
 ): LegendComponentType => (
     <ChartLegend
         name={`legend-${id}`}
@@ -56,7 +56,7 @@ const getChartLegend = (
                 ]
             }
         }]}
-        labelComponent={hasTooltip ? <LegendTip /> : <ChartLabel />}
+        labelComponent={hasTooltip ? <LegendWithTooltip /> : <ChartLabel />}
     />
 )
 
