@@ -13,6 +13,9 @@ export const snakeToSentence = (str: string): string => {
     return sentence.join(' ');
 }
 
+export const turncateAt = (str: string, length: number): string =>
+    str.length > length ? `${str.substring(0, length)}...` : str;
+
 export const getLabels = (
     fnc = null as ChartTooltipCustomFunction,
     standalone = false
