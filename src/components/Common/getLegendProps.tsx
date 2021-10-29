@@ -36,9 +36,9 @@ const getChartLegend = (
     <ChartLegend
         name={`legend-${id}`}
         data={legend.map((el, index) => ({
+            tooltipText: el.name, // This one is overwritable
             ...el,
             name: turncateAt(el.name, turncateAtNumber),
-            tooltipText: el.name,
             ...getInteractiveLegendItemStyles(isHidden(index))
         }))}
         style={{
