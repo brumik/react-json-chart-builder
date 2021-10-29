@@ -57,12 +57,12 @@ export const getApiData = async (
         }
 
         if (result?.meta?.legend) {
-            resolvedData.legend = result.meta.legend.map(({ id }) => {
+            resolvedData.legend = result.meta.legend.map((item) => {
                 const s = resolvedData.data.find(({ serie }) => {
-                    return serie.find(({ id: serieId }) => serieId === id);
+                    return serie.find(({ id: serieId }) => serieId === item.id);
                 });
                 return {
-                    name: s.serie[0].name as string ?? '',
+                    ...item,
                     childName: s.name
                 };
             });
