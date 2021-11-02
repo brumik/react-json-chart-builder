@@ -51,7 +51,9 @@ export default [
         legend: {
             interactive: true,
             orientation: ChartLegendOrientation.vertical,
-            position: ChartLegendPosition.right
+            position: ChartLegendPosition.right,
+            turncateAt: 13,
+            wrapText: true
         },
         tooltip: {
             mouseFollow: true,

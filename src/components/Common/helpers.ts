@@ -16,6 +16,10 @@ export const snakeToSentence = (str: string): string => {
 export const turncateAt = (str: string, length: number): string =>
     str.length > length ? `${str.substring(0, length)}...` : str;
 
+export const wrapAt = (str: string, length: number): string =>
+    // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
+    str.length > length ? str.match(new RegExp(`.{1,${length}}`, 'g')).join('\n') : str;
+
 export const getLabels = (
     fnc = null as ChartTooltipCustomFunction,
     standalone = false

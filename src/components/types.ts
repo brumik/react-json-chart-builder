@@ -108,8 +108,9 @@ export interface ChartLegendProps {
     interactive?: boolean,
     position: ChartLegendPosition,
     orientation: ChartLegendOrientation,
-    hasTooltip?: boolean,
     turncateAt?: number,
+    wrapText?: boolean,
+    hasTooltip?: boolean,
 }
 
 export enum ChartTopLevelType {
@@ -157,6 +158,7 @@ export interface ChartPieLegendProps {
     position: ChartLegendPosition,
     orientation: ChartLegendOrientation,
     turncateAt?: number,
+    wrapText?: boolean,
     hasTooltip?: boolean
 }
 

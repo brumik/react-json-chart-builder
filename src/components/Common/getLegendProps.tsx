@@ -15,7 +15,10 @@ import {
     LegendTooltipProps,
     PaddingProps
 } from '../types';
-import { turncateAt } from './helpers';
+import {
+    turncateAt,
+    wrapAt
+} from './helpers';
 
 export type LegendComponentType = React.ReactElement<typeof ChartLegend>;
 
@@ -31,6 +34,7 @@ const getChartLegend = (
     isHidden: (i: number) => boolean,
     handleClick: (props: { index: number }) => void,
     turncateAtNumber = Infinity,
+    wrapText = false,
     hasTooltip = true
 ): LegendComponentType => (
     <ChartLegend
@@ -38,7 +42,9 @@ const getChartLegend = (
         data={legend.map((el, index) => ({
             tooltipText: el.name, // This one is overwritable
             ...el,
-            name: turncateAt(el.name, turncateAtNumber),
+            name: wrapText
+                ? wrapAt(el.name, turncateAtNumber)
+                : turncateAt(el.name, turncateAtNumber),
             ...getInteractiveLegendItemStyles(isHidden(index))
         }))}
         style={{
@@ -99,6 +105,7 @@ export const getInteractiveLegendForMultiSeries = (
             isHidden,
             handleClick,
             element?.legend?.turncateAt,
+            element?.legend?.wrapText,
             element?.legend?.hasTooltip
         )
         : null;
@@ -136,6 +143,7 @@ export const getInteractiveLegendForSingleSeries = (
             isHidden,
             handleClick,
             element?.legend?.turncateAt,
+            element?.legend?.wrapText,
             element?.legend?.hasTooltip
         )
         : null;
