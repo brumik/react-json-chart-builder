@@ -14,11 +14,18 @@ export default [
             themeColor: ChartThemeColor.gray
         },
         xAxis: {
-            label: 'Time'
+            label: 'Time',
+            labelProps: {
+                angle: -45
+            }
         },
         yAxis: {
             label: 'Money Saved',
             tickFormat: 'formatNumberAsK',
+            labelProps: {
+                angle: -90,
+                textAnchor: 'middle'
+            },
             style: {
                 grid: { stroke: '#D2D2D2' }
             }

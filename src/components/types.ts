@@ -12,7 +12,8 @@ import {
     ChartScatterProps,
     ChartThemeColor,
     ChartAxisProps as PFChartAxisProps,
-    ChartLabelProps as PFChartLabelProps
+    ChartLabelProps as PFChartLabelProps,
+    ChartLabelProps
 } from '@patternfly/react-charts';
 import { ChartAxisFormatFunction, ChartFunctions, ChartOnClickFunction } from './Functions/types';
 
@@ -87,8 +88,8 @@ export interface ChartSimple extends ChartBase {
 
 export interface ChartGroup extends ChartBase {
     kind: ChartKind.group,
-    props?: ChartGroupProps
-    template?: ChartSimple
+    props?: ChartGroupProps,
+    template?: ChartSimple,
 }
 
 export interface ChartStack extends ChartBase {
@@ -97,8 +98,9 @@ export interface ChartStack extends ChartBase {
 }
 
 export interface ChartAxisProps extends Omit<PFChartAxisProps, 'tickFormat'> {
-    tickFormat?: string
-    label?: string
+    tickFormat?: string,
+    label?: string,
+    labelProps?: ChartLabelProps,
 }
 
 export { ChartLegendPosition, ChartLegendOrientation };

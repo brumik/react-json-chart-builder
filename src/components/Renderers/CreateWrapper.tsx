@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 import {
     Chart as PFChart,
     ChartAxis,
+    ChartLabel,
     ChartLegendTooltip,
     ChartVoronoiContainer,
     createContainer
@@ -192,20 +193,24 @@ const CreateWrapper: FunctionComponent<Props> = ({
     const xOffsetY: number = props.padding.bottom;
     /* end of caluclations */
 
+    const { labelProps: xLabelProps, ...xAxisProps } = wrapper.xAxis;
     const xAxis = {
         fixLabelOverlap: true,
+        tickLabelComponent: <ChartLabel {...xLabelProps} />,
         ...minMaxValue[0] < 0 && { offsetY: xOffsetY },
-        ...wrapper.xAxis,
-        ...wrapper.xAxis.tickFormat && { tickFormat: functions.axisFormat[wrapper.xAxis.tickFormat] }
+        ...xAxisProps,
+        ...xAxisProps.tickFormat && { tickFormat: functions.axisFormat[xAxisProps.tickFormat] }
     };
 
+    const { labelProps: yLabelProps, ...yAxisProps } = wrapper.yAxis;
     const yAxis = {
+        tickLabelComponent: <ChartLabel {...yLabelProps} />,
         ...minMaxValue[0] < 0 && {
             domain: yDomain,
             tickValues: yTicks.slice(1, -1)
         },
-        ...wrapper.yAxis,
-        tickFormat: functions.axisFormat[wrapper.yAxis.tickFormat]
+        ...yAxisProps,
+        tickFormat: functions.axisFormat[yAxisProps.tickFormat]
     };
 
     return (
