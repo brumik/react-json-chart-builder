@@ -1,17 +1,17 @@
 import { ChartAxisFormatFunction } from './types';
 
-export const returnSame = (i: string | number): string => i as string;
+const returnSame = (i: string | number): string => i as string;
 
-export const formatDateAsDays = (i: string): string =>
+const formatDateAsDays = (i: string): string =>
     (i && i.split('-')[2]);
 
-export const formatDateAsDayMonth = (i: string): string => {
+const formatDateAsDayMonth = (i: string): string => {
     if (!i) return '';
     const parts = i.split('-');
     return `${parts[1]}/${parts[2]}`;
 }
 
-export const formatNumberAsK = (n: string | number = 0): string => {
+const formatNumberAsK = (n: string | number = 0): string => {
     const digits = 3;
     if (`${n}`.length <= digits) {
         return `${n}`;

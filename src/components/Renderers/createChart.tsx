@@ -13,11 +13,9 @@ import {
     ChartTooltipType,
     ChartType
 } from '../types';
-import legendMapper from '../Tooltips';
-import {
-    getLabels,
-    snakeToSentence
-} from '../Common/helpers';
+import tooltipMapper from '../Tooltips';
+import { snakeToSentence } from '../Common/helpers';
+import { ChartLabelFormatFunctionNames } from '../Functions';
 
 const components: Partial<Record<ChartType, React.ElementType>> = {
     [ChartType.bar]: ChartBar,
@@ -56,22 +54,21 @@ const createChart = (
     const chart = charts.find(({ id: i }) => i === id) as ChartSimple;
     const SelectedChart = components[chart.type];
 
-    let props = {...chart.props};
-    if (chart.tooltip?.standalone) {
-        const LegendComponent = legendMapper[chart.tooltip.type ?? ChartTooltipType.default];
-        props = {
-            ...props,
-            labels: getLabels(chart.tooltip.customFnc, chart.tooltip.standalone),
-            labelComponent: <LegendComponent
-                {...chart.tooltip.props}
-                dy={0}
-            />
-        }
-    }
+    const TooltipComponent = tooltipMapper[chart.tooltip?.type ?? ChartTooltipType.default];
+    const labelFnc = chart.tooltip?.standalone ?
+        functions.labelFormat[
+            chart.tooltip?.labelFormat ??
+            ChartLabelFormatFunctionNames.default
+        ] : null;
 
-    if (chart.onClick) {
-        props = {
-            ...props,
+    const props = {
+        ...chart.props,
+        labels: labelFnc,
+        labelComponent: <TooltipComponent
+            {...chart.tooltip?.props}
+            dy={0}
+        />,
+        ...chart.onClick && {
             events: [{
                 target: 'data',
                 eventHandlers: {
@@ -86,10 +83,6 @@ const createChart = (
             ? chart.tooltip.labelName ?? snakeToSentence(chart.props.y as string)
             : '';
 
-    // If standalone dont ignore
-    // if no tooltip ignore
-    const isIgnoredTooltip = () => !chart.tooltip || chart.tooltip?.standalone;
-
     return (
         <SelectedChart
             {...props}
@@ -99,7 +92,7 @@ const createChart = (
                 props.y as string,
                 {
                     labelName: getLabelName(),
-                    ...isIgnoredTooltip() && { ignored: 'true' }
+                    ...!chart.tooltip && { ignored: 'true' }
                 }
             )}
             name={chart.name || chartData.data[0].name}

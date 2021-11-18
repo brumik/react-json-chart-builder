@@ -62,13 +62,12 @@ interface ChartBase {
     parent: number // Id of the parent wrapper Element
 }
 
-export type ChartTooltipCustomFunction = (datum: Record<string, any>) => string;
 export interface ChartTooltipProps {
     type?: ChartTooltipType,
     props?: PFChartTooltipProps,
     standalone?: boolean,
     labelName?: string,
-    customFnc?: ChartTooltipCustomFunction,
+    labelFormat?: string,
 }
 
 export interface LegendTooltipProps extends PFChartLabelProps {
@@ -141,7 +140,7 @@ export interface ChartWrapper extends ChartTopLevelElement {
         mouseFollow?: boolean,
         stickToAxis?: 'x' | 'y',
         cursor?: boolean,
-        customFnc?: ChartTooltipCustomFunction,
+        labelFormat?: string,
         legendTooltip?: {
             legendData?: {
                 childName: string,

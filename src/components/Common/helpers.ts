@@ -1,11 +1,8 @@
 import {
     ChartData,
-    ChartTooltipCustomFunction,
     PaddingProps,
     PaddingPropsOptional
 } from '../types';
-
-type GetLabelReturnType = (d: any) => string;
 
 export const snakeToSentence = (str: string): string => {
     const sentence = str.toLowerCase().split('_');
@@ -19,25 +16,6 @@ export const turncateAt = (str: string, length: number): string =>
 export const wrapAt = (str: string, length: number): string =>
     // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
     str.length > length ? str.match(new RegExp(`.{1,${length}}`, 'g')).join('\n') : str;
-
-export const getLabels = (
-    fnc = null as ChartTooltipCustomFunction,
-    standalone = false
-): GetLabelReturnType => {
-    if (fnc) {
-        return ({ datum }: { datum: Record<string, string> }) => fnc(datum);
-    } else {
-        return ({ datum }: { datum: Record<string, string> }) => {
-            if (!standalone && datum.ignored) {
-                return null;
-            } else {
-                return datum.labelName
-                    ? `${datum.labelName}: ${datum.y}`
-                    : `${datum.y}`;
-            }
-        };
-    }
-}
 
 export const getBarWidthFromData = (data: ChartData, width: number): number => {
     /* 1 is for the one bar witdth space between the groups */
