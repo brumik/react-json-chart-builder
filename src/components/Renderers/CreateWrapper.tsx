@@ -22,13 +22,13 @@ import createGroup from './createGroup';
 import createStack from './createStack';
 import {
     getBarWidthFromData,
-    getLabels,
     paddingNumberToObject
 } from '../Common/helpers';
 import ResponsiveContainer from '../Common/ResponsiveContainer';
 import {
     getInteractiveLegendForMultiSeries as getInteractiveLegend, getLegendProps
 } from '../Common/getLegendProps';
+import { ChartLabelFormatFunctionNames } from '../Functions';
 
 const components: Partial<Record<ChartKind, (
     id: number,
@@ -167,7 +167,10 @@ const CreateWrapper: FunctionComponent<Props> = ({
         labelProps = {
             containerComponent: <ContainerComponent
                 cursorDimension={tooltip.stickToAxis}
-                labels={getLabels(tooltip.customFnc)}
+                labels={functions.labelFormat[
+                    tooltip.labelFormat ??
+                    ChartLabelFormatFunctionNames.default
+                ]}
                 voronoiPadding={props.padding}
                 {...tooltip.legendTooltip && {
                     labelComponent: (<ChartLegendTooltip
