@@ -29,7 +29,7 @@ export default {
             'cumulative_net_benefits': 687922
         },
         {
-            'year': 'year3',
+            'year': 'year3333333 55555555555 444444444444 666666666666 ',
             'total_hours_spent_risk_adjusted': 6,
             'total_hours_saved': 1508,
             'cumulative_time_net_benefits': 3695,
