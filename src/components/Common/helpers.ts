@@ -1,4 +1,5 @@
 import {
+    ChartAxisFormatFunction,
     ChartData,
     PaddingProps,
     PaddingPropsOptional
@@ -16,6 +17,22 @@ export const turncateAt = (str: string, length: number): string =>
 export const wrapAt = (str: string, length: number): string =>
     // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
     str.length > length ? str.match(new RegExp(`.{1,${length}}`, 'g')).join('\n') : str;
+
+export const axisFormatPreprocess = ({
+    wrapText = false,
+    turncateAtNumber = Infinity,
+    fnc
+}: {
+    wrapText: boolean,
+    turncateAtNumber: number,
+    fnc: ChartAxisFormatFunction
+}) => (n: string | number): string => {
+    n = wrapText
+        ? wrapAt(n.toString(), turncateAtNumber)
+        : turncateAt(n.toString(), turncateAtNumber);
+
+    return fnc(n);
+}
 
 export const getBarWidthFromData = (data: ChartData, width: number): number => {
     /* 1 is for the one bar witdth space between the groups */

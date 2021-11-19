@@ -17,7 +17,8 @@ export default [
             label: 'Time',
             labelProps: {
                 angle: -45
-            }
+            },
+            turncateAt: 6
         },
         yAxis: {
             label: 'Money Saved',

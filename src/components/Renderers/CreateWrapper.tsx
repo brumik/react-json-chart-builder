@@ -21,6 +21,7 @@ import createChart from './createChart';
 import createGroup from './createGroup';
 import createStack from './createStack';
 import {
+    axisFormatPreprocess,
     getBarWidthFromData,
     paddingNumberToObject
 } from '../Common/helpers';
@@ -28,7 +29,7 @@ import ResponsiveContainer from '../Common/ResponsiveContainer';
 import {
     getInteractiveLegendForMultiSeries as getInteractiveLegend, getLegendProps
 } from '../Common/getLegendProps';
-import { ChartLabelFormatFunctionNames } from '../Functions';
+import { ChartAxisFormatFunctionNames, ChartLabelFormatFunctionNames } from '../Functions';
 
 const components: Partial<Record<ChartKind, (
     id: number,
@@ -202,7 +203,11 @@ const CreateWrapper: FunctionComponent<Props> = ({
         tickLabelComponent: <ChartLabel {...xLabelProps} />,
         ...minMaxValue[0] < 0 && { offsetY: xOffsetY },
         ...xAxisProps,
-        ...xAxisProps.tickFormat && { tickFormat: functions.axisFormat[xAxisProps.tickFormat] }
+        tickFormat: axisFormatPreprocess({
+            wrapText: xAxisProps.wrapText,
+            turncateAtNumber: xAxisProps.turncateAt,
+            fnc: functions.axisFormat[xAxisProps.tickFormat ?? ChartAxisFormatFunctionNames.default]
+        })
     };
 
     const { labelProps: yLabelProps, ...yAxisProps } = wrapper.yAxis;
@@ -213,7 +218,11 @@ const CreateWrapper: FunctionComponent<Props> = ({
             tickValues: yTicks.slice(1, -1)
         },
         ...yAxisProps,
-        tickFormat: functions.axisFormat[yAxisProps.tickFormat]
+        tickFormat: axisFormatPreprocess({
+            wrapText: yAxisProps.wrapText,
+            turncateAtNumber: yAxisProps.turncateAt,
+            fnc: functions.axisFormat[yAxisProps.tickFormat ?? ChartAxisFormatFunctionNames.default]
+        })
     };
 
     return (

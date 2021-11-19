@@ -100,6 +100,8 @@ export interface ChartAxisProps extends Omit<PFChartAxisProps, 'tickFormat'> {
     tickFormat?: string,
     label?: string,
     labelProps?: ChartLabelProps,
+    turncateAt?: number,
+    wrapText?: boolean,
 }
 
 export { ChartLegendPosition, ChartLegendOrientation };

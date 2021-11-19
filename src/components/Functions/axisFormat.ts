@@ -1,6 +1,13 @@
 import { ChartAxisFormatFunction } from './types';
 
-const returnSame = (i: string | number): string => i as string;
+export enum ChartAxisFormatFunctionNames {
+    default = 'default',
+    formatDateAsDays = 'formatDateAsDays',
+    formatDateAsDayMonth = 'formatDateAsDayMonth',
+    formatNumberAsK = 'formatNumberAsK'
+}
+
+const returnSame = (i: string | number): string => i.toString();
 
 const formatDateAsDays = (i: string): string =>
     (i && i.split('-')[2]);
