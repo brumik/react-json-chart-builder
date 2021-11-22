@@ -1,6 +1,6 @@
 import { ChartOnClickFunction } from './types';
 
-const consoleLogValue = (e: Record<string, any>, params: Record<string, any>): void => {
+const consoleLogValue: ChartOnClickFunction = (e, params) => {
     // eslint-disable-next-line no-console
     console.log('onclick', e, params);
 };

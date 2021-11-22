@@ -1,9 +1,11 @@
-import {
+import axisFormat from '../../components/Functions/axisFormat';
+
+const {
     formatDateAsDayMonth,
     formatDateAsDays,
     formatNumberAsK,
-    returnSame
-} from '../../components/Functions/axisFormat';
+    default: returnSame
+} = axisFormat;
 
 describe('Chart/Functions/axisFormat', () => {
     test('should return the same string', () => {
@@ -20,6 +22,6 @@ describe('Chart/Functions/axisFormat', () => {
 
     test('should return numbers in (number/1000)K format', () => {
         expect(formatNumberAsK(100)).toBe('100');
-        expect(formatNumberAsK(2000)).toBe('2.0k');
+        expect(formatNumberAsK(2000)).toBe('2k');
     })
 });
