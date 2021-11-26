@@ -7,7 +7,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     context: __dirname,
     devServer: {
-        contentBase: resolve(__dirname, './dist')
+        static: {
+           directory: resolve(__dirname, './dist')
+        }
     },
     entry: {
         'demo': resolve(__dirname, './src/index.tsx')
