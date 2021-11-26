@@ -88,7 +88,7 @@ export interface ChartSimple extends ChartBase {
 export interface ChartGroup extends ChartBase {
     kind: ChartKind.group,
     props?: ChartGroupProps,
-    template?: ChartSimple,
+    template?: number,
 }
 
 export interface ChartStack extends ChartBase {

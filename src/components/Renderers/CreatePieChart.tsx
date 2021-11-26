@@ -77,7 +77,7 @@ const CreatePieChart: FunctionComponent<Props> = ({
             setData={setResolvedApi}
             fetchFnc={data.functions.fetchFnc}
         >
-            { resolvedApi.data.length > 0 && <PFChartPie
+            {resolvedApi.data.length > 0 && <PFChartPie
                 {...props}
                 {...legendProps}
                 data={serie.map(el =>

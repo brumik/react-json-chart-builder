@@ -247,17 +247,18 @@ const groupedBarChart: ChartSchemaElement[] = [
         kind: ChartKind.group,
         parent: 3000,
         props: {},
-        template: {
-            id: 0,
-            kind: ChartKind.simple,
-            type: ChartType.bar,
-            parent: 0,
-            props: {
-                x: 'created_date',
-                y: 'total_count'
-            }
-        }
+        template: 3101,
     },
+    {
+        id: 3101,
+        kind: ChartKind.simple,
+        type: ChartType.bar,
+        parent: 0,
+        props: {
+            x: 'created_date',
+            y: 'total_count'
+        }
+    }
 ]
 
 describe('Chart/Renderers/CreateWrapper', () => {
