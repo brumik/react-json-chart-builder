@@ -6,8 +6,8 @@ import {
 import { Tooltip } from '@patternfly/react-core';
 import React from 'react';
 import {
-    ChartApiData,
-    ChartLegendData,
+    ChartData,
+    ChartLegendEntry,
     ChartLegendPosition,
     ChartPie,
     ChartTopSchemaElement,
@@ -30,7 +30,7 @@ const LegendWithTooltip = ({ datum, ...rest }: LegendTooltipProps) => (
 
 const getChartLegend = (
     id: number,
-    legend: ChartLegendData,
+    legend: ChartLegendEntry[],
     isHidden: (i: number) => boolean,
     handleClick: (props: { index: number }) => void,
     turncateAtNumber = Infinity,
@@ -73,30 +73,30 @@ const getChartLegend = (
 
 export const getInteractiveLegendForMultiSeries = (
     element: ChartTopSchemaElement,
-    chartData: ChartApiData,
-    setData: (data: ChartApiData) => void
+    chartData: ChartData,
+    setData: (data: ChartData) => void
 ): LegendComponentType => {
     const handleClick = ({ index }: { index: number }) => {
         // Don't allow hiding ALL the series
-        const hiddenCount = chartData.data.filter(({ hidden }) => hidden).length;
+        const hiddenCount = chartData.series.filter(({ hidden }) => hidden).length;
         if (
-            !chartData.data[index].hidden &&
-            chartData.data.length === hiddenCount + 1
+            !chartData.series[index].hidden &&
+            chartData.series.length === hiddenCount + 1
         ) {
             return;
         }
 
         // Set the charts data in it too
-        const tempData = [...chartData.data];
+        const tempData = [...chartData.series];
         tempData[index].hidden = !tempData[index].hidden;
         setData({
             ...chartData,
-            data: tempData
+            series: tempData
         })
     };
 
     const isHidden = (idx: number) =>
-        chartData.data[idx].hidden
+        chartData.series[idx].hidden
 
     return element.legend && chartData.legend
         ? getChartLegend(
@@ -115,7 +115,7 @@ export const getInteractiveLegendForSingleSeries = (
     element: ChartPie,
     serie: Record<string, string | number | boolean>[],
     setSerie: (serie: Record<string, string | number | boolean>[]) => void,
-    chartData: ChartApiData
+    chartData: ChartData
 ): LegendComponentType => {
     const handleClick = ({ index }: { index: number }) => {
         // Don't allow hiding ALL the series
@@ -151,7 +151,7 @@ export const getInteractiveLegendForSingleSeries = (
 
 interface LegendProps {
     padding?: { top: number, bottom: number, left: number, right: number },
-    legendData?: ChartLegendData,
+    legendData?: ChartLegendEntry[],
     legendPosition?: ChartLegendPosition,
     legendOrientation?: ChartLegendOrientation,
     legendComponent?: LegendComponentType,
@@ -160,7 +160,7 @@ interface LegendProps {
 
 export const getLegendProps = (
     element: ChartTopSchemaElement,
-    chartData: ChartApiData,
+    chartData: ChartData,
     originalPadding: PaddingProps
 ): LegendProps => {
     let props: LegendProps = {

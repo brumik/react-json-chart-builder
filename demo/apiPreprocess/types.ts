@@ -1,4 +1,4 @@
-import { ChartLegendData } from '../types';
+import { ChartLegendEntry } from '../../src/components/types';
 
 export enum ApiType {
     nonGrouped = 'nonGrouped',
@@ -6,24 +6,22 @@ export enum ApiType {
 }
 
 export interface NonGroupedApi {
-    type: ApiType.nonGrouped,
+    type?: ApiType.nonGrouped,
     items: Record<string, string | number>[]
-    response_type: string,
     meta?: {
-        legend?: ChartLegendData,
+        legend?: ChartLegendEntry[],
         [key: string]: any
     }
 }
 
 export interface GroupedApi {
-    type: ApiType.grouped,
+    type?: ApiType.grouped,
     dates: {
         date: string,
         items: Record<string, string | number>[]
     }[],
-    response_type: string,
     meta?: {
-        legend?: ChartLegendData,
+        legend?: ChartLegendEntry[],
         [key: string]: any
     }
 }

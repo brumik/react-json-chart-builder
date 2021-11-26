@@ -1,6 +1,6 @@
 import {
     ChartAxisFormatFunction,
-    ChartData,
+    ChartDataSerie,
     PaddingProps,
     PaddingPropsOptional
 } from '../types';
@@ -34,7 +34,7 @@ export const axisFormatPreprocess = ({
     return fnc(n);
 }
 
-export const getBarWidthFromData = (data: ChartData, width: number): number => {
+export const getBarWidthFromData = (data: ChartDataSerie[], width: number): number => {
     /* 1 is for the one bar witdth space between the groups */
     const barNumber = (1 + data.length) * data[0].serie.length;
 

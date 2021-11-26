@@ -1,11 +1,10 @@
 import '@patternfly/react-core/dist/styles/base.css';
 import React, { RefObject, useState, useEffect } from 'react';
-import ChartRenderer, { ChartKind, ChartSchemaElement, ChartTopSchemaElement, functions } from '../../src/';
+import ChartRenderer, { ChartData, ChartSchemaElement, functions } from '../../src/';
 import presets, {
-    PresetNames,
+    PresetName,
     humanReadableNames
 } from './schemas/';
-import data from '../api/';
 import '@patternfly/react-core/dist/styles/base.css';
 import {
     ActionList,
@@ -31,15 +30,7 @@ import {
 } from '@patternfly/react-code-editor';
 import SaveIcon from '@patternfly/react-icons/dist/js/icons/save-icon';
 
-/* eslint-disable-next-line */
-const getResponse = (url: string) => data[url];
-
 const prettyPrintJson = (json: unknown): string => JSON.stringify(json, null, 2);
-
-const getApiData = (schema: ChartSchemaElement[]) => {
-    const topElement = schema.find(el => el.kind === ChartKind.wrapper) as ChartTopSchemaElement;
-    return prettyPrintJson(getResponse(topElement.api.url));
-};
 
 /* eslint-disable */
 const clipboardCopyFunc = (event, text) => {
@@ -54,13 +45,20 @@ const clipboardCopyFunc = (event, text) => {
 /* eslint-enable */
 
 const App: React.FunctionComponent<Record<string, never>> = () => {
-    const [schema, setSchema] = useState(presets[PresetNames.ANOMALY]);
+    const [schema, setSchema] = useState<ChartSchemaElement[]>(presets[PresetName.ANOMALY].schema);
     const [editorCode, setEditorCode] = useState('');
+    const [data, setData] = useState<ChartData>(presets[PresetName.ANOMALY].data);
     const [activeTabKey, setActiveTabKey] = useState(0);
 
     useEffect(() => {
         setEditorCode(prettyPrintJson(schema));
-    }, [schema])
+    }, [schema]);
+
+    const changeChart = (presetkey: PresetName) => {
+        setSchema(presets[presetkey].schema);
+        setData(presets[presetkey].data);
+        setEditorCode(prettyPrintJson(presets[presetkey].schema));
+    }
 
     const contentRef1: RefObject<HTMLElement> = React.createRef();
     const contentRef2: RefObject<HTMLElement> = React.createRef();
@@ -76,7 +74,7 @@ const App: React.FunctionComponent<Record<string, never>> = () => {
                     id="copy-button"
                     textId="code-content"
                     aria-label="Copy to clipboard"
-                    onClick={e => clipboardCopyFunc(e, getApiData(schema))}
+                    onClick={e => clipboardCopyFunc(e, data)}
                     variant="plain"
                 >
                 </ClipboardCopyButton>
@@ -88,9 +86,9 @@ const App: React.FunctionComponent<Record<string, never>> = () => {
         <ActionList>
             <ActionListItem>Presets:</ActionListItem>
             {
-                Object.values(PresetNames).map(key => (
+                Object.values(PresetName).map(key => (
                     <ActionListItem key={key}>
-                        <Button variant="link" onClick={() => setSchema(presets[key])}>
+                        <Button variant="link" onClick={() => changeChart(key)}>
                             {humanReadableNames[key]}
                         </Button>
                     </ActionListItem>
@@ -108,10 +106,8 @@ const App: React.FunctionComponent<Record<string, never>> = () => {
                 <hr style={{ marginBottom: '10px' }} />
                 <ChartRenderer
                     schema={schema}
-                    functions={{
-                        ...functions,
-                        fetchFnc: (api) => Promise.resolve(getResponse(api.url))
-                    }}
+                    functions={functions}
+                    dataState={[data, setData]}
                 />
             </CardBody>
             <CardFooter>
@@ -155,7 +151,7 @@ const App: React.FunctionComponent<Record<string, never>> = () => {
                     <TabContent eventKey={1} id="refTab2Section" ref={contentRef2} aria-label="API Data" hidden>
                         <CodeBlock actions={actions}>
                             <CodeBlockCode>
-                                {getApiData(schema)}
+                                {prettyPrintJson(data)}
                             </CodeBlockCode>
                         </CodeBlock>
                     </TabContent>
