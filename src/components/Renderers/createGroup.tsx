@@ -1,11 +1,11 @@
 import React from 'react';
 import { ChartGroup as PFChartGroup } from '@patternfly/react-charts';
 import {
-    ChartApiData,
     ChartData,
+    ChartDataSerie,
     ChartGroup,
     ChartKind,
-    ChartSchema,
+    ChartInterface,
     ChartSchemaElement,
     ChartSimple,
     ChartType
@@ -16,8 +16,8 @@ import { getBarWidthFromData } from '../Common/helpers';
 
 const components: Partial<Record<ChartKind, (
     id: number,
-    data: ChartSchema,
-    resolvedApi: ChartApiData
+    data: ChartInterface,
+    resolvedApi: ChartData
 ) => React.ReactElement>> = {
     [ChartKind.simple]: createChart,
     [ChartKind.stack]: createStack
@@ -28,7 +28,7 @@ const createDynamicChildren = ({
 }: {
     template: ChartSimple,
     parent: number,
-    data: ChartData,
+    data: ChartDataSerie[],
     width: number
 }): ChartSchemaElement[] => ([
     ...data.map((_d, idx) => ({
@@ -52,11 +52,11 @@ const getTemplateChart = ({
 
 const createGroup = (
     id: number,
-    data: ChartSchema,
-    resolvedApi: ChartApiData,
+    data: ChartInterface,
+    resolvedApi: ChartData,
     width: number
 ): React.ReactElement => {
-    const { charts } =  data;
+    const { schema: charts } =  data;
     const group = charts.find(({ id: i }) => i === id) as ChartGroup;
     let children = charts.filter(({ parent }) => parent === id);
 
@@ -66,14 +66,14 @@ const createGroup = (
         children = createDynamicChildren({
             template: templateChart,
             parent: group.id,
-            data: resolvedApi.data,
+            data: resolvedApi.series,
             width
         });
         renderedChildren = children.map((child, idx) =>
             components[child.kind](
                 child.id,
-                { ...data, charts: [child] },
-                { data: [resolvedApi.data[idx]] }
+                { ...data, schema: [child] },
+                { series: [resolvedApi.series[idx]] }
             ));
     } else {
         renderedChildren = children.map(child => components[child.kind](child.id, data, resolvedApi));
@@ -84,7 +84,7 @@ const createGroup = (
             key={id}
             {...templateChart
                 && templateChart.type === ChartType.bar
-                && { offset: getBarWidthFromData(resolvedApi.data, width) }
+                && { offset: getBarWidthFromData(resolvedApi.series, width) }
             }
             {...group?.props}
         >

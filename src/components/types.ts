@@ -43,23 +43,16 @@ export interface ChartDataSerie {
     hidden: boolean,
     name: string
 }
-export type ChartData = ChartDataSerie[]
 
-export interface ChartApiData {
-    data: ChartData,
-    legend?: ChartLegendData
-}
-
-export interface ChartApiProps {
-    params: Record<string, unknown>,
-    url: string,
-    method?: string
+export interface ChartData {
+    series: ChartDataSerie[],
+    legend?: ChartLegendEntry[]
 }
 
 interface ChartBase {
-    id: number
+    id: number,
     kind: ChartKind,
-    parent: number // Id of the parent wrapper Element
+    parent: number
 }
 
 export interface ChartTooltipProps {
@@ -105,7 +98,13 @@ export interface ChartAxisProps extends Omit<PFChartAxisProps, 'tickFormat'> {
 }
 
 export { ChartLegendPosition, ChartLegendOrientation };
-export type ChartLegendData = { name: string, childName?: string, [key: string]: any }[]
+export interface ChartLegendEntry {
+    name: string,
+    childName?: string,
+    tooltipText?: string,
+    [key: string]: string | number
+}
+export type ChartLegendData = ChartLegendEntry[];
 
 export interface ChartLegendProps {
     interactive?: boolean,
@@ -125,7 +124,6 @@ export interface ChartTopLevelElement extends ChartBase {
     kind: ChartKind.wrapper,
     parent: null,
     type: ChartTopLevelType,
-    api?: ChartApiProps,
 }
 
 export interface ChartProps extends Omit<PFChartProps, 'padding'> {
@@ -186,9 +184,10 @@ export {
 // Reexport theme color from PF
 export { ChartThemeColor };
 
-export type ChartSchemaElement = ChartSimple | ChartPie | ChartWrapper | ChartGroup | ChartStack;
 export type ChartTopSchemaElement = ChartWrapper | ChartPie;
-export interface ChartSchema {
-    charts: ChartSchemaElement[],
+export type ChartSchemaElement = ChartSimple | ChartTopSchemaElement | ChartGroup | ChartStack;
+export interface ChartInterface {
+    schema: ChartSchemaElement[],
     functions: ChartFunctions
+    dataState: [ChartData, (data: ChartData) => void];
 }

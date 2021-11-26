@@ -1,7 +1,6 @@
 /* eslint-disable */
 const { resolve } = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -29,11 +28,6 @@ module.exports = {
             filename: './favicon.ico',
             minify: false
         }),
-        new CopyPlugin({
-            patterns: [
-                { from: 'api', to: 'api' }
-            ]
-        })
     ],
     module: {
         rules: [

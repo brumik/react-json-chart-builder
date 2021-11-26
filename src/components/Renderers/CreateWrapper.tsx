@@ -8,10 +8,10 @@ import {
     createContainer
 } from '@patternfly/react-charts';
 import {
-    ChartApiData,
     ChartData,
+    ChartDataSerie,
     ChartKind,
-    ChartSchema,
+    ChartInterface,
     ChartSchemaElement,
     ChartSimple,
     ChartType,
@@ -33,8 +33,8 @@ import { ChartAxisFormatFunctionNames, ChartLabelFormatFunctionNames } from '../
 
 const components: Partial<Record<ChartKind, (
     id: number,
-    data: ChartSchema,
-    resolvedApi: ChartApiData,
+    data: ChartInterface,
+    resolvedApi: ChartData,
     width: number
 ) => React.ReactElement>> = {
     [ChartKind.group]: createGroup,
@@ -42,13 +42,12 @@ const components: Partial<Record<ChartKind, (
     [ChartKind.simple]: createChart
 };
 
-interface Props {
+interface Props extends ChartInterface {
     id: number,
-    data: ChartSchema
 }
 
 const getDomainPadding = ({ data, child, charts, width }: {
-    data: ChartData,
+    data: ChartDataSerie[],
     child: ChartSchemaElement,
     charts: ChartSchemaElement[],
     width: number
@@ -79,7 +78,7 @@ const getNiceNumber = (n: number): number => {
         rounded * Math.ceil(Math.abs(n) / rounded);
 }
 
-const getMinMaxFromData = (data: ChartData, dataKeys: string[]): [number, number] => {
+const getMinMaxFromData = (data: ChartDataSerie[], dataKeys: string[]): [number, number] => {
     let maxInAnyData = 1;
     let minInAnyData = 0;
 
@@ -127,15 +126,14 @@ const getDomainFromTicks = (ticks: number[]): [number, number] => [ticks[0], tic
 
 const CreateWrapper: FunctionComponent<Props> = ({
     id,
-    data
+    schema,
+    functions,
+    dataState
 }) => {
-    const { charts, functions } = data;
-    const wrapper = charts.find(({ id: i }) => i === id) as ChartWrapper;
-    const children = charts.filter(({ parent }) => parent === wrapper.id);
+    const wrapper = schema.find(({ id: i }) => i === id) as ChartWrapper;
+    const children = schema.filter(({ parent }) => parent === wrapper.id);
+    const [data, setData] = dataState;
     const [width, setWidth] = useState(0);
-    const [resolvedApi, setResolvedApi] = useState({
-        data: []
-    } as ChartApiData);
 
     const props = {
         height: 300,
@@ -150,11 +148,11 @@ const CreateWrapper: FunctionComponent<Props> = ({
             }}
     }
 
-    let legendProps = getLegendProps(wrapper, resolvedApi, props.padding);
+    let legendProps = getLegendProps(wrapper, data, props.padding);
     if (wrapper.legend?.interactive) {
         legendProps = {
             ...legendProps,
-            legendComponent: getInteractiveLegend(wrapper, resolvedApi, setResolvedApi)
+            legendComponent: getInteractiveLegend(wrapper, data, setData)
         }
         delete legendProps.legendData;
     }
@@ -177,7 +175,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
                 voronoiPadding={props.padding}
                 {...tooltip.legendTooltip && {
                     labelComponent: (<ChartLegendTooltip
-                        legendData={tooltip.legendTooltip.legendData ?? resolvedApi.legend}
+                        legendData={tooltip.legendTooltip.legendData ?? data.legend}
                         {...tooltip.legendTooltip.titleProperyForLegend && {
                             title: (datum: Record<string, string>) =>
                                 datum[tooltip.legendTooltip.titleProperyForLegend]
@@ -192,8 +190,8 @@ const CreateWrapper: FunctionComponent<Props> = ({
     }
 
     /* calculations for y axis with negative values */
-    const dataKeys: string[] = getAllDisplayedValues(data.charts);
-    const minMaxValue: [number, number] = getMinMaxFromData(resolvedApi.data, dataKeys);
+    const dataKeys: string[] = getAllDisplayedValues(schema);
+    const minMaxValue: [number, number] = getMinMaxFromData(data.series, dataKeys);
     const yTicks: number[] = getTicksFromMinMax(minMaxValue);
     const yDomain: [number, number] = getDomainFromTicks(yTicks);
     const xOffsetY: number = props.padding.bottom;
@@ -231,17 +229,14 @@ const CreateWrapper: FunctionComponent<Props> = ({
         <ResponsiveContainer
             setWidth={setWidth}
             height={props.height}
-            api={wrapper.api}
-            setData={setResolvedApi}
-            fetchFnc={functions.fetchFnc}
         >
-            {resolvedApi.data.length > 0 && <PFChart
+            {data.series.length > 0 && <PFChart
                 // Get the domain padding if it has a grouped bar chart from template or a bar chart
                 domainPadding={children.length === 1
                     ? getDomainPadding({
-                        data: resolvedApi.data,
+                        data: data.series,
                         child: children[0],
-                        charts,
+                        charts: schema,
                         width: width - props.padding.left - props.padding.right
                     }) : 0}
                 {...props}
@@ -254,8 +249,8 @@ const CreateWrapper: FunctionComponent<Props> = ({
                 <ChartAxis dependentAxis {...yAxis} />
                 {children && children.map(child => components[child.kind](
                     child.id,
+                    { schema, functions, dataState },
                     data,
-                    resolvedApi,
                     width - props.padding.left - props.padding.right
                 ))}
             </PFChart>}

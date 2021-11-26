@@ -6,9 +6,9 @@ import {
     ChartScatter
 } from '@patternfly/react-charts';
 import {
-    ChartApiData,
+    ChartData,
     ChartDataSerie,
-    ChartSchema,
+    ChartInterface,
     ChartSimple,
     ChartTooltipType,
     ChartType
@@ -47,10 +47,10 @@ const getData = (
 
 const createChart = (
     id: number,
-    data: ChartSchema,
-    chartData: ChartApiData
+    data: ChartInterface,
+    chartData: ChartData
 ): React.ReactElement => {
-    const { charts, functions } = data;
+    const { schema: charts, functions } = data;
     const chart = charts.find(({ id: i }) => i === id) as ChartSimple;
     const SelectedChart = components[chart.type];
 
@@ -86,16 +86,16 @@ const createChart = (
     return (
         <SelectedChart
             {...props}
-            key={chartData.data[0].name}
+            key={chartData.series[0].name}
             data={getData(
-                chartData.data[0],
+                chartData.series[0],
                 props.y as string,
                 {
                     labelName: getLabelName(),
                     ...!chart.tooltip && { ignored: 'true' }
                 }
             )}
-            name={chart.name || chartData.data[0].name}
+            name={chart.name || chartData.series[0].name}
         />
     );
 };

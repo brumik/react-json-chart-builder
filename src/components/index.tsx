@@ -1,37 +1,22 @@
 import React, { FunctionComponent } from 'react';
 import {
-    ChartFunctions,
     ChartKind,
-    ChartSchema,
+    ChartInterface,
     ChartTopLevelType,
-    ChartTopSchemaElement,
-    ChartSchemaElement
+    ChartTopSchemaElement
 } from './types';
 import CreateWrapper from './Renderers/CreateWrapper';
 import CreatePieChart from './Renderers/CreatePieChart';
 
-interface Props {
-    schema: ChartSchemaElement[],
-    functions: ChartFunctions
-}
-
-const ChartRenderer: FunctionComponent<Props> = ({
-    schema,
-    functions
-}) => {
-    const data: ChartSchema = {
-        charts: schema,
-        functions
-    };
-
-    const chart = data.charts.find(
+const ChartRenderer: FunctionComponent<ChartInterface> = (props) => {
+    const chart = props.schema.find(
         ({ kind, parent }) => kind === ChartKind.wrapper && parent === null
     ) as ChartTopSchemaElement;
 
     if (chart.type === ChartTopLevelType.chart) {
-        return (<CreateWrapper key={chart.id + Math.random()} id={chart.id} data={data} />);
+        return (<CreateWrapper key={chart.id + Math.random()} id={chart.id} {...props} />);
     } else if (chart.type === ChartTopLevelType.pie) {
-        return (<CreatePieChart key={chart.id + Math.random()} id={chart.id} data={data} />);
+        return (<CreatePieChart key={chart.id + Math.random()} id={chart.id} {...props} />);
     } else {
         return null;
     }
