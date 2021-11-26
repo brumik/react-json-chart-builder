@@ -47,16 +47,18 @@ interface Props {
     data: ChartSchema
 }
 
-const getDomainPadding = (
+const getDomainPadding = ({ data, child, charts, width }: {
     data: ChartData,
     child: ChartSchemaElement,
+    charts: ChartSchemaElement[],
     width: number
-): number => {
+}): number => {
     switch (child.kind) {
         case ChartKind.simple:
             return child.type === ChartType.bar ? 20 : 0;
         case ChartKind.group:
-            return child.template && child.template.type === ChartType.bar
+            const template = charts.find(({ id }) => id === child.template) as ChartSimple;
+            return template && template.type === ChartType.bar
                 ? getBarWidthFromData(data, width) * data.length / 2
                 : 0
         default:
@@ -236,11 +238,12 @@ const CreateWrapper: FunctionComponent<Props> = ({
             {resolvedApi.data.length > 0 && <PFChart
                 // Get the domain padding if it has a grouped bar chart from template or a bar chart
                 domainPadding={children.length === 1
-                    ? getDomainPadding(
-                        resolvedApi.data,
-                        children[0],
-                        width - props.padding.left - props.padding.right)
-                    : 0}
+                    ? getDomainPadding({
+                        data: resolvedApi.data,
+                        child: children[0],
+                        charts,
+                        width: width - props.padding.left - props.padding.right
+                    }) : 0}
                 {...props}
                 {...legendProps}
                 key={id}

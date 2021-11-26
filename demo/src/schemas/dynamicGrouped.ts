@@ -39,18 +39,19 @@ export default [
         id: 3100,
         kind: ChartKind.group,
         parent: 3000,
-        template: {
-            id: 0,
-            kind: ChartKind.simple,
-            type: ChartType.bar,
-            parent: 0,
-            props: {
-                x: 'created_date',
-                y: 'total_count'
-            },
-            tooltip: {
-                standalone: true
-            }
+        template: 3101
+    },
+    {
+        id: 3101,
+        kind: ChartKind.simple,
+        type: ChartType.bar,
+        parent: 0,
+        props: {
+            x: 'created_date',
+            y: 'total_count'
+        },
+        tooltip: {
+            standalone: true
         }
     }
 ];

@@ -23,12 +23,14 @@ const components: Partial<Record<ChartKind, (
     [ChartKind.stack]: createStack
 };
 
-const createDynamicChildren = (
+const createDynamicChildren = ({
+    template, parent, data, width
+}: {
     template: ChartSimple,
     parent: number,
     data: ChartData,
     width: number
-): ChartSchemaElement[] => ([
+}): ChartSchemaElement[] => ([
     ...data.map((_d, idx) => ({
         ...template,
         id: idx,
@@ -40,32 +42,39 @@ const createDynamicChildren = (
     }))
 ]);
 
+const getTemplateChart = ({
+    templateId,
+    charts
+}: {
+    templateId: number,
+    charts: ChartSchemaElement[]
+}) => charts.find(({ id }) => id === templateId) as ChartSimple;
+
 const createGroup = (
     id: number,
     data: ChartSchema,
     resolvedApi: ChartApiData,
     width: number
 ): React.ReactElement => {
-    let { charts } =  data;
+    const { charts } =  data;
     const group = charts.find(({ id: i }) => i === id) as ChartGroup;
     let children = charts.filter(({ parent }) => parent === id);
 
     let renderedChildren: React.ReactElement[] = [];
-    if (group.template) {
-        charts = createDynamicChildren(
-            group.template,
-            group.id,
-            resolvedApi.data,
+    const templateChart = getTemplateChart({ templateId: group.template, charts });
+    if (templateChart) {
+        children = createDynamicChildren({
+            template: templateChart,
+            parent: group.id,
+            data: resolvedApi.data,
             width
-        );
-        children = charts.filter(({ parent }) => parent === id);
-        renderedChildren = children.map((child, idx) => {
-            const calculatedApi = {
-                // Pass only the data which needs the child
-                data: [resolvedApi.data[idx]]
-            }
-            return components[child.kind](child.id, { ...data, charts }, calculatedApi)
         });
+        renderedChildren = children.map((child, idx) =>
+            components[child.kind](
+                child.id,
+                { ...data, charts: [child] },
+                { data: [resolvedApi.data[idx]] }
+            ));
     } else {
         renderedChildren = children.map(child => components[child.kind](child.id, data, resolvedApi));
     }
@@ -73,8 +82,8 @@ const createGroup = (
     return (
         <PFChartGroup
             key={id}
-            {...group.template
-                && group.template.type === ChartType.bar
+            {...templateChart
+                && templateChart.type === ChartType.bar
                 && { offset: getBarWidthFromData(resolvedApi.data, width) }
             }
             {...group?.props}
