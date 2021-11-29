@@ -14,7 +14,7 @@
     * Publish the package to the NPM registry
     * Build the demo app & docs and push it to the `gh-pages` branch to be served as a webpage
         * Demo: [https://brumik.github.io/react-json-chart-builder](https://brumik.github.io/react-json-chart-builder)
-        * Docs: [https://brumik.github.io/react-json-chart-builder/docs](https://brumik.github.io/react-json-chart-builder)
+        * Docs: [https://brumik.github.io/react-json-chart-builder/docs](https://brumik.github.io/react-json-chart-builder/docs)
 
 ### Semantic release commit messages
 Using semantic release
