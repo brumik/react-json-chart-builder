@@ -1,5 +1,4 @@
 import { SyntheticEvent } from 'react';
-import { LabelFunction } from './labelFormat';
 
 export { ChartLabelFormatFunctionNames } from './labelFormat';
 export { ChartAxisFormatFunctionNames } from './axisFormat';
@@ -9,7 +8,7 @@ export type ChartOnClickFunction = (
     props: Record<string, any>
 ) => any;
 export type ChartAxisFormatFunction = (tick: string | number) => string;
-export type ChartLabelFormatFunction = LabelFunction;
+export type ChartLabelFormatFunction = (data: { datum: Record<string, any> }) => string;
 
 export interface ChartFunctions {
     onClick?: Record<string, ChartOnClickFunction>

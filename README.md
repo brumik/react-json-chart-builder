@@ -12,11 +12,11 @@
 * Merge the PR, and the CI will start to run:
     * Generate new package number and tag by semantic release
     * Publish the package to the NPM registry
-    * Build the demo app and push the built app to the `gh-pages` branch
-    * The branch served as a webpage on: [https://brumik.github.io/react-json-chart-builder](https://brumik.github.io/react-json-chart-builder)
+    * Build the demo app & docs and push it to the `gh-pages` branch to be served as a webpage
+        * Demo: [https://brumik.github.io/react-json-chart-builder](https://brumik.github.io/react-json-chart-builder)
+        * Docs: [https://brumik.github.io/react-json-chart-builder/docs](https://brumik.github.io/react-json-chart-builder)
 
 ### Semantic release commit messages
-**Currently use `fix` for changes, and `feat` for schema changes as the lib is undergoing a lot of changes.
 Using semantic release
 * Patch release: `fix(pencil): stop graphite breaking when too much pressure applied`
 * Feature release: `feat(pencil): add 'graphiteWidth' option`

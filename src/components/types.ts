@@ -16,6 +16,7 @@ import {
     ChartLabelProps
 } from '@patternfly/react-charts';
 import { ChartAxisFormatFunction, ChartFunctions, ChartOnClickFunction } from './Functions/types';
+export * from './Functions/types';
 
 export interface PaddingProps { top: number, bottom: number, left: number, right: number }
 export interface PaddingPropsOptional { top?: number, bottom?: number, left?: number, right?: number }
