@@ -4,30 +4,30 @@ import { ChartData, ChartKind, ChartInterface, ChartSimple, ChartStack } from '.
 import createChart from './createChart';
 
 const components: Partial<Record<ChartKind, (
-    id: number,
-    data: ChartInterface,
-    resolvedApi: ChartData
+  id: number,
+  data: ChartInterface,
+  resolvedApi: ChartData
 ) => React.ReactElement>> = {
-    [ChartKind.simple]: createChart
+  [ChartKind.simple]: createChart
 };
 
 const createStack = (
-    id: number,
-    data: ChartInterface,
-    resolvedApi: ChartData
+  id: number,
+  data: ChartInterface,
+  resolvedApi: ChartData
 ): React.ReactElement => {
-    const { schema: charts } = data;
-    const stack = charts.find(({ id: i }) => i === id) as ChartStack;
-    const children = charts.filter(({ parent }) => parent === id) as ChartSimple[];
+  const { schema: charts } = data;
+  const stack = charts.find(({ id: i }) => i === id) as ChartStack;
+  const children = charts.filter(({ parent }) => parent === id) as ChartSimple[];
 
-    return (
-        <PFChartStack
-            key={stack.id}
-            {...stack?.props}
-        >
-            { children.map(child => components[child.kind](child.id, data, resolvedApi)) }
-        </PFChartStack>
-    )
+  return (
+    <PFChartStack
+      key={stack.id}
+      {...stack?.props}
+    >
+      { children.map(child => components[child.kind](child.id, data, resolvedApi)) }
+    </PFChartStack>
+  )
 };
 
 export default createStack;
