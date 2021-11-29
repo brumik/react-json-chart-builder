@@ -17,8 +17,7 @@ module.exports = {
     devtool: 'source-map',
     output: {
         path: resolve(__dirname, './dist'),
-        filename: '[name].js',
-        publicPath: '/'
+        filename: '[name].js'
     },
     plugins: [
         new HtmlWebPackPlugin({
