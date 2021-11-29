@@ -36,6 +36,7 @@
     "build:esm": "tsc -p tsconfig.esm.json --module es2015 --target es5",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "lint": "eslint ./src/**/*.{js,ts,tsx}",
+    "lint:fix": "eslint ./src/**/*.{js,ts,tsx} --fix",
     "prepublishOnly": "npm run lint",
     "prepare": "rm -rf dist && npm run build"
   },

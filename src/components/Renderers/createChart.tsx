@@ -1,27 +1,27 @@
 import React from 'react';
 import {
-    ChartBar,
-    ChartLine,
-    ChartArea,
-    ChartScatter
+  ChartBar,
+  ChartLine,
+  ChartArea,
+  ChartScatter
 } from '@patternfly/react-charts';
 import {
-    ChartData,
-    ChartDataSerie,
-    ChartInterface,
-    ChartSimple,
-    ChartTooltipType,
-    ChartType
+  ChartData,
+  ChartDataSerie,
+  ChartInterface,
+  ChartSimple,
+  ChartTooltipType,
+  ChartType
 } from '../types';
 import tooltipMapper from '../Tooltips';
 import { snakeToSentence } from '../Common/helpers';
 import { ChartLabelFormatFunctionNames } from '../Functions';
 
 const components: Partial<Record<ChartType, React.ElementType>> = {
-    [ChartType.bar]: ChartBar,
-    [ChartType.line]: ChartLine,
-    [ChartType.area]: ChartArea,
-    [ChartType.scatter]: ChartScatter
+  [ChartType.bar]: ChartBar,
+  [ChartType.line]: ChartLine,
+  [ChartType.area]: ChartArea,
+  [ChartType.scatter]: ChartScatter
 };
 
 /**
@@ -30,74 +30,74 @@ const components: Partial<Record<ChartType, React.ElementType>> = {
  * the same for the other charts.
  */
 const getData = (
-    data: ChartDataSerie,
-    y = 'y',
-    props: {
-        labelName: string,
-        ignored?: string
-    }
+  data: ChartDataSerie,
+  y = 'y',
+  props: {
+    labelName: string,
+    ignored?: string
+  }
 ): Record<string, string | number>[] =>
-    data.hidden
-        ? [{ [y]: null }]
-        : data.serie.map(el => ({
-            ...el,
-            y: el[y],
-            ...props
-        }));
+  data.hidden
+    ? [{ [y]: null }]
+    : data.serie.map(el => ({
+      ...el,
+      y: el[y],
+      ...props
+    }));
 
 const createChart = (
-    id: number,
-    data: ChartInterface,
-    chartData: ChartData
+  id: number,
+  data: ChartInterface,
+  chartData: ChartData
 ): React.ReactElement => {
-    const { schema: charts, functions } = data;
-    const chart = charts.find(({ id: i }) => i === id) as ChartSimple;
-    const SelectedChart = components[chart.type];
+  const { schema: charts, functions } = data;
+  const chart = charts.find(({ id: i }) => i === id) as ChartSimple;
+  const SelectedChart = components[chart.type];
 
-    const TooltipComponent = tooltipMapper[chart.tooltip?.type ?? ChartTooltipType.default];
-    const labelFnc = chart.tooltip?.standalone ?
-        functions.labelFormat[
-            chart.tooltip?.labelFormat ??
+  const TooltipComponent = tooltipMapper[chart.tooltip?.type ?? ChartTooltipType.default];
+  const labelFnc = chart.tooltip?.standalone ?
+    functions.labelFormat[
+      chart.tooltip?.labelFormat ??
             ChartLabelFormatFunctionNames.default
-        ] : null;
+    ] : null;
 
-    const props = {
-        ...chart.props,
-        labels: labelFnc,
-        labelComponent: <TooltipComponent
-            {...chart.tooltip?.props}
-            dy={0}
-        />,
-        ...chart.onClick && {
-            events: [{
-                target: 'data',
-                eventHandlers: {
-                    onClick: functions.onClick[chart.onClick]
-                }
-            }]
+  const props = {
+    ...chart.props,
+    labels: labelFnc,
+    labelComponent: <TooltipComponent
+      {...chart.tooltip?.props}
+      dy={0}
+    />,
+    ...chart.onClick && {
+      events: [{
+        target: 'data',
+        eventHandlers: {
+          onClick: functions.onClick[chart.onClick]
         }
+      }]
     }
+  }
 
-    const getLabelName = () =>
-        chart.tooltip
-            ? chart.tooltip.labelName ?? snakeToSentence(chart.props.y as string)
-            : '';
+  const getLabelName = () =>
+    chart.tooltip
+      ? chart.tooltip.labelName ?? snakeToSentence(chart.props.y as string)
+      : '';
 
-    return (
-        <SelectedChart
-            {...props}
-            key={chartData.series[0].name}
-            data={getData(
-                chartData.series[0],
-                props.y as string,
-                {
-                    labelName: getLabelName(),
-                    ...!chart.tooltip && { ignored: 'true' }
-                }
-            )}
-            name={chart.name || chartData.series[0].name}
-        />
-    );
+  return (
+    <SelectedChart
+      {...props}
+      key={chartData.series[0].name}
+      data={getData(
+        chartData.series[0],
+        props.y as string,
+        {
+          labelName: getLabelName(),
+          ...!chart.tooltip && { ignored: 'true' }
+        }
+      )}
+      name={chart.name || chartData.series[0].name}
+    />
+  );
 };
 
 export default createChart;

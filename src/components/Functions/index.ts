@@ -4,7 +4,7 @@ import labelFormat from './labelFormat';
 export * from './types';
 
 export default {
-    onClick,
-    axisFormat,
-    labelFormat
+  onClick,
+  axisFormat,
+  labelFormat
 };
