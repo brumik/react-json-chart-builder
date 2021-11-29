@@ -26,7 +26,9 @@
     "dist"
   ],
   "scripts": {
-    "build:demo": "webpack --config demo/webpack.config.js --mode production",
+    "build:demo:docs": "typedoc --out demo/dist/docs --name 'React Json Chart Builder' src/index.ts",
+    "build:demo:app": "webpack --config demo/webpack.config.js --mode production",
+    "build:demo": "npm run build:demo:app && npm run build:demo:docs",
     "start": "webpack serve --config demo/webpack.config.js --mode development",
     "test": "jest --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch",
@@ -75,7 +77,8 @@
     "style-loader": "^2.0.0",
     "ts-jest": "^27.0.7",
     "ts-loader": "^9.2.0",
-    "typescript": "^3.9.9",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.2",
     "uuid": "^8.3.2",
     "webpack": "^5.64.0",
     "webpack-cli": "^4.9.1",
