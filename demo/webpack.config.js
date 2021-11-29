@@ -8,7 +8,8 @@ module.exports = {
     devServer: {
         static: {
            directory: resolve(__dirname, './dist')
-        }
+        },
+        historyApiFallback: true,
     },
     entry: {
         'demo': resolve(__dirname, './src/index.tsx')
@@ -16,7 +17,8 @@ module.exports = {
     devtool: 'source-map',
     output: {
         path: resolve(__dirname, './dist'),
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: '/'
     },
     plugins: [
         new HtmlWebPackPlugin({

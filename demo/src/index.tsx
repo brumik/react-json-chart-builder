@@ -1,8 +1,16 @@
+import '@patternfly/react-core/dist/styles/base.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 
+const RootApp: React.FC<Record<string, never>> = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
 ReactDOM.render(
-    <App />,
-    document.getElementById('root')
+  <RootApp />,
+  document.getElementById('root')
 );
