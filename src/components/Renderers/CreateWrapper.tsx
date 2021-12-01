@@ -169,8 +169,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
       containerComponent: <ContainerComponent
         cursorDimension={tooltip.stickToAxis}
         labels={functions.labelFormat[
-          tooltip.labelFormat ??
-                    ChartLabelFormatFunctionNames.default
+          tooltip.labelFormat ?? ChartLabelFormatFunctionNames.default
         ]}
         voronoiPadding={props.padding}
         {...tooltip.legendTooltip && {
