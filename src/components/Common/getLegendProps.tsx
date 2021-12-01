@@ -26,7 +26,19 @@ const LegendWithTooltip = ({ datum, ...rest }: LegendTooltipProps) => (
   <Tooltip content={datum.tooltipText} enableFlip>
     <ChartLabel {...rest} />
   </Tooltip>
-)
+);
+
+const getLegendName = ({
+  name,
+  turncateAtNumber,
+  wrapText
+}: {
+  name: string,
+  turncateAtNumber?: number,
+  wrapText?: boolean
+}) => wrapText
+  ? wrapAt(name, turncateAtNumber)
+  : turncateAt(name, turncateAtNumber);
 
 const getChartLegend = (
   id: number,
@@ -42,9 +54,7 @@ const getChartLegend = (
     data={legend.map((el, index) => ({
       tooltipText: el.name, // This one is overwritable
       ...el,
-      name: wrapText
-        ? wrapAt(el.name, turncateAtNumber)
-        : turncateAt(el.name, turncateAtNumber),
+      name: getLegendName({ name: el.name, turncateAtNumber, wrapText }),
       ...getInteractiveLegendItemStyles(isHidden(index))
     }))}
     style={{
@@ -166,11 +176,12 @@ export const getLegendProps = (
   let props: LegendProps = {
     padding: originalPadding
   };
+
   if (element.legend) {
     const { legend } = element;
     if (
       legend.position === ChartLegendPosition.bottom ||
-            legend.position === ChartLegendPosition.right
+      legend.position === ChartLegendPosition.right
     ) {
       props.padding[legend.position] += 100;
     }
@@ -185,7 +196,14 @@ export const getLegendProps = (
       ...props,
       ...legend.position && { legendPosition: legend.position },
       ...legend.orientation && { legendOrientation: legend.orientation },
-      legendData: chartData.legend
+      legendData: chartData.legend.map((el) => ({
+        ...el,
+        name: getLegendName({
+          name: el.name,
+          turncateAtNumber: element?.legend?.turncateAt ?? Infinity,
+          wrapText: element?.legend?.wrapText
+        })
+      }))
     }
   }
 
