@@ -46,23 +46,15 @@ interface Props extends ChartInterface {
   id: number,
 }
 
-const getDomainPadding = ({ data, child, charts, width }: {
+const getDomainPadding = ({ data, charts, width }: {
   data: ChartDataSerie[],
-  child: ChartSchemaElement,
   charts: ChartSchemaElement[],
   width: number
 }): number => {
-  switch (child.kind) {
-    case ChartKind.simple:
-      return child.type === ChartType.bar ? 20 : 0;
-    case ChartKind.group:
-      const template = charts.find(({ id }) => id === child.template) as ChartSimple;
-      return template && template.type === ChartType.bar
-        ? getBarWidthFromData(data, width) * data.length / 2
-        : 0
-    default:
-      return 0;
-  }
+  const simpleCharts = charts.filter(({ kind }) => kind === ChartKind.simple) as ChartSimple[];
+  return simpleCharts.some(({ type }) => type !== ChartType.bar)
+    ? 0
+    : getBarWidthFromData(data, width) * data.length / 2;
 }
 
 /* Domain functions */
@@ -234,7 +226,6 @@ const CreateWrapper: FunctionComponent<Props> = ({
         domainPadding={children.length === 1
           ? getDomainPadding({
             data: data.series,
-            child: children[0],
             charts: schema,
             width: width - props.padding.left - props.padding.right
           }) : 0}
