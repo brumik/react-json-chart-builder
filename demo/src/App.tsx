@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import {
   Button,
@@ -18,8 +18,6 @@ const jumpToDocs = () => {
 };
 
 const App: FC<Record<string, never>> = () => {
-  const [isNavOpen, setIsNavOpen] = useState(true);
-
   const headerToolbar = (
     <PageHeaderTools>
       <Button onClick={() => jumpToDocs()} variant={ButtonVariant.primary}>
@@ -30,17 +28,15 @@ const App: FC<Record<string, never>> = () => {
 
   const Header = (
     <PageHeader
-      logo="Interactive chart builder app"
+      logo="Interactive chart builder demo"
       headerTools={headerToolbar}
       showNavToggle
-      isNavOpen={isNavOpen}
-      onNavToggle={() => setIsNavOpen(curr => !curr)}
     />
   );
-  const Sidebar = <PageSidebar nav={<Navigation />} isNavOpen={isNavOpen} />;
+  const Sidebar = <PageSidebar nav={<Navigation />} />;
 
   return (
-    <Page header={Header} sidebar={Sidebar} style={{ minHeight: '100vh' }}>
+    <Page header={Header} isManagedSidebar sidebar={Sidebar} style={{ minHeight: '100vh' }}>
       <PageSection isFilled>
         <Routes>
           <Route path="/" element={<List />} />
