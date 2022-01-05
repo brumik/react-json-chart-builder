@@ -7,6 +7,8 @@ import {
   Card,
   CardBody,
   CardFooter,
+  CardHeader,
+  CardTitle,
   Tab,
   TabContent,
   Tabs,
@@ -23,7 +25,7 @@ interface Params {
 }
 
 const Show: React.FunctionComponent<Record<string, never>> = () => {
-  const { slug } = useParams<keyof Params>() as Params;
+  const { slug } = useParams() as Params;
   const [schema, setSchema] = useState<ChartSchemaElement[]>(presets[slug].schema);
   const [data, setData] = useState<ChartData>(presets[slug].data);
   const [activeTabKey, setActiveTabKey] = useState(0);
@@ -42,6 +44,9 @@ const Show: React.FunctionComponent<Record<string, never>> = () => {
 
   return (
     <Card style={{ maxWidth: '1100px', margin: 'auto' }}>
+      <CardHeader>
+        <CardTitle></CardTitle>
+      </CardHeader>
       <CardBody>
         <ChartRenderer
           schema={schema}
