@@ -12,11 +12,17 @@ import {
 import { List, Show } from './Pages';
 import Navigation from './Navigation';
 
+const jumpToDocs = () => {
+  const url = window.location.origin + window.location.pathname + 'docs/';
+  window.open(url, '_blank');
+};
+
 const App: FC<Record<string, never>> = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
+
   const headerToolbar = (
     <PageHeaderTools>
-      <Button component="a" href="/docs" target="_blank" variant={ButtonVariant.primary}>
+      <Button onClick={() => jumpToDocs()} variant={ButtonVariant.primary}>
             Jump to docs
       </Button>
     </PageHeaderTools>
