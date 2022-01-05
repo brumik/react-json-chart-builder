@@ -1,3 +1,4 @@
+import { PresetName } from './types';
 import {
   ChartKind,
   ChartLegendOrientation,
@@ -558,6 +559,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
+  slug: PresetName.LEGEND_LIKE_TOOLTIP,
+  title: 'Legend like tooltip',
+  description: 'TODO',
+  tags: [],
   schema,
   data: convertApiToData(api)
 }

@@ -1,3 +1,4 @@
+import { PresetName } from './types';
 import { ChartKind, ChartSchemaElement, ChartThemeColor, ChartTopLevelType, ChartType } from '../../../src';
 import { convertApiToData } from '../../apiPreprocess';
 
@@ -177,6 +178,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
+  slug: PresetName.GROUPED_STACKED,
+  title: 'Grouped with dynamic no. bars',
+  description: 'TODO',
+  tags: [],
   schema,
   data: convertApiToData(api)
 }

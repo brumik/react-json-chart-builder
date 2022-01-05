@@ -1,14 +1,16 @@
 import React, { RefObject, useEffect, useState } from 'react';
 import ChartRenderer, { ChartData, ChartSchemaElement, functions } from '../../../src';
-import presets, {
-  PresetName
-} from '../schemas';
+import getPreset from '../schemas';
+import { PresetName } from '../schemas/types';
 import {
   Card,
   CardBody,
   CardFooter,
   CardHeader,
   CardTitle,
+  Label,
+  Stack,
+  StackItem,
   Tab,
   TabContent,
   Tabs,
@@ -19,15 +21,15 @@ import { prettyPrint } from '../helpers';
 import SchemaEditor from '../Components/SchemaEditor';
 import { useParams } from 'react-router-dom';
 
-
 interface Params {
   slug: PresetName;
 }
 
 const Show: React.FunctionComponent<Record<string, never>> = () => {
   const { slug } = useParams() as Params;
-  const [schema, setSchema] = useState<ChartSchemaElement[]>(presets[slug].schema);
-  const [data, setData] = useState<ChartData>(presets[slug].data);
+  const [preset, setPreset] = useState(getPreset(slug));
+  const [schema, setSchema] = useState<ChartSchemaElement[]>([]);
+  const [data, setData] = useState<ChartData>(null);
   const [activeTabKey, setActiveTabKey] = useState(0);
 
   const contentRef1: RefObject<HTMLElement> = React.createRef();
@@ -38,21 +40,35 @@ const Show: React.FunctionComponent<Record<string, never>> = () => {
   };
 
   useEffect(() => {
-    setSchema(presets[slug].schema);
-    setData(presets[slug].data);
+    setSchema(preset.schema);
+    setData(preset.data);
+  }, [preset]);
+
+  useEffect(() => {
+    setPreset(getPreset(slug));
   }, [slug]);
+
+  if (schema.length < 1 || !data) return null;
 
   return (
     <Card style={{ maxWidth: '1100px', margin: 'auto' }}>
       <CardHeader>
-        <CardTitle></CardTitle>
+        <CardTitle>{preset.title}</CardTitle>
       </CardHeader>
       <CardBody>
-        <ChartRenderer
-          schema={schema}
-          functions={functions}
-          dataState={[data, setData]}
-        />
+        <Stack hasGutter>
+          <StackItem>
+            {preset.tags.map(tag => (<Label style={{ margin: '0 10px 0 0' }} key={tag}>{tag}</Label>))}
+          </StackItem>
+          <StackItem>{preset.description}</StackItem>
+          <StackItem>
+            <ChartRenderer
+              schema={schema}
+              functions={functions}
+              dataState={[data, setData]}
+            />
+          </StackItem>
+        </Stack>
       </CardBody>
       <CardFooter>
         <Tabs activeKey={activeTabKey} onSelect={handleTabClick}>
