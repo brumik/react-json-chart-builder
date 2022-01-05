@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import { Nav, NavGroup, NavItem, NavList } from '@patternfly/react-core';
 import { Link, useMatch, useResolvedPath, LinkProps } from 'react-router-dom';
-import { humanReadableNames, PresetName } from './schemas';
+import getPreset from './schemas';
+import { PresetName } from './schemas/types';
 
 const CustomNavItem:FC<LinkProps> = ({ to, children, ...props }) => {
   const resolved = useResolvedPath(to);
@@ -21,7 +22,7 @@ const NavDefaultList: FC<Record<string, never>> = () => (
       <NavGroup title="Examples">
         {Object.values(PresetName).map(key => (
           <CustomNavItem key={key} to={`/example/${key}`}>
-            {humanReadableNames[key]}
+            {getPreset(key).title}
           </CustomNavItem>
         ))}
       </NavGroup>

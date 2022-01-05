@@ -1,3 +1,4 @@
+import { PresetName } from './types';
 import { ChartKind, ChartSchemaElement, ChartTopLevelType, ChartType } from '../../../src';
 import { convertApiToData } from '../../apiPreprocess';
 
@@ -221,6 +222,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
+  slug: PresetName.STACKED_LINE,
+  title: 'Stacked line',
+  description: 'TODO',
+  tags: [],
   schema,
   data: convertApiToData(api)
 }

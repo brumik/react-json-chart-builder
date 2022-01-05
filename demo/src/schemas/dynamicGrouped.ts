@@ -1,3 +1,4 @@
+import { PresetName } from './types';
 import {
   ChartKind,
   ChartLegendOrientation,
@@ -503,6 +504,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
+  slug: PresetName.GROUPED_STACKED,
+  title: 'Stacked with line',
+  description: 'TODO',
+  tags: [],
   schema,
   data: convertApiToData(api)
 }

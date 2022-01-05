@@ -1,3 +1,4 @@
+import { PresetName } from './types';
 import {
   ChartKind,
   ChartLegendOrientation,
@@ -75,6 +76,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
+  slug: PresetName.PIE,
+  title: 'Pie',
+  description: 'TODO',
+  tags: [],
   schema,
   data: convertApiToData(api)
 }

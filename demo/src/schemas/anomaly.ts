@@ -1,3 +1,4 @@
+import { PresetName, Tag } from './types';
 import { ChartKind, ChartSchemaElement, ChartTopLevelType, ChartType } from '../../../src';
 import { convertApiToData } from '../../apiPreprocess/';
 
@@ -107,6 +108,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
+  slug: PresetName.ANOMALY,
+  title: 'Anomaly',
+  description: 'TODO',
+  tags: [Tag.test1, Tag.test2],
   schema,
   data: convertApiToData(api)
 }

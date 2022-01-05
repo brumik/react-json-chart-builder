@@ -1,3 +1,4 @@
+import { PresetName } from './types';
 import { ChartKind, ChartSchemaElement, ChartTopLevelType, ChartType } from '../../../src';
 import { convertApiToData } from '../../apiPreprocess';
 
@@ -219,6 +220,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
+  slug: PresetName.STACKED_BAR,
+  title: 'Stacked bar',
+  description: 'TODO',
+  tags: [],
   schema,
   data: convertApiToData(api)
 }

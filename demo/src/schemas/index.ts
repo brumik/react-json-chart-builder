@@ -5,41 +5,17 @@ import stackedLine from './stackedLine';
 import dynamicGrouped from './dynamicGrouped';
 import pie from './pie';
 import legendLikeTooltip from './legendLikeTooltip';
-import { ChartData, ChartSchemaElement } from '../../../src';
+import { Preset, PresetName } from './types';
 
-export enum PresetName {
-  ANOMALY = 'anomaly',
-  GROUPED_STACKED = 'groupedStacked',
-  STACKED_BAR = 'stackedBar',
-  STACKED_LINE = 'stackedLine',
-  DYNAMIC_GROUPED = 'dynamicGrouped',
-  PIE = 'pie',
-  LEGEND_LIKE_TOOLTIP = 'legendLikeTooltip',
-}
-
-export type Preset = {
-  [key in PresetName]: {
-    schema: ChartSchemaElement[];
-    data: ChartData;
-  };
+export default (slug: PresetName): Preset => {
+  switch (slug) {
+    case PresetName.ANOMALY: return anomaly;
+    case PresetName.GROUPED_STACKED: return groupedStacked;
+    case PresetName.STACKED_BAR: return stackedBar;
+    case PresetName.STACKED_LINE: return stackedLine;
+    case PresetName.DYNAMIC_GROUPED: return dynamicGrouped;
+    case PresetName.PIE: return pie;
+    case PresetName.LEGEND_LIKE_TOOLTIP: return legendLikeTooltip;
+    default: throw new Error('Unknown preset.');
+  }
 };
-
-export const humanReadableNames: Record<PresetName, string> = {
-  [PresetName.ANOMALY]: 'Anomaly',
-  [PresetName.GROUPED_STACKED]: 'Stacked with line',
-  [PresetName.STACKED_BAR]: 'Stacked bar',
-  [PresetName.STACKED_LINE]: 'Stacked line',
-  [PresetName.DYNAMIC_GROUPED]: 'Grouped with dynamic no. bars',
-  [PresetName.PIE]: 'Pie',
-  [PresetName.LEGEND_LIKE_TOOLTIP]: 'Legend like tooltip'
-}
-
-export default {
-  [PresetName.ANOMALY]: anomaly,
-  [PresetName.GROUPED_STACKED]: groupedStacked,
-  [PresetName.STACKED_BAR]: stackedBar,
-  [PresetName.STACKED_LINE]: stackedLine,
-  [PresetName.DYNAMIC_GROUPED]: dynamicGrouped,
-  [PresetName.PIE]: pie,
-  [PresetName.LEGEND_LIKE_TOOLTIP]: legendLikeTooltip
-} as Preset;
