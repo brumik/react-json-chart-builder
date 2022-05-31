@@ -71,6 +71,7 @@ const CreatePieChart: FunctionComponent<Props> = ({
       height={props.height}
     >
       {data.series.length > 0 && <PFChartPie
+        constrainToVisibleArea={true}
         {...props}
         {...legendProps}
         data={serie.map(el =>
@@ -81,7 +82,6 @@ const CreatePieChart: FunctionComponent<Props> = ({
         key={data.series[0].name}
         name={data.series[0].name}
         width={width}
-        constrainToVisibleArea={true}
       />}
     </ResponsiveContainer>
   );
