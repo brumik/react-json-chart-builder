@@ -8,6 +8,15 @@ import {
 import CreateWrapper from './Renderers/CreateWrapper';
 import CreatePieChart from './Renderers/CreatePieChart';
 
+/**
+ * The ChartRenderer component is the default export of the library.
+ *
+ * The component is taking all the data, like schema and functions and renders
+ * the chart(s) with the data, using the Patternfly React Charts.
+ *
+ * @param props See the ChartInterface type for more information
+ * @returns The rendered chart component
+ */
 const ChartRenderer: FunctionComponent<ChartInterface> = (props) => {
   const chart = props.schema.find(
     ({ kind, parent }) => kind === ChartKind.wrapper && parent === null

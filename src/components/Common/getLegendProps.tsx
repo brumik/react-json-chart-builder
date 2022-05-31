@@ -1,7 +1,8 @@
 import {
   getInteractiveLegendItemStyles,
   ChartLegend,
-  ChartLabel
+  ChartLabel,
+  ChartLabelProps as PFChartLabelProps
 } from '@patternfly/react-charts';
 import { Tooltip } from '@patternfly/react-core';
 import React from 'react';
@@ -12,7 +13,6 @@ import {
   ChartPie,
   ChartTopSchemaElement,
   ChartLegendOrientation,
-  LegendTooltipProps,
   PaddingProps
 } from '../types';
 import {
@@ -21,6 +21,9 @@ import {
 } from './helpers';
 
 export type LegendComponentType = React.ReactElement<typeof ChartLegend>;
+interface LegendTooltipProps extends PFChartLabelProps {
+  datum?: Record<string, unknown>
+}
 
 const LegendWithTooltip = ({ datum, ...rest }: LegendTooltipProps) => (
   <Tooltip content={datum.tooltipText} enableFlip>
