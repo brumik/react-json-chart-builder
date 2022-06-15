@@ -63,6 +63,10 @@ const createChart = (
             ChartLabelFormatFunctionNames.default
     ] : null;
 
+  const DataComponentElement = chart.dataComponent
+    ? functions.dataComponent[chart.dataComponent]
+    : null;
+
   const props = {
     ...chart.props,
     labels: labelFnc,
@@ -77,8 +81,11 @@ const createChart = (
           onClick: functions.onClick[chart.onClick]
         }
       }]
+    },
+    ...chart.dataComponent && {
+      dataComponent: <DataComponentElement />
     }
-  }
+  };
 
   const getLabelName = () =>
     chart.tooltip
@@ -98,8 +105,7 @@ const createChart = (
         }
       )}
       name={chart.name || chartData.series[0].name}
-    />
-  );
+    />);
 };
 
 export default createChart;

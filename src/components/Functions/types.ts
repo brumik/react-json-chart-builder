@@ -1,5 +1,5 @@
 import { ChartTooltipProps } from '@patternfly/react-charts';
-import {
+import React, {
   SyntheticEvent,
   FunctionComponent
 } from 'react';
@@ -52,6 +52,13 @@ export type ChartTooltipComponentFunction = FunctionComponent<ChartTooltipProps>
 export type ChartStyleFunction = (props: any) => any;
 
 /**
+ * The ChartDataComponentFunction should return a function
+ * that will render a specific component for points in the chart.
+ * Color of the component can be changes via props :{ style: { data: { fill: [your color] } } }
+ */
+export type ChartDataComponentFunction = React.ElementType;
+
+/**
  * The ChartFunctions object should hold all the function that are used in the chart and are
  * customizable. Each key is a category and each value is an object with the 'name' as the key
  * and value as the function. The 'name' is then used to reference the function in the code.
@@ -71,4 +78,7 @@ export interface ChartFunctions {
 
   /** The style key contains the name: function pairs for various styling functions. */
   style?: Record<string, ChartStyleFunction>
+
+  /** The dataComponent contains the name: function pairs for deciding which component to use. */
+  dataComponent?: Record<string, ChartDataComponentFunction>
 }
