@@ -1,7 +1,8 @@
 import { ChartTooltipProps } from '@patternfly/react-charts';
 import {
   SyntheticEvent,
-  FunctionComponent
+  FunctionComponent,
+  ReactNode
 } from 'react';
 
 export { ChartLabelFormatFunctionNames } from './labelFormat';
@@ -71,4 +72,7 @@ export interface ChartFunctions {
 
   /** The style key contains the name: function pairs for various styling functions. */
   style?: Record<string, ChartStyleFunction>
+
+  /** The ChartDataComponentMapperFunction maps a string to a component. If there's no match it will return null. */
+  dataComponentMapper?: (dataComponent: string) => ReactNode
 }

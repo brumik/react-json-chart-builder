@@ -2,6 +2,7 @@ import onClick from './onClick';
 import axisFormat from './axisFormat';
 import labelFormat from './labelFormat';
 import tooltipComponent from './tooltip';
+import { dataComponentMapper } from './dataComponentMapper';
 export * from './types';
 
 /**
@@ -15,5 +16,6 @@ export default {
   onClick,
   axisFormat,
   labelFormat,
-  tooltipComponent
+  tooltipComponent,
+  dataComponentMapper
 };

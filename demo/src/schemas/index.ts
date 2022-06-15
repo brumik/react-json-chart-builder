@@ -7,6 +7,7 @@ import pie from './pie';
 import legendLikeTooltip from './legendLikeTooltip';
 import { Preset, PresetName } from './types';
 import dynamicScatter from './dynamicScatter';
+import scatterWithCustomPoints from './scatterWithCustomPoints';
 
 export default (slug: PresetName): Preset => {
   switch (slug) {
@@ -18,6 +19,7 @@ export default (slug: PresetName): Preset => {
     case PresetName.DYNAMIC_SCATTER: return dynamicScatter;
     case PresetName.LEGEND_LIKE_TOOLTIP: return legendLikeTooltip;
     case PresetName.COMPLEX: return complex;
+    case PresetName.CUSTOM_POINTS: return scatterWithCustomPoints;
     default: throw new Error('Unknown preset.');
   }
 };

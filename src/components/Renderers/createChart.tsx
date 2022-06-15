@@ -85,7 +85,22 @@ const createChart = (
       ? chart.tooltip.labelName ?? snakeToSentence(chart.props.y as string)
       : '';
 
-  return (
+  return chart.props?.dataComponent && functions.dataComponentMapper ? (
+    <SelectedChart
+      {...props}
+      dataComponent={functions.dataComponentMapper(chart.props.dataComponent as string)}
+      key={chartData.series[0].name}
+      data={getData(
+        chartData.series[0],
+        props.y as string,
+        {
+          labelName: getLabelName(),
+          ...!chart.tooltip && { ignored: 'true' }
+        }
+      )}
+      name={chart.name || chartData.series[0].name}
+    />
+  ) : (
     <SelectedChart
       {...props}
       key={chartData.series[0].name}

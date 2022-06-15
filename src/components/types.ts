@@ -221,8 +221,16 @@ export interface ChartTooltipProps {
   labelFormat?: string
 }
 
+export interface ChartScatterPropsExt extends  Omit<ChartScatterProps, 'dataComponent'> {
+  /**
+   * The props prop is passed to dataComponentMapper. This function returns a component that will be passed as
+   * dataComponent instead of <Point />.
+   */
+  dataComponent?: string
+}
+
 /** The ChartSimpleProps unifying all the possible types fot the simple chart props. */
-export type ChartSimpleProps = ChartBarProps | ChartLineProps | ChartAreaProps | ChartScatterProps;
+export type ChartSimpleProps = ChartBarProps | ChartLineProps | ChartAreaProps | ChartScatterPropsExt;
 
 export interface ChartSimple extends ChartBase {
   /** The kind of the chart. Always `simple`. */
