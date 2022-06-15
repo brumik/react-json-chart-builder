@@ -263,7 +263,14 @@ export interface ChartSimple extends ChartBase {
    * @see ChartOnClickFunction
    * @see ChartInterface.functions
    */
-  onClick?: string
+  onClick?: string,
+
+  /**
+   * The dataComponent prop defines which dataComponent function (that renders specific component)
+   * to pass to the Victory chart.
+   * The value has to be in the name one of the passed functions in the `functions` list under the `dataComponent` key.
+   */
+  dataComponent?: string
 }
 
 export interface ChartGroup extends ChartBase {
