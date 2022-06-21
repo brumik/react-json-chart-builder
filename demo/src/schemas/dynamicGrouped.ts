@@ -8,454 +8,427 @@ import {
   ChartTopLevelType,
   ChartType
 } from '../../../src';
-import { convertApiToData } from '../../apiPreprocess';
 
-const api = {
-  'dates': [
+const data = {
+  'series': [
     {
-      'date': '2021-04-28',
-      'items': [
+      'serie': [
         {
+          'created_date': '2021-04-28',
           'total_count': 23,
           'total_org_count': 1,
           'id': 2,
           'name': 'organization_0'
         },
         {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
-          'total_count': 122,
-          'total_org_count': 26,
-          'id': -1,
-          'name': '26 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-04-29',
-      'items': [
-        {
+          'created_date': '2021-04-29',
           'total_count': 23,
           'total_org_count': 1,
           'id': 2,
           'name': 'organization_0'
         },
         {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
-          'total_count': 123,
-          'total_org_count': 26,
-          'id': -1,
-          'name': '26 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-04-30',
-      'items': [
-        {
+          'created_date': '2021-04-30',
           'total_count': 23,
           'total_org_count': 1,
           'id': 2,
           'name': 'organization_0'
         },
         {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
-          'total_count': 123,
-          'total_org_count': 26,
-          'id': -1,
-          'name': '26 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-05-01',
-      'items': [
-        {
+          'created_date': '2021-05-01',
           'total_count': 22,
           'total_org_count': 1,
           'id': 2,
           'name': 'organization_0'
         },
         {
+          'created_date': '2021-05-02',
+          'total_count': 23,
+          'total_org_count': 1,
+          'id': 2,
+          'name': 'organization_0'
+        },
+        {
+          'created_date': '2021-05-03',
+          'total_count': 23,
+          'total_org_count': 1,
+          'id': 2,
+          'name': 'organization_0'
+        },
+        {
+          'created_date': '2021-05-04',
+          'total_count': 14,
+          'total_org_count': 1,
+          'id': 2,
+          'name': 'organization_0'
+        },
+        {
+          'created_date': '2021-05-05',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 2,
+          'name': 'organization_0'
+        },
+        {
+          'created_date': '2021-05-06',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 2,
+          'name': 'organization_0'
+        },
+        {
+          'created_date': '2021-05-07',
+          'total_count': 0,
+          'total_org_count': 0,
+          'id': 2,
+          'name': 'organization_0'
+        }
+      ],
+      'hidden': false,
+      'name': '7967da16-df2b-4f81-960c-ddfb14eaf4a1'
+    },
+    {
+      'serie': [
+        {
+          'created_date': '2021-04-28',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-04-29',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-04-30',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-05-01',
           'total_count': 16,
           'total_org_count': 1,
           'id': 3,
           'name': 'organization_1'
         },
         {
+          'created_date': '2021-05-02',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-05-03',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-05-04',
+          'total_count': 14,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-05-05',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-05-06',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 3,
+          'name': 'organization_1'
+        },
+        {
+          'created_date': '2021-05-07',
+          'total_count': 0,
+          'total_org_count': 0,
+          'id': 3,
+          'name': 'organization_1'
+        }
+      ],
+      'hidden': false,
+      'name': '411fcf95-ad46-4343-8f48-37195e6f65e1'
+    },
+    {
+      'serie': [
+        {
+          'created_date': '2021-04-28',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-04-29',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-04-30',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-05-01',
           'total_count': 16,
           'total_org_count': 1,
           'id': 4,
           'name': 'organization_3'
         },
         {
+          'created_date': '2021-05-02',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-05-03',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-05-04',
+          'total_count': 14,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-05-05',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-05-06',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 4,
+          'name': 'organization_3'
+        },
+        {
+          'created_date': '2021-05-07',
+          'total_count': 0,
+          'total_org_count': 0,
+          'id': 4,
+          'name': 'organization_3'
+        }
+      ],
+      'hidden': false,
+      'name': 'dcb44762-682f-483a-be50-99b645360119'
+    },
+    {
+      'serie': [
+        {
+          'created_date': '2021-04-28',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-04-29',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-04-30',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-05-01',
           'total_count': 16,
           'total_org_count': 1,
           'id': 1,
           'name': 'organization_2'
         },
         {
+          'created_date': '2021-05-02',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-05-03',
+          'total_count': 17,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-05-04',
+          'total_count': 14,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-05-05',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-05-06',
+          'total_count': 12,
+          'total_org_count': 1,
+          'id': 1,
+          'name': 'organization_2'
+        },
+        {
+          'created_date': '2021-05-07',
+          'total_count': 0,
+          'total_org_count': 0,
+          'id': 1,
+          'name': 'organization_2'
+        }
+      ],
+      'hidden': false,
+      'name': '013892d3-2c09-4079-932b-b96aa1201e97'
+    },
+    {
+      'serie': [
+        {
+          'created_date': '2021-04-28',
+          'total_count': 122,
+          'total_org_count': 26,
+          'id': -1,
+          'name': '26 Others'
+        },
+        {
+          'created_date': '2021-04-29',
+          'total_count': 123,
+          'total_org_count': 26,
+          'id': -1,
+          'name': '26 Others'
+        },
+        {
+          'created_date': '2021-04-30',
+          'total_count': 123,
+          'total_org_count': 26,
+          'id': -1,
+          'name': '26 Others'
+        },
+        {
+          'created_date': '2021-05-01',
           'total_count': 127,
           'total_org_count': 26,
           'id': -1,
           'name': '26 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-05-02',
-      'items': [
-        {
-          'total_count': 23,
-          'total_org_count': 1,
-          'id': 2,
-          'name': 'organization_0'
         },
         {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
+          'created_date': '2021-05-02',
           'total_count': 123,
           'total_org_count': 26,
           'id': -1,
           'name': '26 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-05-03',
-      'items': [
-        {
-          'total_count': 23,
-          'total_org_count': 1,
-          'id': 2,
-          'name': 'organization_0'
         },
         {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 17,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
+          'created_date': '2021-05-03',
           'total_count': 123,
           'total_org_count': 26,
           'id': -1,
           'name': '26 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-05-04',
-      'items': [
-        {
-          'total_count': 14,
-          'total_org_count': 1,
-          'id': 2,
-          'name': 'organization_0'
         },
         {
-          'total_count': 14,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 14,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 14,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
+          'created_date': '2021-05-04',
           'total_count': 69,
           'total_org_count': 26,
           'id': -1,
           'name': '26 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-05-05',
-      'items': [
-        {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 2,
-          'name': 'organization_0'
         },
         {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
+          'created_date': '2021-05-05',
+          'total_count': 0,
+          'total_org_count': 0,
+          'id': -1,
+          'name': '0 Others'
         },
         {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
+          'created_date': '2021-05-06',
+          'total_count': 0,
+          'total_org_count': 0,
+          'id': -1,
+          'name': '0 Others'
         },
         {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
+          'created_date': '2021-05-07',
           'total_count': 0,
           'total_org_count': 0,
           'id': -1,
           'name': '0 Others'
         }
-      ]
-    },
-    {
-      'date': '2021-05-06',
-      'items': [
-        {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 2,
-          'name': 'organization_0'
-        },
-        {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 12,
-          'total_org_count': 1,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
-          'total_count': 0,
-          'total_org_count': 0,
-          'id': -1,
-          'name': '0 Others'
-        }
-      ]
-    },
-    {
-      'date': '2021-05-07',
-      'items': [
-        {
-          'total_count': 0,
-          'total_org_count': 0,
-          'id': 2,
-          'name': 'organization_0'
-        },
-        {
-          'total_count': 0,
-          'total_org_count': 0,
-          'id': 3,
-          'name': 'organization_1'
-        },
-        {
-          'total_count': 0,
-          'total_org_count': 0,
-          'id': 4,
-          'name': 'organization_3'
-        },
-        {
-          'total_count': 0,
-          'total_org_count': 0,
-          'id': 1,
-          'name': 'organization_2'
-        },
-        {
-          'total_count': 0,
-          'total_org_count': 0,
-          'id': -1,
-          'name': '0 Others'
-        }
-      ]
+      ],
+      'hidden': false,
+      'name': 'ac056e8b-ba02-4bb0-8770-3cfaefc22b67'
     }
   ],
-  'meta': {
-    'count': 31,
-    'counts': {
-      '2021-04-28': {
-        'total_count': 207,
-        'total_org_count': 31
-      },
-      '2021-04-29': {
-        'total_count': 208,
-        'total_org_count': 31
-      },
-      '2021-04-30': {
-        'total_count': 208,
-        'total_org_count': 31
-      },
-      '2021-05-01': {
-        'total_count': 208,
-        'total_org_count': 31
-      },
-      '2021-05-02': {
-        'total_count': 208,
-        'total_org_count': 31
-      },
-      '2021-05-03': {
-        'total_count': 208,
-        'total_org_count': 31
-      },
-      '2021-05-04': {
-        'total_count': 200,
-        'total_org_count': 31
-      },
-      '2021-05-05': {
-        'total_count': 191,
-        'total_org_count': 5
-      },
-      '2021-05-06': {
-        'total_count': 57,
-        'total_org_count': 5
-      },
-      '2021-05-07': {
-        'total_count': 0,
-        'total_org_count': 0
-      },
-      '2021-05-08': {
-        'total_count': 0,
-        'total_org_count': 0
-      },
-      '2021-05-09': {
-        'total_count': 0,
-        'total_org_count': 0
-      },
-      '2021-05-10': {
-        'total_count': 0,
-        'total_org_count': 0
-      },
-      '2021-05-11': {
-        'total_count': 0,
-        'total_org_count': 0
-      }
+  'legend': [
+    {
+      'total_count': 175,
+      'total_org_count': 1,
+      'id': 2,
+      'name': 'organization_0',
+      'childName': '7967da16-df2b-4f81-960c-ddfb14eaf4a1'
     },
-    'legend': [
-      {
-        'total_count': 175,
-        'total_org_count': 1,
-        'id': 2,
-        'name': 'organization_0'
-      },
-      {
-        'total_count': 139,
-        'total_org_count': 1,
-        'id': 3,
-        'name': 'organization_1'
-      },
-      {
-        'total_count': 139,
-        'total_org_count': 1,
-        'id': 4,
-        'name': 'organization_3'
-      },
-      {
-        'total_count': 139,
-        'total_org_count': 1,
-        'id': 1,
-        'name': 'organization_2'
-      },
-      {
-        'total_count': 810,
-        'total_org_count': 26,
-        'id': -1,
-        'name': '27 Others'
-      }
-    ]
-  }
+    {
+      'total_count': 139,
+      'total_org_count': 1,
+      'id': 3,
+      'name': 'organization_1',
+      'childName': '411fcf95-ad46-4343-8f48-37195e6f65e1'
+    },
+    {
+      'total_count': 139,
+      'total_org_count': 1,
+      'id': 4,
+      'name': 'organization_3',
+      'childName': 'dcb44762-682f-483a-be50-99b645360119'
+    },
+    {
+      'total_count': 139,
+      'total_org_count': 1,
+      'id': 1,
+      'name': 'organization_2',
+      'childName': '013892d3-2c09-4079-932b-b96aa1201e97'
+    },
+    {
+      'total_count': 810,
+      'total_org_count': 26,
+      'id': -1,
+      'name': '27 Others',
+      'childName': 'ac056e8b-ba02-4bb0-8770-3cfaefc22b67'
+    }
+  ]
 };
 
 const schema: ChartSchemaElement[] = [
@@ -504,10 +477,10 @@ const schema: ChartSchemaElement[] = [
 ];
 
 export default {
-  slug: PresetName.GROUPED_STACKED,
+  slug: PresetName.COMPLEX,
   title: 'Stacked with line',
   description: 'TODO',
   tags: [],
   schema,
-  data: convertApiToData(api)
-}
+  data
+};
