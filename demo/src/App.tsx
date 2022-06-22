@@ -11,8 +11,7 @@ import {
 } from '@patternfly/react-core';
 import { List, Show } from './Pages';
 import Navigation from './Navigation';
-
-// const logo = require('./favicon.png');
+import logo from '../public/favicon.png';
 
 const jumpToDocs = () => {
   const url = window.location.origin + window.location.pathname + 'docs/';
@@ -30,7 +29,13 @@ const App: FC<Record<string, never>> = () => {
 
   const Header = (
     <PageHeader
-      logo=""
+      logo={(
+        <>
+          {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
+          <img src={logo} width="30px" alt="Logo" />
+          <p style={{ marginLeft: '10px', color: 'white' }}>Chart builder demo</p>
+        </>
+      )}
       headerTools={headerToolbar}
       showNavToggle
     />

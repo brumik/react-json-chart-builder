@@ -58,6 +58,10 @@ module.exports = {
                         outputPath: 'fonts/'
                     }
                 }]
+            },
+            {
+                test: /\.(?:png|jpg|svg)$/,
+                loader: 'url-loader'
             }
         ]
     },
