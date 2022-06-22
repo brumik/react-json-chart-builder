@@ -1,4 +1,4 @@
-import { PresetName } from './types';
+import { PresetName, Tag } from './types';
 import {
   ChartKind,
   ChartSchemaElement,
@@ -232,11 +232,20 @@ const schema: ChartSchemaElement[] = [
   }
 ];
 
+const description = 'The stacked line chart example uses one serie to display \
+  two line charts, coloring them differently. In addition the example shows how \
+  to customize the default tooltip of the line chart. One of the tooltip name is \
+  derived from the data set, the other is defined in the schema.'
+
 export default {
   slug: PresetName.STACKED_LINE,
-  title: 'Stacked line',
-  description: 'TODO',
-  tags: [],
+  title: 'Stacked line chart',
+  description,
+  tags: [
+    Tag.stacked,
+    Tag.tooltip,
+    Tag.styled
+  ],
   schema,
   data
 };

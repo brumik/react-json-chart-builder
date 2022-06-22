@@ -1,4 +1,4 @@
-import { PresetName } from './types';
+import { PresetName, Tag } from './types';
 import {
   ChartKind,
   ChartSchemaElement,
@@ -230,11 +230,20 @@ const schema: ChartSchemaElement[] = [
   }
 ];
 
+const description = 'The stacked bar chart example shows how to use multiple \
+  bar charts on top of each other using one data set. The tooltip of the chart \
+  is using the standalone mode for each bar. The bars are colored manually.'
+
 export default {
   slug: PresetName.STACKED_BAR,
-  title: 'Stacked bar',
-  description: 'TODO',
-  tags: [],
+  title: 'Stacked bar chart',
+  description,
+  tags: [
+    Tag.stacked,
+    Tag.standaloneTooltip,
+    Tag.styled,
+    Tag.onClick
+  ],
   schema,
   data
 };

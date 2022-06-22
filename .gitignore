@@ -3,3 +3,4 @@ dist
 coverage
 .vscode
 docs
+*.d.ts

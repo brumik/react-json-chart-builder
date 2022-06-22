@@ -12,6 +12,8 @@ import {
 import { List, Show } from './Pages';
 import Navigation from './Navigation';
 
+// const logo = require('./favicon.png');
+
 const jumpToDocs = () => {
   const url = window.location.origin + window.location.pathname + 'docs/';
   window.open(url, '_blank');
@@ -28,7 +30,7 @@ const App: FC<Record<string, never>> = () => {
 
   const Header = (
     <PageHeader
-      logo="Interactive chart builder demo"
+      logo=""
       headerTools={headerToolbar}
       showNavToggle
     />

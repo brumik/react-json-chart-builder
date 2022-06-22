@@ -1,13 +1,13 @@
 import { ChartData, ChartSchemaElement } from '../../../src';
 
 export enum PresetName {
-  LINE_WITH_DOTS = 'line-with-dots',
-  STACKED_BAR = 'stackedBar',
-  STACKED_LINE = 'stackedLine',
-  DYNAMIC_GROUPED = 'dynamicGrouped',
   PIE = 'pie',
-  LEGEND_LIKE_TOOLTIP = 'legendLikeTooltip',
-  COMPLEX = 'complex',
+  STACKED_LINE = 'stacked-line-chart',
+  STACKED_BAR = 'stacked-bar-chart',
+  LINE_WITH_DOTS = 'line-with-dots',
+  DYNAMIC_GROUPED = 'dynamicGrouped',
+  LEGEND_LIKE_TOOLTIP = 'legend-like-tooltip',
+  COMPLEX = 'complex-chart',
 }
 
 export interface Preset {
@@ -26,6 +26,10 @@ export enum Tag {
   styled = 'Styled',
   pie = 'Pie',
   legend = 'Legend',
+  legendWrap = 'Wrapped legend',
   axis = 'Axis',
   tooltip = 'Tooltip',
+  standaloneTooltip = 'Standalone Tooltip',
+  onClick = 'On click',
+  dynamicTemplate = 'Dynamic from template'
 }

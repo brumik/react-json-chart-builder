@@ -1,4 +1,4 @@
-import { PresetName } from './types';
+import { PresetName, Tag } from './types';
 import {
   ChartKind,
   ChartLegendOrientation,
@@ -28,7 +28,7 @@ const data = {
           'name': 'template_name_58',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 100,
           'total_count': 160
         },
         {
@@ -79,7 +79,7 @@ const data = {
           'name': 'template_name_53',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 200,
           'total_count': 160
         },
         {
@@ -88,7 +88,7 @@ const data = {
           'name': 'template_name_53',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 100,
           'total_count': 160
         },
         {
@@ -106,7 +106,7 @@ const data = {
           'name': 'template_name_53',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 180,
           'total_count': 160
         },
         {
@@ -166,7 +166,7 @@ const data = {
           'name': 'template_name_56',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 140,
           'total_count': 160
         },
         {
@@ -175,7 +175,7 @@ const data = {
           'name': 'template_name_56',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 130,
           'total_count': 160
         },
         {
@@ -184,7 +184,7 @@ const data = {
           'name': 'template_name_56',
           'total_unique_host_changed_count': 4,
           'total_template_count': 1,
-          'total_unique_host_count': 20,
+          'total_unique_host_count': 100,
           'total_count': 20
         }
       ],
@@ -259,7 +259,7 @@ const data = {
           'name': 'template_name_59',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 260,
           'total_count': 160
         },
         {
@@ -268,7 +268,7 @@ const data = {
           'name': 'template_name_59',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 200,
           'total_count': 160
         },
         {
@@ -277,7 +277,7 @@ const data = {
           'name': 'template_name_59',
           'total_unique_host_changed_count': 28,
           'total_template_count': 1,
-          'total_unique_host_count': 140,
+          'total_unique_host_count': 340,
           'total_count': 140
         },
         {
@@ -286,7 +286,7 @@ const data = {
           'name': 'template_name_59',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 260,
           'total_count': 160
         },
         {
@@ -304,7 +304,7 @@ const data = {
           'name': 'template_name_59',
           'total_unique_host_changed_count': 4,
           'total_template_count': 1,
-          'total_unique_host_count': 20,
+          'total_unique_host_count': 220,
           'total_count': 20
         }
       ],
@@ -319,7 +319,7 @@ const data = {
           'name': 'template_name_57',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 360,
           'total_count': 160
         },
         {
@@ -328,7 +328,7 @@ const data = {
           'name': 'template_name_57',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 360,
           'total_count': 160
         },
         {
@@ -337,7 +337,7 @@ const data = {
           'name': 'template_name_57',
           'total_unique_host_changed_count': 28,
           'total_template_count': 1,
-          'total_unique_host_count': 140,
+          'total_unique_host_count': 340,
           'total_count': 140
         },
         {
@@ -346,7 +346,7 @@ const data = {
           'name': 'template_name_57',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 360,
           'total_count': 160
         },
         {
@@ -355,7 +355,7 @@ const data = {
           'name': 'template_name_57',
           'total_unique_host_changed_count': 32,
           'total_template_count': 1,
-          'total_unique_host_count': 160,
+          'total_unique_host_count': 360,
           'total_count': 160
         },
         {
@@ -364,7 +364,7 @@ const data = {
           'name': 'template_name_57',
           'total_unique_host_changed_count': 4,
           'total_template_count': 1,
-          'total_unique_host_count': 20,
+          'total_unique_host_count': 220,
           'total_count': 20
         }
       ],
@@ -571,11 +571,22 @@ const schema: ChartSchemaElement[] = [
   }
 ];
 
+const description = 'The chart demonstrates two features: custom tooltip which \
+  coresponsds with the legend and the power of rendering variable amounth of lines \
+  from the data set. Each line is correpsonding to as "serie" in the data set. \
+  Clicking on the legend toggles the connected chart\'s visibility.'
+
 export default {
   slug: PresetName.LEGEND_LIKE_TOOLTIP,
   title: 'Legend like tooltip',
-  description: 'TODO',
-  tags: [],
+  description,
+  tags: [
+    Tag.legend,
+    Tag.legendWrap,
+    Tag.tooltip,
+    Tag.grouped,
+    Tag.dynamicTemplate
+  ],
   schema,
   data
 };

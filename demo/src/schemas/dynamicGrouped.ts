@@ -1,4 +1,4 @@
-import { PresetName } from './types';
+import { PresetName, Tag } from './types';
 import {
   ChartKind,
   ChartLegendOrientation,
@@ -476,11 +476,21 @@ const schema: ChartSchemaElement[] = [
   }
 ];
 
+const description = 'The example shows how to use the template in the group \
+  chart to render multiple bars from multiple series in the data set. \
+  For bars the standalone tooltips are looking good, like in this example. \
+  The legend is interactive. Click to toggle the connected bars in the chart.';
+
 export default {
   slug: PresetName.COMPLEX,
-  title: 'Stacked with line',
-  description: 'TODO',
-  tags: [],
+  title: 'Grouped bar chart from template',
+  description,
+  tags: [
+    Tag.dynamicTemplate,
+    Tag.grouped,
+    Tag.legend,
+    Tag.standaloneTooltip
+  ],
   schema,
   data
 };

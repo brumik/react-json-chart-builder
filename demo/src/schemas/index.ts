@@ -9,11 +9,11 @@ import { Preset, PresetName } from './types';
 
 export default (slug: PresetName): Preset => {
   switch (slug) {
-    case PresetName.LINE_WITH_DOTS: return lineWithDots;
-    case PresetName.STACKED_BAR: return stackedBar;
-    case PresetName.STACKED_LINE: return stackedLine;
-    case PresetName.DYNAMIC_GROUPED: return dynamicGrouped;
     case PresetName.PIE: return pie;
+    case PresetName.STACKED_LINE: return stackedLine;
+    case PresetName.STACKED_BAR: return stackedBar;
+    case PresetName.LINE_WITH_DOTS: return lineWithDots;
+    case PresetName.DYNAMIC_GROUPED: return dynamicGrouped;
     case PresetName.LEGEND_LIKE_TOOLTIP: return legendLikeTooltip;
     case PresetName.COMPLEX: return complex;
     default: throw new Error('Unknown preset.');
