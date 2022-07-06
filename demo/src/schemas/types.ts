@@ -5,7 +5,8 @@ export enum PresetName {
   STACKED_LINE = 'stacked-line-chart',
   STACKED_BAR = 'stacked-bar-chart',
   LINE_WITH_DOTS = 'line-with-dots',
-  DYNAMIC_GROUPED = 'dynamicGrouped',
+  DYNAMIC_GROUPED = 'dynamic-grouped',
+  DYNAMIC_SCATTER = 'dynamic-scatter',
   LEGEND_LIKE_TOOLTIP = 'legend-like-tooltip',
   COMPLEX = 'complex-chart',
 }

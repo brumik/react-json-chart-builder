@@ -6,6 +6,7 @@ import dynamicGrouped from './dynamicGrouped';
 import pie from './pie';
 import legendLikeTooltip from './legendLikeTooltip';
 import { Preset, PresetName } from './types';
+import dynamicScatter from './dynamicScatter';
 
 export default (slug: PresetName): Preset => {
   switch (slug) {
@@ -14,6 +15,7 @@ export default (slug: PresetName): Preset => {
     case PresetName.STACKED_BAR: return stackedBar;
     case PresetName.LINE_WITH_DOTS: return lineWithDots;
     case PresetName.DYNAMIC_GROUPED: return dynamicGrouped;
+    case PresetName.DYNAMIC_SCATTER: return dynamicScatter;
     case PresetName.LEGEND_LIKE_TOOLTIP: return legendLikeTooltip;
     case PresetName.COMPLEX: return complex;
     default: throw new Error('Unknown preset.');
