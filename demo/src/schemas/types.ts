@@ -1,4 +1,4 @@
-import { ChartData, ChartSchemaElement } from '../../../src';
+import { ChartData, ChartFunctions, ChartSchemaElement } from '../../../src';
 
 export enum PresetName {
   PIE = 'pie',
@@ -18,6 +18,7 @@ export interface Preset {
   tags: Tag[];
   schema: ChartSchemaElement[];
   data: ChartData;
+  functions?: ChartFunctions;
 }
 
 export enum Tag {
