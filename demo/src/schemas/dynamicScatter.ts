@@ -1,4 +1,4 @@
-import { PresetName } from './types';
+import { PresetName, Tag } from './types';
 import {
   ChartKind,
   ChartSchemaElement,
@@ -57,6 +57,19 @@ const data = {
   ]
 };
 
+const functions = {
+  labelFormat: {
+    customValues: ({ datum: { organization, template, score} }: {
+      datum: {
+        organization: string;
+        template: string;
+        score: number;
+      }
+    }): string =>
+      `Organization: ${organization}\nTemplate: ${template}\nScore: ${score}`
+  }
+};
+
 const schema: ChartSchemaElement[] = [
   {
     id: 3000,
@@ -87,6 +100,10 @@ const schema: ChartSchemaElement[] = [
     kind: ChartKind.simple,
     type: ChartType.scatter,
     parent: 3000,
+    tooltip: {
+      labelFormat: 'customValues',
+      standalone: true
+    },
     props: {
       x: 'organization',
       y: 'template',
@@ -102,13 +119,21 @@ const schema: ChartSchemaElement[] = [
   }
 ];
 
-const description = 'TODO';
+const description = 'The example of the scatter chart shows how to create a heatmap/grid styled\
+  scatter chart. Main features are the hidden ticks on the x axis, the format of the data to render\
+  a grid and the custom function passed and used in the tooltip labels.';
 
 export default {
   slug: PresetName.DYNAMIC_SCATTER,
   title: 'Grid like scatter chart',
   description,
-  tags: [],
+  tags: [
+    Tag.axis,
+    Tag.styled,
+    Tag.standaloneTooltip,
+    Tag.tooltip
+  ],
   schema,
-  data
+  data,
+  functions
 };
