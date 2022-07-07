@@ -63,22 +63,20 @@ const schema: ChartSchemaElement[] = [
     kind: ChartKind.wrapper,
     type: ChartTopLevelType.chart,
     parent: null,
+    props: {
+      padding: {
+        bottom: 40,
+        left: 100
+      }
+    },
     xAxis: {
-      label: 'Organization',
-      labelProps: {
-        angle: -45,
-        textAnchor: 'end'
-      },
       style: {
+        // Disable the ticks by setting 0 font.
+        tickLabels: { fontSize: 0 },
         grid: { stroke: '#D2D2D2' }
       }
     },
     yAxis: {
-      labelProps: {
-        angle: -40,
-        textAnchor: 'end'
-      },
-      turncateAt: 10,
       style: {
         grid: { stroke: '#D2D2D2' }
       }
