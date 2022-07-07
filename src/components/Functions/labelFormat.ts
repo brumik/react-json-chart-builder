@@ -16,6 +16,6 @@ const defaultFnc: ChartLabelFormatFunction =
       datum.ignored ? null : defaultStandalone({ datum })
 
 export default {
-  default: defaultFnc,
-  defaultStandalone
+  [ChartLabelFormatFunctionNames.default]: defaultFnc,
+  [ChartLabelFormatFunctionNames.defaultStandalone]: defaultStandalone
 };
