@@ -40,10 +40,10 @@ const formatNumberAsK = (n: string | number = 0): string => {
 }
 
 const axisFormat: Record<string, ChartAxisFormatFunction> = {
-  default: returnSame,
-  formatDateAsDays,
-  formatDateAsDayMonth,
-  formatNumberAsK
+  [ChartAxisFormatFunctionNames.default]: returnSame,
+  [ChartAxisFormatFunctionNames.formatDateAsDays]: formatDateAsDays,
+  [ChartAxisFormatFunctionNames.formatDateAsDayMonth]: formatDateAsDayMonth,
+  [ChartAxisFormatFunctionNames.formatNumberAsK]: formatNumberAsK
 };
 
 export default axisFormat;

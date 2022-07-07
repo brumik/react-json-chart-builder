@@ -1,7 +1,13 @@
-import { SyntheticEvent } from 'react';
+import { ChartTooltipProps } from '@patternfly/react-charts';
+import {
+  SyntheticEvent,
+  FunctionComponent
+} from 'react';
 
 export { ChartLabelFormatFunctionNames } from './labelFormat';
 export { ChartAxisFormatFunctionNames } from './axisFormat';
+export { ChartOnClickFunctionNames } from './onClick';
+export { ChartTooltipComponentFunctionNames } from './tooltip';
 
 /**
  * The ChartOnClick function takes the events and the props
@@ -17,7 +23,7 @@ export type ChartOnClickFunction = (
 ) => any;
 
 /**
- * The ChartOnHover function takes the tick data and should return the
+ * The ChartAxisFormat function takes the tick data and should return the
  * desired axis label to display. It can be used to format date or numbers.
  */
 export type ChartAxisFormatFunction = (tick: string | number) => string;
@@ -29,6 +35,12 @@ export type ChartAxisFormatFunction = (tick: string | number) => string;
  * @param data The data point values. See VictoryCharts docs.
  */
 export type ChartLabelFormatFunction = (data: { datum: Record<string, any> }) => string;
+
+/**
+ * The ChartTooltip should be a component, similar to the Patternfly ChartTooltip
+ * component which can be rendered in the chart when the user hover over a data point.
+ */
+export type ChartTooltipComponentFunction = FunctionComponent<ChartTooltipProps>;
 
 /**
  * The ChartFunctions object should hold all the function that are used in the chart and are
@@ -44,4 +56,7 @@ export interface ChartFunctions {
 
   /** The axisFormat contains the name: function pairs for formatting the tooltip and other labels.  */
   labelFormat?: Record<string, ChartLabelFormatFunction>
+
+  /** The tooltipComponent contains the name: function pairs for rendereing the tooltip on hover. */
+  tooltipComponent?: Record<string, ChartTooltipComponentFunction>
 }

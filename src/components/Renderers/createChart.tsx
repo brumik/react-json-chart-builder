@@ -10,10 +10,9 @@ import {
   ChartDataSerie,
   ChartInterface,
   ChartSimple,
-  ChartTooltipType,
+  ChartTooltipComponentFunctionNames,
   ChartType
 } from '../types';
-import tooltipMapper from '../Tooltips';
 import { snakeToSentence } from '../Common/helpers';
 import { ChartLabelFormatFunctionNames } from '../Functions';
 
@@ -54,7 +53,10 @@ const createChart = (
   const chart = charts.find(({ id: i }) => i === id) as ChartSimple;
   const SelectedChart = components[chart.type];
 
-  const TooltipComponent = tooltipMapper[chart.tooltip?.type ?? ChartTooltipType.default];
+  const TooltipComponent = functions.tooltipComponent[
+    chart.tooltip?.type ?? ChartTooltipComponentFunctionNames.default
+  ];
+
   const labelFnc = chart.tooltip?.standalone ?
     functions.labelFormat[
       chart.tooltip?.labelFormat ??

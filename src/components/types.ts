@@ -54,14 +54,6 @@ export enum ChartType {
 }
 
 /**
- * This enum should contain all the possible template types for the tooltip.
- * This is still not implemented fully in the library as only one template exists.
- */
-export enum ChartTooltipType {
-  default = 'default'
-}
-
-/**
  * This enum contains all the possible top level chart types.
  * These chart types have to be used with the `wrapper` chart kind.
  */
@@ -178,11 +170,15 @@ interface ChartBase {
 
 export interface ChartTooltipProps {
   /**
-   * The type prop defines which component to use. Right now there is only one.
+   * The type prop defines which tooltip component function will be usedto render.
+   * The value has to be in the name one of the passed functions in the
+   * `functions` list under the `tooltipComponent` key.
    *
    * @default 'default'
+   * @see ChartTooltipComponentFunction
+   * @see ChartInterface.functions
    */
-  type?: ChartTooltipType,
+  type?: string,
 
   /**
    * The props prop is used as the props to the tooltip component.
