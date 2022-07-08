@@ -43,6 +43,15 @@ export type ChartLabelFormatFunction = (data: { datum: Record<string, any> }) =>
 export type ChartTooltipComponentFunction = FunctionComponent<ChartTooltipProps>;
 
 /**
+ * The ChartStyle function should return the appropriate value for any field
+ * that it supposed to be used with. The props are depending on the value of the
+ * field it is applied to.
+ *
+ * @see https://formidable.com/open-source/victory/docs/common-props/#style
+ */
+export type ChartStyleFunction = (props: any) => any;
+
+/**
  * The ChartFunctions object should hold all the function that are used in the chart and are
  * customizable. Each key is a category and each value is an object with the 'name' as the key
  * and value as the function. The 'name' is then used to reference the function in the code.
@@ -59,4 +68,7 @@ export interface ChartFunctions {
 
   /** The tooltipComponent contains the name: function pairs for rendereing the tooltip on hover. */
   tooltipComponent?: Record<string, ChartTooltipComponentFunction>
+
+  /** The style key contains the name: function pairs for various styling functions. */
+  style?: Record<string, ChartStyleFunction>
 }

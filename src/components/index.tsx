@@ -7,6 +7,7 @@ import {
 } from './types';
 import CreateWrapper from './Renderers/CreateWrapper';
 import CreatePieChart from './Renderers/CreatePieChart';
+import { replaceStringsWithFunctions } from './Common/stylePreprocess';
 
 /**
  * The ChartRenderer component is the default export of the library.
@@ -18,14 +19,22 @@ import CreatePieChart from './Renderers/CreatePieChart';
  * @returns The rendered chart component
  */
 const ChartRenderer: FunctionComponent<ChartInterface> = (props) => {
-  const chart = props.schema.find(
+  // Preprocess the schema for the styles:
+  const schema = replaceStringsWithFunctions(props.schema, props.functions?.style ?? {});
+
+  const newProps = {
+    ...props,
+    schema
+  }
+
+  const chart = schema.find(
     ({ kind, parent }) => kind === ChartKind.wrapper && parent === null
   ) as ChartTopSchemaElement;
 
   if (chart.type === ChartTopLevelType.chart) {
-    return (<CreateWrapper key={chart.id + Math.random()} id={chart.id} {...props} />);
+    return (<CreateWrapper key={chart.id + Math.random()} id={chart.id} {...newProps} />);
   } else if (chart.type === ChartTopLevelType.pie) {
-    return (<CreatePieChart key={chart.id + Math.random()} id={chart.id} {...props} />);
+    return (<CreatePieChart key={chart.id + Math.random()} id={chart.id} {...newProps} />);
   } else {
     return null;
   }

@@ -67,6 +67,11 @@ const functions = {
       }
     }): string =>
       `Organization: ${organization}\nTemplate: ${template}\nScore: ${score}`
+  },
+  style: {
+    // eslint-disable-next-line max-len
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-unsafe-member-access
+    colorFiller: ({ datum }) => datum.score > 3 ? '#000000' : '#c43a31'
   }
 };
 
@@ -110,8 +115,7 @@ const schema: ChartSchemaElement[] = [
       size: 8,
       style: {
         data: {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-          fill: ({ datum }) => datum.score > 3 ? '#000000' : '#c43a31'
+          fill: 'colorFiller'
         }
       },
       symbol: 'square'
