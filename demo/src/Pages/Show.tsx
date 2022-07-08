@@ -73,7 +73,7 @@ const Show: React.FunctionComponent<Record<string, never>> = () => {
           <StackItem>
             <ChartRenderer
               schema={schema}
-              functions={mergeDeep(defaultFunctions, functions)}
+              functions={mergeDeep<ChartFunctions>(defaultFunctions, functions)}
               dataState={[data, setData]}
             />
           </StackItem>
