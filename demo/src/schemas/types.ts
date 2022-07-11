@@ -9,6 +9,7 @@ export enum PresetName {
   DYNAMIC_SCATTER = 'dynamic-scatter',
   LEGEND_LIKE_TOOLTIP = 'legend-like-tooltip',
   COMPLEX = 'complex-chart',
+  CUSTOM_POINTS = 'custom-points',
 }
 
 export interface Preset {
@@ -33,5 +34,6 @@ export enum Tag {
   tooltip = 'Tooltip',
   standaloneTooltip = 'Standalone Tooltip',
   onClick = 'On click',
-  dynamicTemplate = 'Dynamic from template'
+  dynamicTemplate = 'Dynamic from template',
+  customPoint = 'Custom point'
 }
