@@ -540,7 +540,7 @@ const schema: ChartSchemaElement[] = [
       interactive: true,
       orientation: ChartLegendOrientation.vertical,
       position: ChartLegendPosition.right,
-      turncateAt: 13,
+      truncateAt: 13,
       wrapText: true
     },
     tooltip: {

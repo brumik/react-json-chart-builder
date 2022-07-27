@@ -16,7 +16,7 @@ import {
   PaddingProps
 } from '../types';
 import {
-  turncateAt,
+  truncateAt,
   wrapAt
 } from './helpers';
 
@@ -33,22 +33,22 @@ const LegendWithTooltip = ({ datum, ...rest }: LegendTooltipProps) => (
 
 const getLegendName = ({
   name,
-  turncateAtNumber,
+  truncateAtNumber,
   wrapText
 }: {
   name: string,
-  turncateAtNumber?: number,
+  truncateAtNumber?: number,
   wrapText?: boolean
 }) => wrapText
-  ? wrapAt(name, turncateAtNumber)
-  : turncateAt(name, turncateAtNumber);
+  ? wrapAt(name, truncateAtNumber)
+  : truncateAt(name, truncateAtNumber);
 
 const getChartLegend = (
   id: number,
   legend: ChartLegendEntry[],
   isHidden: (i: number) => boolean,
   handleClick: (props: { index: number }) => void,
-  turncateAtNumber = Infinity,
+  truncateAtNumber = Infinity,
   wrapText = false,
   hasTooltip = true
 ): LegendComponentType => (
@@ -57,7 +57,7 @@ const getChartLegend = (
     data={legend.map((el, index) => ({
       tooltipText: el.name, // This one is overwritable
       ...el,
-      name: getLegendName({ name: el.name, turncateAtNumber, wrapText }),
+      name: getLegendName({ name: el.name, truncateAtNumber, wrapText }),
       ...getInteractiveLegendItemStyles(isHidden(index))
     }))}
     style={{
@@ -117,7 +117,7 @@ export const getInteractiveLegendForMultiSeries = (
       chartData.legend,
       isHidden,
       handleClick,
-      element?.legend?.turncateAt,
+      element?.legend?.truncateAt,
       element?.legend?.wrapText,
       element?.legend?.hasTooltip
     )
@@ -155,7 +155,7 @@ export const getInteractiveLegendForSingleSeries = (
       chartData.legend,
       isHidden,
       handleClick,
-      element?.legend?.turncateAt,
+      element?.legend?.truncateAt,
       element?.legend?.wrapText,
       element?.legend?.hasTooltip
     )
@@ -203,7 +203,7 @@ export const getLegendProps = (
         ...el,
         name: getLegendName({
           name: el.name,
-          turncateAtNumber: element?.legend?.turncateAt ?? Infinity,
+          truncateAtNumber: element?.legend?.truncateAt ?? Infinity,
           wrapText: element?.legend?.wrapText
         })
       }))

@@ -315,21 +315,21 @@ export interface ChartAxisProps extends Omit<PFChartAxisProps, 'tickFormat'> {
   labelProps?: ChartLabelProps,
 
   /**
-   * The turncateAt prop defines at what length should be the ticks label turncated.
+   * The truncateAt prop defines at what length should be the ticks label truncated.
    * Please not that the charts are not using monospace characters, however it is not
    * possible to inject css onto svg pictures.
    *
-   * @example `turncateAt: 2` - when the label would be `My label` it will be turncated to `My...`.
+   * @example `truncateAt: 2` - when the label would be `My label` it will be truncated to `My...`.
    */
-  turncateAt?: number,
+  truncateAt?: number,
 
   /**
-   * When the wrapText is set to true and the turncateAt is set instead of truncating
+   * When the wrapText is set to true and the truncateAt is set instead of truncating
    * at the position it will insert newlines, wrapping the text. This method also has problems
    * with the non monospace characters used in the charts.
    *
-   * @see turncateAt
-   * @example `turncateAt: 2; wrapText: true` - when the label would be `My label` it will bemodified to `My\n label`.
+   * @see truncateAt
+   * @example `truncateAt: 2; wrapText: true` - when the label would be `My label` it will bemodified to `My\n label`.
    *
    */
   wrapText?: boolean
@@ -352,21 +352,21 @@ export interface ChartLegendProps {
   orientation: ChartLegendOrientation,
 
   /**
-   * The turncateAt prop defines at what length should be the ticks label turncated.
+   * The truncateAt prop defines at what length should be the ticks label truncated.
    * Please not that the charts are not using monospace characters, however it is not
    * possible to inject css onto svg pictures.
    *
-   * @example `turncateAt: 2` - when the label would be `My label` it will be turncated to `My...`.
+   * @example `truncateAt: 2` - when the label would be `My label` it will be truncated to `My...`.
    */
-  turncateAt?: number,
+  truncateAt?: number,
 
   /**
-   * When the wrapText is set to true and the turncateAt is set instead of truncating
+   * When the wrapText is set to true and the truncateAt is set instead of truncating
    * at the position it will insert newlines, wrapping the text. This method also has problems
    * with the non monospace characters used in the charts.
    *
-   * @see turncateAt
-   * @example `turncateAt: 2; wrapText: true` - when the label would be `My label` it will bemodified to `My\n label`.
+   * @see truncateAt
+   * @example `truncateAt: 2; wrapText: true` - when the label would be `My label` it will bemodified to `My\n label`.
    *
    */
   wrapText?: boolean,

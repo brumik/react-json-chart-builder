@@ -11,7 +11,7 @@ export const snakeToSentence = (str: string): string => {
   return sentence.join(' ');
 }
 
-export const turncateAt = (str: string, length: number): string =>
+export const truncateAt = (str: string, length: number): string =>
   str.length > length ? `${str.substring(0, length)}...` : str;
 
 export const wrapAt = (str: string, length: number): string =>
@@ -20,16 +20,16 @@ export const wrapAt = (str: string, length: number): string =>
 
 export const axisFormatPreprocess = ({
   wrapText = false,
-  turncateAtNumber = Infinity,
+  truncateAtNumber = Infinity,
   fnc
 }: {
   wrapText: boolean,
-  turncateAtNumber: number,
+  truncateAtNumber: number,
   fnc: ChartAxisFormatFunction
 }) => (n: string | number): string => {
   n = wrapText
-    ? wrapAt(n.toString(), turncateAtNumber)
-    : turncateAt(n.toString(), turncateAtNumber);
+    ? wrapAt(n.toString(), truncateAtNumber)
+    : truncateAt(n.toString(), truncateAtNumber);
 
   return fnc(n);
 }

@@ -73,7 +73,7 @@ const schema: ChartSchemaElement[] = [
       labelProps: {
         angle: -45
       },
-      turncateAt: 6
+      truncateAt: 6
     },
     yAxis: {
       label: 'Money Saved',

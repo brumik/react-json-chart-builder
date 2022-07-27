@@ -6,6 +6,12 @@
 ## Intall the npm package
 * `npm i --save react-json-chart-builder`
 
+## Update guide
+This section describes the changes you need to make to keep the chart builder working after the update.
+
+### v1.x.x to v2 (v2-breaking-changes branch)
+* All the truncate props were miss spelled as turncate. In the schemas replace every occurence of `turncateAt` with `truncateAt`.
+
 ## Workflow
 * Write code, commit with semantic release commit messages (see bellow)
 * Create PR

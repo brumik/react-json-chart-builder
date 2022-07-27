@@ -196,7 +196,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
     ...xAxisProps,
     tickFormat: axisFormatPreprocess({
       wrapText: xAxisProps.wrapText,
-      turncateAtNumber: xAxisProps.turncateAt,
+      truncateAtNumber: xAxisProps.truncateAt,
       fnc: functions.axisFormat[xAxisProps.tickFormat ?? ChartAxisFormatFunctionNames.default]
     })
   };
@@ -211,7 +211,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
     ...yAxisProps,
     tickFormat: axisFormatPreprocess({
       wrapText: yAxisProps.wrapText,
-      turncateAtNumber: yAxisProps.turncateAt,
+      truncateAtNumber: yAxisProps.truncateAt,
       fnc: functions.axisFormat[yAxisProps.tickFormat ?? ChartAxisFormatFunctionNames.default]
     })
   };
