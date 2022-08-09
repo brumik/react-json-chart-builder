@@ -78,6 +78,9 @@ const schema: ChartSchemaElement[] = [
     kind: ChartKind.simple,
     type: ChartType.scatter,
     parent: 2,
+    tooltip: {
+      standalone: true
+    },
     props: {
       x: 'created_date',
       y: 'failed_anomaly',
@@ -102,7 +105,9 @@ const CustomPoint: FC<Props> = ({ x, y, disableInlineStyles, ...props }) => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   // the component can be centered here if needed
-  return <text x={x} y={y} {...props}>:-)</text>;
+  // it's advised to pass props.events to make sure all events are passed to the component
+  // if not bug like missing tooltip will happen
+  return <text x={x} y={y} {...props} {...props.events}>:-)</text>;
 };
 
 const functions = {
