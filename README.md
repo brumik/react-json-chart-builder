@@ -28,8 +28,8 @@ The default graphite width of 10mm is always used for performance reasons.`
 ## Devel setup
 
 ### Requirements
-* node = 15
-* npm = 7
+* node >= 15
+* npm >= 7
 * for nvm users you can just do `nvm use` after `nvm install 15` if you had not doen it before
 
 ### Setup
