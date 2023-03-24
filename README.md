@@ -17,7 +17,7 @@
         * Docs: [https://brumik.github.io/react-json-chart-builder/docs](https://brumik.github.io/react-json-chart-builder/docs)
 
 ### Semantic release commit messages
-Using semantic release
+Using semantic release: Note, you need the `:` in it to trigger the release.
 * No release: `chore(demo): updated the demo application`
 * Patch release: `fix(pencil): stop graphite breaking when too much pressure applied`
 * Feature release: `feat(pencil): add 'graphiteWidth' option`
