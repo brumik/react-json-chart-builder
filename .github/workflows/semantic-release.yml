@@ -7,7 +7,7 @@ on:
   push:
     branches: [ main ]
 
-#jobs:
+jobs:
 #  github_pages:
 #    runs-on: ubuntu-latest
 #    steps:
