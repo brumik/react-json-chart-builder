@@ -5,6 +5,9 @@
   "description": "A chart builder component in react, which uses JSON for schema.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ansible/react-json-chart-builder.git"
