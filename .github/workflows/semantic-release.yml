@@ -5,7 +5,7 @@ name: Deploy GH Page and NPM Package
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, release_1.0 ]
 
 jobs:
 #  github_pages:
