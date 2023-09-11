@@ -5,8 +5,6 @@ import {
   ChartStackProps,
   ChartGroupProps,
   ChartPieProps as PFChartPieProps,
-  ChartLegendOrientation,
-  ChartPieLegendPosition as ChartLegendPosition,
   ChartLineProps,
   ChartAreaProps,
   ChartScatterProps,
@@ -91,9 +89,6 @@ export interface ChartDataSerie {
    */
   name: string
 }
-
-// Reexport the interfaces from Patternfly charts.
-export { ChartLegendPosition, ChartLegendOrientation };
 
 /**
  * The ChartLegendEntry defines a single entry in the legend.
@@ -353,10 +348,10 @@ export interface ChartLegendProps {
   interactive?: boolean,
 
   /** The position prop controlls the position of the legend. */
-  position: ChartLegendPosition,
+  position: 'bottom' | 'right',
 
   /** The orientation prop defines if the legend is vertical or horizontal. */
-  orientation: ChartLegendOrientation,
+  orientation: 'horizontal' | 'vertical',
 
   /**
    * The turncateAt prop defines at what length should be the ticks label turncated.

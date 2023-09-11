@@ -23,11 +23,13 @@ const jumpToDocs = () => {
 
 const App: FC<Record<string, never>> = () => {
   const headerToolbar = (
-    <PageHeaderTools>
-      <Button onClick={() => jumpToDocs()} variant={ButtonVariant.primary}>
+    <PageHeaderTools
+      children={
+        <Button onClick={() => jumpToDocs()} variant={ButtonVariant.primary}>
             Jump to docs
-      </Button>
-    </PageHeaderTools>
+        </Button>
+      }
+    />
   );
 
   const Header = (
