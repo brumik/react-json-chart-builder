@@ -1,8 +1,6 @@
 import { PresetName, Tag } from './types';
 import {
   ChartKind,
-  ChartLegendOrientation,
-  ChartLegendPosition,
   ChartSchemaElement,
   ChartThemeColor,
   ChartTopLevelType,
@@ -450,8 +448,8 @@ const schema: ChartSchemaElement[] = [
     },
     legend: {
       interactive: true,
-      orientation: ChartLegendOrientation.vertical,
-      position: ChartLegendPosition.right,
+      orientation: 'vertical',
+      position: 'right',
       hasTooltip: true
     }
   },
