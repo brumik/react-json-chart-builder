@@ -4,11 +4,14 @@ import {
   Button,
   ButtonVariant,
   Page,
-  PageHeader,
-  PageHeaderTools,
   PageSection,
-  PageSidebar
+  PageSidebar,
+  PageSidebarBody
 } from '@patternfly/react-core';
+import {
+  PageHeader,
+  PageHeaderTools
+} from '@patternfly/react-core/deprecated';
 import { List, Show } from './Pages';
 import Navigation from './Navigation';
 import logo from '../public/favicon.png';
@@ -20,11 +23,13 @@ const jumpToDocs = () => {
 
 const App: FC<Record<string, never>> = () => {
   const headerToolbar = (
-    <PageHeaderTools>
-      <Button onClick={() => jumpToDocs()} variant={ButtonVariant.primary}>
+    <PageHeaderTools
+      children={
+        <Button onClick={() => jumpToDocs()} variant={ButtonVariant.primary}>
             Jump to docs
-      </Button>
-    </PageHeaderTools>
+        </Button>
+      }
+    />
   );
 
   const Header = (
@@ -40,7 +45,12 @@ const App: FC<Record<string, never>> = () => {
       showNavToggle
     />
   );
-  const Sidebar = <PageSidebar nav={<Navigation />} />;
+  const Sidebar = (
+    <PageSidebar  >
+      <PageSidebarBody>
+        <Navigation />
+      </PageSidebarBody>
+    </PageSidebar>);
 
   return (
     <Page header={Header} isManagedSidebar sidebar={Sidebar} style={{ minHeight: '100vh' }}>
