@@ -232,6 +232,7 @@ const CreateWrapper: FunctionComponent<Props> = ({
         {...props}
         {...legendProps}
         {...labelProps}
+        key={id}
         width={width}
       >
         <ChartAxis {...xAxis} />
