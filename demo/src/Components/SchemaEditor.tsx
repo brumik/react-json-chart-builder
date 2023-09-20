@@ -25,7 +25,7 @@ const SchemaEditor: FC<Props> = ({
       customControls={<CodeEditorControl
         icon={<SaveIcon />}
         aria-label="Save code"
-        toolTipText="Save code"
+        tooltipProps={{ content:'Save code' }}
         onClick={() => {
           setCode(editorText);
         }}
@@ -33,7 +33,11 @@ const SchemaEditor: FC<Props> = ({
       code={editorText}
       onChange={setEditorText}
       language={Language.json}
-      height='500px' />
+      height='500px'
+      shortcutsPopoverButtonText={'View Shortcuts'}
+      toolTipCopyExitDelay={1600}
+      toolTipDelay={300}
+      toolTipMaxWidth={'100px'} />
   );
 };
 
