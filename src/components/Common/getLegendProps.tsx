@@ -9,10 +9,8 @@ import React from 'react';
 import {
   ChartData,
   ChartLegendEntry,
-  ChartLegendPosition,
   ChartPie,
   ChartTopSchemaElement,
-  ChartLegendOrientation,
   PaddingProps
 } from '../types';
 import {
@@ -26,8 +24,8 @@ interface LegendTooltipProps extends PFChartLabelProps {
 }
 
 const LegendWithTooltip = ({ datum, ...rest }: LegendTooltipProps) => (
-  <Tooltip content={datum.tooltipText} enableFlip>
-    <ChartLabel {...rest} />
+  <Tooltip content={datum.tooltipText} triggerRef={() => document.getElementById(rest.text.toString())} enableFlip>
+    <ChartLabel {...rest} id={rest.text.toString()} />
   </Tooltip>
 );
 
@@ -165,8 +163,8 @@ export const getInteractiveLegendForSingleSeries = (
 interface LegendProps {
   padding?: { top: number, bottom: number, left: number, right: number },
   legendData?: ChartLegendEntry[],
-  legendPosition?: ChartLegendPosition,
-  legendOrientation?: ChartLegendOrientation,
+  legendPosition?: 'bottom' | 'right',
+  legendOrientation?: 'horizontal' | 'vertical',
   legendComponent?: LegendComponentType,
   domainPadding?: number,
 }
@@ -183,14 +181,14 @@ export const getLegendProps = (
   if (element.legend) {
     const { legend } = element;
     if (
-      legend.position === ChartLegendPosition.bottom ||
-      legend.position === ChartLegendPosition.right
+      legend.position === 'bottom' ||
+      legend.position === 'right'
     ) {
       props.padding[legend.position] += 100;
     }
 
     if (
-      legend.position === ChartLegendPosition.bottom
+      legend.position === 'bottom'
     ) {
       element.props.height += 100;
     }
