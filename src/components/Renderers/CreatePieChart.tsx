@@ -79,6 +79,7 @@ const CreatePieChart: FunctionComponent<Props> = ({
             ? ({...el, [props.y as string]: 0})
             : ({...el})
         )}
+        key={data.series[0].name}
         name={data.series[0].name}
         width={width}
       />}

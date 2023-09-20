@@ -1,6 +1,8 @@
 import { PresetName, Tag } from './types';
 import {
   ChartKind,
+  ChartLegendOrientation,
+  ChartLegendPosition,
   ChartSchemaElement,
   ChartTopLevelType
 } from '../../../src';
@@ -94,8 +96,8 @@ const schema: ChartSchemaElement[] = [
     },
     legend: {
       interactive: true,
-      orientation: 'vertical',
-      position: 'right'
+      orientation: ChartLegendOrientation.vertical,
+      position: ChartLegendPosition.right
     }
   }
 ];
